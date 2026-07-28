@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e63554bcc2c7454c8fde4da611f5b76, type: 3}
+  m_Name: Water_5_Millennium
+  m_EditorClassIdentifier: Assembly-CSharp::SpiritMerge.SpiritData
+  spiritName: "\uCC9C\uB144\uAD6C\uBBF8\uD638"
+  grade: 5
+  element: 1
+  animalType: 1
+  description: "\uCC9C\uB144\uAD6C\uBBF8\uD638 \u2014 Water \uC18D\uC131 5\uC131
+    \uC815\uB839"
+  spriteFileName: Millennium Nine-tailed Fox
+  baseATK: 110
+  baseHP: 750
+  baseDEF: 75
+  baseSpeed: 0.9
+  baseCritRate: 0.2
+  baseCritDamage: 2.25
+  activeSkill: {fileID: 0}
+  passiveSkill: {fileID: 0}
+  sprite: {fileID: 0}
+  iconSprite: {fileID: 0}
+  animatorController: {fileID: 0}

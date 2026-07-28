@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e63554bcc2c7454c8fde4da611f5b76, type: 3}
+  m_Name: Light_3_LightDeer
+  m_EditorClassIdentifier: Assembly-CSharp::SpiritMerge.SpiritData
+  spiritName: "\uBE5B\uC0AC\uC2B4"
+  grade: 3
+  element: 5
+  animalType: 5
+  description: "\uBE5B\uC0AC\uC2B4 \u2014 Light \uC18D\uC131 3\uC131 \uC815\uB839"
+  spriteFileName: Light Deer
+  baseATK: 28
+  baseHP: 220
+  baseDEF: 24
+  baseSpeed: 1.5
+  baseCritRate: 0.1
+  baseCritDamage: 1.75
+  activeSkill: {fileID: 0}
+  passiveSkill: {fileID: 0}
+  sprite: {fileID: 0}
+  iconSprite: {fileID: 0}
+  animatorController: {fileID: 0}

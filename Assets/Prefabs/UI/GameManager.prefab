@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7551484230243439005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6727806640943804681}
+  - component: {fileID: 2029314021212728184}
+  - component: {fileID: 1024052751846416955}
+  - component: {fileID: 683078311258288934}
+  - component: {fileID: 6885950931542687443}
+  - component: {fileID: 5780947617253302232}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6727806640943804681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7551484230243439005}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029314021212728184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7551484230243439005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96705c731e0a5534b97bffb5ab48572c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpiritMerge.GameManager
+  playerLevel: 1
+  playerExp: 0
+  skillPoints: 0
+  skillTreeLevels: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  gold: 0
+  ruby: 0
+  spiritStone: 0
+  elementStones: 000000000000000000000000000000000000000000000000
+  currentStage: 1
+  partySlotIds: ffffffffffffffffffffffffffffffff
+--- !u!114 &1024052751846416955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7551484230243439005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0126e38de62bb44b845c0eaa54b060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpiritMerge.DataManager
+  spiritDatabase: []
+  stageDatabase: []
+  equipmentDatabase: []
+--- !u!114 &683078311258288934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7551484230243439005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a52e3090d3e12924a872135f9fcb0d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpiritMerge.SpiritManager
+  ownedSpirits: []
+--- !u!114 &6885950931542687443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7551484230243439005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a52805198d38f84bbc879d8f0a16583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpiritMerge.BattleManager
+  spiritSpawnRoot: {fileID: 0}
+  enemySpawnRoot: {fileID: 0}
+  battleField: {fileID: 0}
+  state: 0
+  currentWave: 0
+  maxWaves: 5
+  waveDelay: 2
+--- !u!114 &5780947617253302232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7551484230243439005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408789dcc10bfe54aaf91a5374fae428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpiritMerge.InventoryManager
+  equipmentList: []
