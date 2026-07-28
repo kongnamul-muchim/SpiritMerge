@@ -21,6 +21,7 @@ namespace SpiritMerge.Infrastructure.DI
             builder.Register<ICurrencyService, CurrencyService>(Lifetime.Singleton);
             builder.Register<IMergeService, MergeService>(Lifetime.Singleton);
             builder.Register<IPartyService, PartyService>(Lifetime.Singleton);
+            builder.Register<IStageProgressionService, StageProgressionService>(Lifetime.Singleton);
 
             // ─── Entry Point ─────────────────────────
             builder.RegisterEntryPoint<GameEntryPoint>();
