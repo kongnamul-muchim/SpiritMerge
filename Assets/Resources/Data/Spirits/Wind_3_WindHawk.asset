@@ -26,6 +26,6 @@ MonoBehaviour:
   baseCritDamage: 1.75
   activeSkill: {fileID: 0}
   passiveSkill: {fileID: 0}
-  sprite: {fileID: 0}
-  iconSprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 975f25aa2af7f8445b85933766f02515, type: 3}
+  iconSprite: {fileID: 21300000, guid: 975f25aa2af7f8445b85933766f02515, type: 3}
   animatorController: {fileID: 0}

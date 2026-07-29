@@ -36,11 +36,14 @@ def main():
         print("")
         print("명령어:")
         print("  ping                    연결 확인")
-        print("  errors                 컴파일 에러 확인")
-        print("  exec <Class.Method>    메서드 실행")
-        print("  refresh                AssetDatabase 리프레시")
-        print("  build-webgl            WebGL 빌드")
-        print("  quit                   서버 종료")
+        print("  play                    Play Mode 진입")
+        print("  stop                    Play Mode 종료")
+        print("  errors                  컴파일 에러 확인")
+        print("  exec <Class.Method>     메서드 실행")
+        print("  refresh                 AssetDatabase 리프레시")
+        print("  build-webgl             WebGL 빌드")
+        print("  restart                 CliServer 재시작")
+        print("  quit                    서버 종료")
         return
 
     cmd = sys.argv[1]

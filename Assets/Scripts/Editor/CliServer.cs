@@ -21,8 +21,16 @@ namespace SpiritMerge.Editor
 
         static CliServer()
         {
-            TryStart();
-            EditorApplication.update += OnEditorUpdate;
+            try
+            {
+                Debug.Log("[CliServer] Initializing...");
+                TryStart();
+                EditorApplication.update += OnEditorUpdate;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"[CliServer] Init error: {e.Message}");
+            }
         }
 
         private static void TryStart()
@@ -51,12 +59,23 @@ namespace SpiritMerge.Editor
             {
                 using var test = new TcpClient();
                 test.Connect(IPAddress.Loopback, Port);
-                test.Close();
-                return true; // 연결 성공 = 이미 누군가 listening
+                test.ReceiveTimeout = 2000; // 2초 타임아웃
+                test.SendTimeout = 2000;
+                try
+                {
+                    using var stream = test.GetStream();
+                    using var writer = new StreamWriter(stream, new UTF8Encoding(false));
+                    using var reader = new StreamReader(stream, new UTF8Encoding(false));
+                    writer.Write("ping\n");
+                    writer.Flush();
+                    var response = reader.ReadLine();
+                    return response == "pong";
+                }
+                catch { return false; }
             }
             catch
             {
-                return false; // 연결 실패 = 포트 사용 가능
+                return false;
             }
         }
 
@@ -92,6 +111,8 @@ namespace SpiritMerge.Editor
                 {
                     listener = new TcpListener(IPAddress.Loopback, Port);
                     listener.ExclusiveAddressUse = false;
+                    // Note: ReuseAddress not set on Windows — conflicts with ExclusiveAddressUse=false
+                    // We rely on the retry loop below when TIME_WAIT is active
                     listener.Start();
 
                     while (_running)
@@ -120,14 +141,32 @@ namespace SpiritMerge.Editor
                         }
                     }
                 }
+                catch (SocketException se)
+                {
+                    // 포트 바인딩 실패 — TIME_WAIT 등 예상 가능한 상황
+                    if (se.SocketErrorCode == SocketError.AddressAlreadyInUse
+                        || se.SocketErrorCode == SocketError.AccessDenied)
+                    {
+                        Debug.Log($"[CliServer] Port {Port} busy, retrying in 5s... ({se.SocketErrorCode})");
+                        Thread.Sleep(5000);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"[CliServer] Socket: {se.Message}");
+                        Thread.Sleep(3000);
+                    }
+                }
                 catch (Exception e)
                 {
-                    Debug.LogError($"[CliServer] Recover: {e.Message}");
+                    Debug.LogWarning($"[CliServer] Recover: {e.Message}");
                 }
                 finally
                 {
                     if (listener != null) try { listener.Stop(); } catch { }
                     Debug.Log("[CliServer] Cleanup");
+                    // 스레드 종료 시 상태 완전 초기화
+                    _running = false;
+                    _serverThread = null;
                 }
 
                 if (_running) Thread.Sleep(3000);
@@ -142,8 +181,11 @@ namespace SpiritMerge.Editor
                 {
                     case "ping": return "pong\n";
                     case "quit": MainThreadQueue.Enqueue(() => _running = false); return "ok: quit\n";
+                    case "restart": MainThreadQueue.Enqueue(Restart); return "ok: restart\n";
                     case "refresh": MainThreadQueue.Enqueue(AssetDatabase.Refresh); return "ok: refresh\n";
                     case "errors": return GetCompileErrors();
+                    case "play": MainThreadQueue.Enqueue(() => EditorApplication.EnterPlaymode()); return "ok: play\n";
+                    case "stop": MainThreadQueue.Enqueue(() => EditorApplication.ExitPlaymode()); return "ok: stop\n";
                     case "build-webgl": MainThreadQueue.Enqueue(BuildWebGL); return "ok: build\n";
                 }
 
@@ -154,9 +196,24 @@ namespace SpiritMerge.Editor
                     {
                         Debug.Log($"[CliServer] Exec: {m}");
                         int dot = m.LastIndexOf('.');
-                        if (dot < 0) return;
-                        var type = Type.GetType(m.Substring(0, dot));
-                        type?.GetMethod(m.Substring(dot + 1),
+                        if (dot < 0) { Debug.LogWarning($"[CliServer] Invalid: {m}"); return; }
+                        string typeName = m.Substring(0, dot);
+                        string methodName = m.Substring(dot + 1);
+
+                        // Search all loaded assemblies for the type
+                        System.Type type = null;
+                        foreach (var asm in System.AppDomain.CurrentDomain.GetAssemblies())
+                        {
+                            type = asm.GetType(typeName);
+                            if (type != null) break;
+                        }
+
+                        if (type == null)
+                        {
+                            Debug.LogWarning($"[CliServer] Type not found: {typeName}");
+                            return;
+                        }
+                        type.GetMethod(methodName,
                             System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public)
                             ?.Invoke(null, null);
                     });

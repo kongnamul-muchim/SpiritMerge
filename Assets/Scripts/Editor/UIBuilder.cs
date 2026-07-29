@@ -144,7 +144,9 @@ namespace SpiritMerge.Editor
             tmp.fontSize = fontSize;
             tmp.color = Color.white;
             tmp.alignment = TextAlignmentOptions.Center;
-            tmp.font = Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");
+            // TMP Essentials 폰트가 없으면 기본 폰트 사용
+            var font = Resources.Load<TMP_FontAsset>("Fonts & Materials/NotoSansKR-VariableFont_wght SDF");
+            if (font != null) tmp.font = font;
             return go;
         }
 

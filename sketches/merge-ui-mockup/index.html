@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=390, height=844">
+<title>Spirit Merge - Mobile UI v2</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Malgun Gothic", sans-serif;
+    background: #08080f;
+    color: #e0e0e8;
+    width: 390px;
+    height: 844px;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    touch-action: manipulation;
+  }
+
+  .app {
+    width: 390px;
+    height: 844px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(180deg, #0a0a18 0%, #0e0e1a 50%, #0a0a15 100%);
+  }
+
+  /* ========== TOP BAR ========== */
+  .top-bar {
+    height: 44px;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    border-bottom: 1px solid rgba(100,130,255,0.1);
+    z-index: 20;
+    flex-shrink: 0;
+  }
+  .top-bar .stage {
+    font-size: 13px;
+    font-weight: 700;
+    color: #8bf;
+    flex-shrink: 0;
+  }
+  .top-bar .currency {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    font-size: 12px;
+  }
+  .top-bar .currency span {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .top-bar .currency .gold { color: #fd6; }
+  .top-bar .currency .ruby { color: #f6a; }
+
+  /* ========== BATTLE FIELD ========== */
+  .battle-field {
+    flex: 1;
+    min-height: 0;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0d0d20 0%, #111130 40%, #0d0d20 100%);
+  }
+  .battle-field::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    right: -10%;
+    height: 55%;
+    background:
+      linear-gradient(135deg, rgba(20,25,50,0.6) 25%, transparent 25%) -6px 0,
+      linear-gradient(225deg, rgba(20,25,50,0.6) 25%, transparent 25%) -6px 0,
+      linear-gradient(315deg, rgba(20,25,50,0.6) 25%, transparent 25%) 0px 0,
+      linear-gradient(45deg, rgba(20,25,50,0.6) 25%, transparent 25%) 0px 0;
+    background-size: 12px 12px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wave-info {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: rgba(255,150,100,0.6);
+    z-index: 3;
+    letter-spacing: 1px;
+  }
+  .enemy-path {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 18px;
+    z-index: 2;
+  }
+  .enemy-path .waypoint {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255,80,80,0.15);
+    border: 1px solid rgba(255,80,80,0.2);
+  }
+  .enemy-path .waypoint.active { background: rgba(255,80,80,0.5); border-color: rgba(255,80,80,0.4); }
+  .enemy-group {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+    z-index: 2;
+  }
+  .enemy-unit {
+    width: 48px;
+    height: 48px;
+    background: rgba(180,40,40,0.2);
+    border-radius: 50%;
+    border: 1.5px solid rgba(255,80,80,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: relative;
+    animation: floatEnemy 2s ease-in-out infinite;
+  }
+  .enemy-unit:nth-child(2) { animation-delay: -0.4s; }
+  .enemy-unit:nth-child(3) { animation-delay: -0.8s; }
+  .enemy-unit .hp-bar {
+    position: absolute;
+    bottom: -4px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: rgba(255,50,50,0.2);
+    border-radius: 2px;
+  }
+  .enemy-unit .hp-bar .fill {
+    width: 65%;
+    height: 100%;
+    background: rgba(255,50,50,0.6);
+    border-radius: 2px;
+  }
+  @keyframes floatEnemy {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+  .spirit-field {
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    right: 8%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+  }
+  .field-spirit {
+    width: 44px;
+    height: 44px;
+    background: rgba(40,60,120,0.25);
+    border-radius: 50%;
+    border: 1.5px solid rgba(100,150,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    animation: floatSpirit 3s ease-in-out infinite;
+    position: relative;
+  }
+  .field-spirit:nth-child(2) { animation-delay: -0.6s; }
+  .field-spirit:nth-child(3) { animation-delay: -1.2s; }
+  .field-spirit:nth-child(4) { animation-delay: -0.3s; }
+  .field-spirit .atk-fx {
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(100,180,255,0.4), transparent);
+    border-radius: 2px;
+    top: 50%;
+    right: -16px;
+    animation: atkFlash 1.5s ease-in-out infinite;
+  }
+  .field-spirit:nth-child(3) .atk-fx { animation-delay: -0.5s; }
+  .field-spirit:nth-child(4) .atk-fx { animation-delay: -1s; }
+  @keyframes floatSpirit {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+  @keyframes atkFlash {
+    0%, 100% { opacity: 0; transform: translateX(0); }
+    50% { opacity: 1; transform: translateX(8px); }
+  }
+
+  /* ========== MERGE BOARD ========== */
+  .merge-section {
+    height: 55%;
+    min-height: 400px;
+    background: linear-gradient(180deg, #0c0c18 0%, #0a0a14 100%);
+    border-top: 1px solid rgba(100,130,255,0.08);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px 0;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .merge-section .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px 6px;
+  }
+  .merge-section .section-header .title {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(150,180,255,0.5);
+    letter-spacing: 1px;
+  }
+  .merge-section .section-header .count {
+    font-size: 11px;
+    color: rgba(150,180,255,0.3);
+  }
+
+  /* Merge Board Grid — 4x4 */
+  .merge-board {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    padding: 4px;
+    align-content: center;
+    min-height: 0;
+  }
+
+  .tile {
+    aspect-ratio: 1;
+    background: rgba(18,20,35,0.7);
+    border-radius: 10px;
+    border: 1.5px solid rgba(100,130,255,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    touch-action: manipulation;
+  }
+  .tile:active { transform: scale(0.95); }
+  .tile .icon { font-size: 28px; line-height: 1; }
+  .tile .level-badge {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(180,200,255,0.6);
+    background: rgba(0,0,0,0.4);
+    padding: 0 4px;
+    border-radius: 3px;
+    line-height: 14px;
+  }
+  .tile .star-badge {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 8px;
+    color: #fd6;
+  }
+  .tile .element-tag {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    font-size: 8px;
+    color: rgba(150,180,255,0.3);
+  }
+  .tile.fire { border-color: rgba(255,100,50,0.25); background: rgba(40,20,15,0.8); }
+  .tile.water { border-color: rgba(50,150,255,0.25); background: rgba(15,25,40,0.8); }
+  .tile.nature { border-color: rgba(100,200,50,0.25); background: rgba(15,35,15,0.8); }
+  .tile.thunder { border-color: rgba(200,150,50,0.25); background: rgba(35,30,15,0.8); }
+  .tile.selected {
+    border-color: rgba(100,200,255,0.5) !important;
+    background: rgba(35,50,90,0.5) !important;
+    box-shadow: 0 0 16px rgba(100,200,255,0.15);
+  }
+  .tile .evo-badge {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    font-size: 9px;
+    color: rgba(255,200,100,0.7);
+  }
+
+  /* ========== SUMMON BUTTON (SOLO) ========== */
+  .controls {
+    padding: 8px 4px 6px;
+    flex-shrink: 0;
+  }
+  .controls .btn-summon {
+    width: 100%;
+    height: 52px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 3px 16px rgba(37,99,235,0.25);
+    transition: all 0.15s;
+    touch-action: manipulation;
+    letter-spacing: 1px;
+  }
+  .controls .btn-summon:active {
+    transform: scale(0.97);
+    box-shadow: 0 1px 8px rgba(37,99,235,0.15);
+  }
+
+  /* ========== GNB ========== */
+  .gnb {
+    height: 56px;
+    background: rgba(0,0,0,0.92);
+    border-top: 1px solid rgba(100,130,255,0.08);
+    display: flex;
+    align-items: stretch;
+    flex-shrink: 0;
+    z-index: 20;
+  }
+  .gnb .tab {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 10px;
+    color: rgba(150,180,255,0.3);
+    cursor: pointer;
+    transition: all 0.15s;
+    padding: 4px 0;
+    position: relative;
+  }
+  .gnb .tab .tab-icon { font-size: 20px; line-height: 1; }
+  .gnb .tab.active { color: #8bf; }
+  .gnb .tab.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 2px;
+    background: #8bf;
+    border-radius: 0 0 2px 2px;
+  }
+  .gnb .tab:hover { color: rgba(150,180,255,0.6); }
+
+  /* ========== UPGRADE PANEL (overlay) ========== */
+  .upgrade-panel {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(5,5,12,0.95);
+    z-index: 40;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+  }
+  .upgrade-panel.show { display: flex; }
+  .upgrade-header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba(100,130,255,0.1);
+    gap: 12px;
+  }
+  .upgrade-header .back-btn {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(150,180,255,0.5);
+    padding: 4px 8px;
+  }
+  .upgrade-header .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #8bf;
+  }
+
+  .upgrade-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 14px;
+    overflow-y: auto;
+  }
+
+  /* Spirit card in upgrade list */
+  .upgrade-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(18,20,35,0.6);
+    border-radius: 10px;
+    border: 1px solid rgba(100,130,255,0.06);
+    padding: 12px;
+  }
+  .upgrade-card .card-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(40,30,60,0.3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+  .upgrade-card .card-icon.fire { background: rgba(255,100,50,0.15); }
+  .upgrade-card .card-icon.water { background: rgba(50,150,255,0.15); }
+  .upgrade-card .card-icon.nature { background: rgba(100,200,50,0.15); }
+  .upgrade-card .card-info { flex: 1; }
+  .upgrade-card .card-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ccd;
+  }
+  .upgrade-card .card-stats {
+    font-size: 11px;
+    color: rgba(150,170,255,0.4);
+    margin-top: 2px;
+  }
+  .upgrade-card .card-level {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fd6;
+    text-align: right;
+  }
+  .upgrade-card .card-evo {
+    font-size: 11px;
+    color: rgba(100,200,255,0.5);
+    text-align: right;
+  }
+  .upgrade-card .btn-upgrade {
+    padding: 6px 14px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .upgrade-card .btn-upgrade:active { transform: scale(0.95); }
+
+  /* ========== MERGE POPUP ========== */
+  .popup-overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+  .popup-overlay.show { display: flex; }
+  .popup-box {
+    width: 240px;
+    background: linear-gradient(180deg, #141428, #0e0e1e);
+    border-radius: 16px;
+    border: 1px solid rgba(100,130,255,0.15);
+    padding: 28px 20px 20px;
+    text-align: center;
+    box-shadow: 0 12px 48px rgba(0,0,0,0.5);
+  }
+  .popup-box .reward-icon { font-size: 48px; margin-bottom: 8px; }
+  .popup-box .popup-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fd6;
+    margin-bottom: 4px;
+  }
+  .popup-box .popup-desc {
+    font-size: 13px;
+    color: rgba(180,200,255,0.5);
+    margin-bottom: 18px;
+    line-height: 1.4;
+  }
+  .popup-box .popup-btn {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar">
+    <span class="stage">Stage 3-8 · 어둠의 숲</span>
+    <div class="currency">
+      <span class="gold">🪙 12,450</span>
+      <span class="ruby">💎 320</span>
+    </div>
+  </div>
+
+  <!-- ===== BATTLE FIELD ===== -->
+  <div class="battle-field">
+    <div class="wave-info">WAVE 3/7</div>
+    <div class="enemy-path">
+      <div class="waypoint active"></div>
+      <div class="waypoint active"></div>
+      <div class="waypoint active"></div>
+      <div class="waypoint"></div>
+      <div class="waypoint"></div>
+    </div>
+    <div class="enemy-group">
+      <div class="enemy-unit">
+        👹
+        <div class="hp-bar"><div class="fill"></div></div>
+      </div>
+      <div class="enemy-unit">
+        👾
+        <div class="hp-bar"><div class="fill" style="width:40%"></div></div>
+      </div>
+      <div class="enemy-unit">
+        👹
+        <div class="hp-bar"><div class="fill"></div></div>
+      </div>
+    </div>
+    <div class="spirit-field">
+      <div class="field-spirit">🔥<div class="atk-fx"></div></div>
+      <div class="field-spirit">💧<div class="atk-fx"></div></div>
+      <div class="field-spirit">🌿<div class="atk-fx"></div></div>
+      <div class="field-spirit">⚡<div class="atk-fx"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== MERGE SECTION ===== -->
+  <div class="merge-section">
+    <div class="section-header">
+      <span class="title">⚔️ 머지 보드</span>
+      <span class="count">12 / 16</span>
+    </div>
+
+    <!-- 4x4 Merge Grid -->
+    <div class="merge-board">
+      <!-- Row 1 -->
+      <div class="tile fire selected">
+        <span class="icon">🔥</span>
+        <span class="level-badge">Lv.3</span>
+        <span class="star-badge">★★★</span>
+      </div>
+      <div class="tile water">
+        <span class="icon">💧</span>
+        <span class="level-badge">Lv.2</span>
+        <span class="star-badge">★★</span>
+      </div>
+      <div class="tile nature">
+        <span class="icon">🌿</span>
+        <span class="level-badge">Lv.4</span>
+        <span class="star-badge">★★★★</span>
+      </div>
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="tile thunder">
+        <span class="icon">⚡</span>
+        <span class="level-badge">Lv.1</span>
+        <span class="star-badge">★</span>
+      </div>
+      <div class="tile fire">
+        <span class="icon" style="font-size:26px;">🔥</span>
+        <span class="level-badge">Lv.2</span>
+        <span class="star-badge">★★</span>
+        <span class="evo-badge">✨</span>
+      </div>
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="tile water">
+        <span class="icon">💧</span>
+        <span class="level-badge">Lv.1</span>
+        <span class="star-badge">★</span>
+      </div>
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+      <div class="tile">
+        <span class="icon" style="opacity:0.12;font-size:22px;">+</span>
+      </div>
+      <div class="tile nature">
+        <span class="icon">🌿</span>
+        <span class="level-badge">Lv.2</span>
+        <span class="star-badge">★★</span>
+      </div>
+    </div>
+
+    <!-- Summon Button (solo) -->
+      </div>
+    </div>
+
+    <!-- Summon Button (solo) -->
+    <div class="controls">
+      <button class="btn-summon">✨ 정령 소환 (500🪙)</button>
+    </div>
+  </div>
+
+  <!-- ===== GNB ===== -->
+  <div class="gnb">
+    <div class="tab active">
+      <span class="tab-icon">⚔️</span>
+      <span>전투</span>
+    </div>
+    <div class="tab">
+      <span class="tab-icon">👥</span>
+      <span>파티</span>
+    </div>
+    <div class="tab" onclick="toggleUpgrade()">
+      <span class="tab-icon">🔧</span>
+      <span>업그레이드</span>
+    </div>
+    <div class="tab">
+      <span class="tab-icon">📖</span>
+      <span>도감</span>
+    </div>
+    <div class="tab">
+      <span class="tab-icon">📋</span>
+      <span>의뢰</span>
+    </div>
+  </div>
+
+  <!-- ===== UPGRADE PANEL (overlay) ===== -->
+  <div class="upgrade-panel" id="upgradePanel">
+    <div class="upgrade-header">
+      <span class="back-btn" onclick="toggleUpgrade()">←</span>
+      <span class="title">🔧 정령 강화</span>
+    </div>
+    <div class="upgrade-content">
+      <div class="upgrade-card">
+        <div class="card-icon fire">🔥</div>
+        <div class="card-info">
+          <div class="card-name">불의 정령</div>
+          <div class="card-stats">공격력 150 → 180 | 체력 800 → 960</div>
+        </div>
+        <div style="text-align:right">
+          <div class="card-level">Lv.3</div>
+          <div class="card-evo">★★★</div>
+        </div>
+        <button class="btn-upgrade">강화 🪙500</button>
+      </div>
+      <div class="upgrade-card">
+        <div class="card-icon water">💧</div>
+        <div class="card-info">
+          <div class="card-name">물의 정령</div>
+          <div class="card-stats">공격력 120 → 144 | 체력 1000 → 1200</div>
+        </div>
+        <div style="text-align:right">
+          <div class="card-level">Lv.2</div>
+          <div class="card-evo">★★</div>
+        </div>
+        <button class="btn-upgrade">강화 🪙300</button>
+      </div>
+      <div class="upgrade-card">
+        <div class="card-icon nature">🌿</div>
+        <div class="card-info">
+          <div class="card-name">자연의 정령</div>
+          <div class="card-stats">공격력 200 → 240 | 체력 600 → 720</div>
+        </div>
+        <div style="text-align:right">
+          <div class="card-level">Lv.4</div>
+          <div class="card-evo">★★★★</div>
+        </div>
+        <button class="btn-upgrade">강화 🪙800</button>
+      </div>
+      <div class="upgrade-card">
+        <div class="card-icon thunder">⚡</div>
+        <div class="card-info">
+          <div class="card-name">번개의 정령</div>
+          <div class="card-stats">공격력 90 → 108 | 체력 500 → 600</div>
+        </div>
+        <div style="text-align:right">
+          <div class="card-level">Lv.1</div>
+          <div class="card-evo">★</div>
+        </div>
+        <button class="btn-upgrade">강화 🪙200</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== POPUP ===== -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-box">
+      <div class="reward-icon">🔥</div>
+      <div class="popup-title">합성 성공!</div>
+      <div class="popup-desc">불의 정령이<br>Lv.4 로 강화되었습니다</div>
+      <button class="popup-btn" onclick="closePopup()">확인</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Tile selection
+  document.querySelectorAll('.tile').forEach(tile => {
+    tile.addEventListener('click', function() {
+      this.classList.toggle('selected');
+    });
+  });
+
+  // Summon popup
+  document.querySelector('.btn-summon').addEventListener('click', function() {
+    document.getElementById('popup').classList.add('show');
+  });
+  function closePopup() { document.getElementById('popup').classList.remove('show'); }
+
+  // Upgrade panel
+  function toggleUpgrade() {
+    document.getElementById('upgradePanel').classList.toggle('show');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b6fe48e87e2ce4fa9b9559df99999c, type: 3}
+  m_Name: Stage_2-4
+  m_EditorClassIdentifier: Assembly-CSharp::SpiritMerge.StageData
+  stageNumber: 4
+  stageName: "2-4 \uBB3C\uC758 \uC232"
+  region: 2
+  elementType: 1
+  isBossStage: 0
+  waveCount: 6
+  goldReward: 280
+  rubyReward: 0
+  expReward: 130
+  hpMultiplier: 1.6
+  atkMultiplier: 1.2
+  totalMonsterCount: 28
+  spawnPointCount: 5
+  summonCost: 800
+  bossHpMultiplier: 10
