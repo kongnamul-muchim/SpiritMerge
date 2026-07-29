@@ -21,8 +21,8 @@ namespace SpiritMerge.Editor
             if (!Directory.Exists(dataDir))
             { Debug.LogError("[Sprites] Data/Spirits 폴더 없음!"); return; }
 
-            // 모든 PNG 로드
-            var spriteFiles = Directory.GetFiles(spriteDir, "*.png");
+            // 모든 PNG 로드 (하위폴더 포함)
+            var spriteFiles = Directory.GetFiles(spriteDir, "*.png", SearchOption.AllDirectories);
             Debug.Log($"[Sprites] PNG 파일 {spriteFiles.Length}개 발견");
 
             // 모든 SpiritData 에셋 로드

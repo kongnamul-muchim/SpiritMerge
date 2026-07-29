@@ -166,5 +166,6 @@ namespace SpiritMerge.Battle
         public int TotalWaves => totalWaves;
         public int MonstersRemaining => monstersRemaining;
         public bool IsBossStage => stageData != null && stageData.isBossStage;
+        public StageData StageData => stageData;
     }
 }

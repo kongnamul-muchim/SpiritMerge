@@ -1,155 +1,208 @@
-using System;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System.Collections.Generic;
+using SpiritMerge.Battle;
+using SpiritMerge.Presentation.UI.HUD;
+using SpiritMerge.Merge;
 
 namespace SpiritMerge
 {
-    /// <summary>
-    /// 게임 전체 상태 관리 싱글톤
-    /// GDD 11.1 GameManager 기반
-    /// </summary>
+    [DefaultExecutionOrder(-100)]
     public class GameManager : MonoBehaviour
     {
-        private static GameManager _instance;
-        public static GameManager Instance
-        {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = FindAnyObjectByType<GameManager>();
-                    if (_instance == null)
-                    {
-                        GameObject go = new GameObject("GameManager");
-                        _instance = go.AddComponent<GameManager>();
-                        DontDestroyOnLoad(go);
-                    }
-                }
-                return _instance;
-            }
-        }
+        public static GameManager Instance;
 
-        [Header("플레이어 상태")]
-        public int playerLevel = 1;
-        public int playerExp = 0;
-        public int skillPoints = 0;
-        public int[] skillTreeLevels = new int[11];
+        public Canvas mainCanvas;
+        public BattleManager battleManager;
 
-        [Header("재화")]
-        public int gold = 0;
-        public int ruby = 0;
-        public int spiritStone = 0;
-        public int[] elementStones = new int[6];
-
-        [Header("진행")]
         public int currentStage = 1;
-        public int[] partySlotIds = new int[4] { -1, -1, -1, -1 };
+        public int gold = 500;
+        public int ruby = 100;
 
-        private DataManager _dataManager;
-
-        private void Awake()
+        void Awake()
         {
-            if (_instance != null && _instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            _instance = this;
-            DontDestroyOnLoad(gameObject);
-
-            _dataManager = GetComponent<DataManager>();
-            if (_dataManager == null)
-                _dataManager = gameObject.AddComponent<DataManager>();
+            if (Instance == null) Instance = this;
+            else Destroy(gameObject);
         }
 
-        private void Start()
+        void Start()
         {
-            LoadGameData();
+            GameLogger.Info("[GM] GameManager 시작");
+            mainCanvas = FindObjectOfType<Canvas>();
+            if (mainCanvas == null) { GameLogger.Error("[GM] MainCanvas 없음!"); return; }
+
+            SetupBattleSystem();
+            SetupMergeSystem();
+            SetupGNBTabs();
+            SetupTopBar();
+            GameLogger.Info("[GM] 모든 시스템 초기화 완료!");
         }
 
-        public void LoadGameData()
-        {
-            SaveData data = _dataManager.LoadGame();
-            if (data != null)
-            {
-                playerLevel = data.playerLevel;
-                playerExp = data.playerExp;
-                skillPoints = data.skillPoints;
-                skillTreeLevels = data.skillTreeLevels;
-                gold = data.gold;
-                ruby = data.ruby;
-                spiritStone = data.spiritStone;
-                elementStones = data.elementStones;
-                currentStage = data.currentStage;
-                partySlotIds = data.partySlotIds;
-                Debug.Log($"[GameManager] Loaded save: Lv.{playerLevel}, Stage {currentStage}");
-            }
-            else
-            {
-                Debug.Log("[GameManager] No save data found, starting fresh game");
-            }
-        }
-
-        public void SaveGameData()
-        {
-            SaveData data = new SaveData
-            {
-                playerLevel = playerLevel,
-                playerExp = playerExp,
-                skillPoints = skillPoints,
-                skillTreeLevels = skillTreeLevels,
-                gold = gold,
-                ruby = ruby,
-                spiritStone = spiritStone,
-                elementStones = elementStones,
-                currentStage = currentStage,
-                partySlotIds = partySlotIds,
-                lastLoginTime = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-            };
-
-            _dataManager.SaveGame(data);
-            Debug.Log("[GameManager] Game saved!");
-        }
-
-        public void AddGold(int amount)
-        {
-            gold += amount;
-        }
-
+        // ── Gold/Ruby ──
         public bool SpendGold(int amount)
         {
-            if (gold >= amount)
-            {
-                gold -= amount;
-                return true;
-            }
-            return false;
-        }
-
-        public void AddRuby(int amount)
-        {
-            ruby += amount;
+            if (gold < amount) { GameLogger.Warn($"[GM] 골드 부족: {gold}/{amount}"); return false; }
+            gold -= amount;
+            UpdateGoldDisplay();
+            GameLogger.Info($"[GM] 골드 사용: -{amount} (잔액: {gold})");
+            return true;
         }
 
         public bool SpendRuby(int amount)
         {
-            if (ruby >= amount)
+            if (ruby < amount) { GameLogger.Warn($"[GM] 루비 부족: {ruby}/{amount}"); return false; }
+            ruby -= amount;
+            UpdateRubyDisplay();
+            GameLogger.Info($"[GM] 루비 사용: -{amount} (잔액: {ruby})");
+            return true;
+        }
+
+        void UpdateGoldDisplay()
+        {
+            var gt = GameObject.Find("GoldText")?.GetComponent<TextMeshProUGUI>();
+            if (gt != null) gt.text = $"{gold} Gold";
+        }
+
+        void UpdateRubyDisplay()
+        {
+            var rt = GameObject.Find("RubyText")?.GetComponent<TextMeshProUGUI>();
+            if (rt != null) rt.text = $"{ruby} Ruby";
+        }
+
+        // ── 전투 시스템 ──
+        Transform CreateRoot(Transform parent, string name)
+        {
+            var go = new GameObject(name, typeof(RectTransform));
+            go.transform.SetParent(parent, false);
+            return go.transform;
+        }
+
+        void SetupBattleSystem()
+        {
+            var ba = GameObject.Find("BattleArea");
+            if (ba == null) { GameLogger.Warn("[GM] BattleArea 없음, 전투 시스템 스킵"); return; }
+
+            battleManager = ba.GetComponent<BattleManager>();
+            if (battleManager == null) battleManager = ba.AddComponent<BattleManager>();
+            battleManager.spiritSpawnRoot = CreateRoot(ba.transform, "SpiritSpawnRoot");
+            battleManager.enemySpawnRoot = CreateRoot(ba.transform, "EnemySpawnRoot");
+
+            var spawner = ba.GetComponent<MonsterSpawner>();
+            if (spawner == null) ba.AddComponent<MonsterSpawner>();
+            var wc = ba.GetComponent<WaveController>();
+            if (wc == null) ba.AddComponent<WaveController>();
+
+            GameLogger.Info("[GM] 전투 시스템 준비 완료");
+        }
+
+        // ── 머지 시스템 ──
+        void SetupMergeSystem()
+        {
+            var ma = GameObject.Find("MergeArea");
+            if (ma == null) { GameLogger.Error("[GM] MergeArea 없음!"); return; }
+
+            var board = ma.GetComponent<MergeBoardManager>();
+            if (board == null) board = ma.AddComponent<MergeBoardManager>();
+
+            // MergeBoard Image raycastTarget 끄기 (클릭 블로킹 방지)
+            var mergeBoard = ma.transform.Find("MergeBoard");
+            if (mergeBoard != null)
             {
-                ruby -= amount;
-                return true;
+                var boardImg = mergeBoard.GetComponent<Image>();
+                if (boardImg != null) boardImg.raycastTarget = false;
             }
-            return false;
+            GameLogger.Info("[GM] 머지 시스템 준비 완료");
+
+            var sb = ma.transform.Find("SummonBtn");
+            if (sb != null)
+            {
+                var b = sb.GetComponent<Button>();
+                if (b == null) b = sb.gameObject.AddComponent<Button>();
+
+                var sbImg = sb.GetComponent<Image>();
+                if (sbImg != null) { sbImg.raycastTarget = true; b.targetGraphic = sbImg; }
+                sb.SetAsLastSibling();
+
+                b.onClick.RemoveAllListeners();
+                b.onClick.AddListener(() => OnSummonClicked(board));
+                GameLogger.Info("[GM] SummonBtn 연결 완료");
+            }
+            else GameLogger.Warn("[GM] SummonBtn 없음!");
         }
 
-        private void OnApplicationQuit()
+        void OnSummonClicked(MergeBoardManager board)
         {
-            SaveGameData();
+            GameLogger.Info("[GM] 소환 버튼 클릭!");
+            int cost = board.summonCost;
+            if (gold < cost) { GameLogger.Warn($"[GM] 골드 부족: {gold}/{cost}"); return; }
+
+            var all = Resources.LoadAll<SpiritData>("Data/Spirits");
+            if (all.Length == 0) { GameLogger.Error("[GM] SpiritData 없음! Connect All Sprites 먼저 실행"); return; }
+            var sd = all[Random.Range(0, all.Length)];
+            GameLogger.Info($"[GM] 소환할 정령 선택: {sd.name}");
+
+            if (board.TrySummon(sd))
+            {
+                gold -= cost;
+                UpdateGoldDisplay();
+                GameLogger.Info($"[GM] 소환 성공: {sd.name} (골드: {gold})");
+            }
+            else
+            {
+                GameLogger.Warn("[GM] 소환 실패: 빈 슬롯 없음");
+            }
         }
 
-        private void OnApplicationPause(bool pauseStatus)
+        // ── GNB ──
+        void SetupGNBTabs()
         {
-            if (pauseStatus)
-                SaveGameData();
+            var bm = GameObject.Find("BottomMenu");
+            if (bm == null) { GameLogger.Warn("[GM] BottomMenu 없음"); return; }
+            for (int i = 0; i < 5; i++)
+            {
+                var t = bm.transform.Find($"Tab_{i}");
+                if (t == null) continue;
+                var b = t.GetComponent<Button>();
+                if (b == null) b = t.gameObject.AddComponent<Button>();
+                int idx = i;
+                b.onClick.RemoveAllListeners();
+                b.onClick.AddListener(() => OnTabClicked(idx));
+            }
+            GameLogger.Info("[GM] GNB 5개 탭 연결 완료");
+        }
+
+        void OnTabClicked(int idx)
+        {
+            string[] names = { "전투", "파티", "업그레드", "도감", "의뢰" };
+            string n = idx < names.Length ? names[idx] : $"Tab_{idx}";
+            GameLogger.Info($"[GM] GNB 탭 클릭: {n}");
+        }
+
+        // ── TopBar ──
+        void SetupTopBar()
+        {
+            UpdateGoldDisplay();
+            UpdateRubyDisplay();
+
+            var gt = GameObject.Find("GoldText");
+            if (gt != null)
+            {
+                var b = gt.GetComponent<Button>();
+                if (b == null) b = gt.AddComponent<Button>();
+                b.onClick.RemoveAllListeners();
+                b.onClick.AddListener(() => { gold += 100; UpdateGoldDisplay(); GameLogger.Info($"[GM] 골드 +100 (테스트, 잔액: {gold})"); });
+            }
+
+            var rt = GameObject.Find("RubyText");
+            if (rt != null)
+            {
+                var b = rt.GetComponent<Button>();
+                if (b == null) b = rt.AddComponent<Button>();
+                b.onClick.RemoveAllListeners();
+                b.onClick.AddListener(() => { ruby += 10; UpdateRubyDisplay(); GameLogger.Info($"[GM] 루비 +10 (테스트, 잔액: {ruby})"); });
+            }
         }
     }
 }
+

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SpiritMerge.Battle;
 
 namespace SpiritMerge
 {
@@ -25,7 +26,7 @@ namespace SpiritMerge
         public float waveDelay = 2f;
 
         private List<SpiritUnit> _activeSpirits = new List<SpiritUnit>();
-        private List<EnemyUnit> _activeEnemies = new List<EnemyUnit>();
+        private List<Monster> _activeEnemies = new List<Monster>();
         private Coroutine _battleCoroutine;
 
         private void Awake()
@@ -145,7 +146,4 @@ namespace SpiritMerge
         Victory,
         Defeat
     }
-
-    public class SpiritUnit : MonoBehaviour { }
-    public class EnemyUnit : MonoBehaviour { }
 }

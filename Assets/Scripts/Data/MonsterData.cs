@@ -14,6 +14,9 @@ namespace SpiritMerge.Data
         public string spriteFileName;
         public bool isBoss;
 
+        [Header("리소스")]
+        public Sprite sprite;             // 몬스터 이미지
+
         [Header("스탯")]
         public int baseATK = 20;
         public int baseHP = 100;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SpiritMerge.Data;
 
 namespace SpiritMerge.Battle
 {
@@ -77,6 +78,21 @@ namespace SpiritMerge.Battle
                 monsterComponent.assignedSpawnPoint = spawnPoint;
             }
 
+            // 몬스터 초기화 (MonsterData 필요)
+            var stageData = FindObjectOfType<WaveController>()?.StageData;
+            MonsterData monsterData = null;
+            if (stageData != null)
+            {
+                // 챕터 속성에 맞는 MonsterData 로드 (임시: 첫 번째 MonsterData 사용)
+                var allMonsters = Resources.LoadAll<MonsterData>("Data/Monsters");
+                if (allMonsters.Length > 0)
+                    monsterData = allMonsters[Random.Range(0, allMonsters.Length)];
+            }
+            if (monsterComponent != null && monsterData != null)
+            {
+                monsterComponent.Initialize(monsterData, false);
+            }
+
             return monster;
         }
 
@@ -100,36 +116,5 @@ namespace SpiritMerge.Battle
         /// 전체 SpawnPoint 수
         /// </summary>
         public int TotalCount => spawnPoints.Count;
-    }
-
-    /// <summary>
-    /// 몬스터 기본 컴포넌트 (간단한 버전)
-    /// </summary>
-    public class Monster : MonoBehaviour
-    {
-        public GameObject assignedSpawnPoint;
-        public int hp = 100;
-        public int maxHp = 100;
-
-        public void TakeDamage(int damage)
-        {
-            hp -= damage;
-            if (hp <= 0)
-            {
-                Die();
-            }
-        }
-
-        private void Die()
-        {
-            // SpawnPoint 반환
-            var spawner = FindObjectOfType<MonsterSpawner>();
-            if (spawner != null && assignedSpawnPoint != null)
-            {
-                spawner.ReturnSpawnPoint(assignedSpawnPoint);
-            }
-
-            Destroy(gameObject);
-        }
     }
 }

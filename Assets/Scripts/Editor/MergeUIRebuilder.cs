@@ -148,13 +148,13 @@ namespace SpiritMerge.Editor
                 SetAnchors(inner, 0.06f, 0.06f, 0.94f, 0.94f);
                 inner.GetComponent<Image>().color = new Color(0.08f, 0.08f, 0.14f);
 
-                // Level badge
+                // Element badge (빈 슬롯에선 투명)
                 var lvl = new GameObject("LevelText", typeof(RectTransform), typeof(TextMeshProUGUI));
                 Undo.RegisterCreatedObjectUndo(lvl, "LevelText");
                 lvl.transform.SetParent(slot.transform, false);
                 SetAnchors(lvl, 0.05f, 0.0f, 0.95f, 0.25f);
                 var ltmp = lvl.GetComponent<TextMeshProUGUI>();
-                ltmp.text = "Lv.1";
+                ltmp.text = "";
                 ltmp.font = _font;
                 ltmp.fontSize = 10;
                 ltmp.color = new Color(0.6f, 0.7f, 1f, 0.5f);
