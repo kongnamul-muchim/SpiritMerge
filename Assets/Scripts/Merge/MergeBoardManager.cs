@@ -53,7 +53,7 @@ namespace SpiritMerge.Merge
 
         GameObject CreateItem(Transform slot, SpiritData data, int level, int slotIdx)
         {
-            var go = new GameObject("SpiritItem", typeof(RectTransform), typeof(Image), typeof(Button));
+            var go = new GameObject("SpiritItem", typeof(RectTransform), typeof(Image), typeof(Button), typeof(SpiritItemData));
             go.transform.SetParent(slot, false);
 
             var rt = go.GetComponent<RectTransform>();
@@ -61,6 +61,13 @@ namespace SpiritMerge.Merge
             rt.anchorMax = Vector2.one;
             rt.offsetMin = Vector2.zero;
             rt.offsetMax = Vector2.zero;
+
+            // SpiritItemData 설정 (⭐ 이게 없으면 합성/색상복귀 둘 다 안 됨)
+            var itemData = go.GetComponent<SpiritItemData>();
+            itemData.spiritName = data.spiritName;
+            itemData.element = data.element;
+            itemData.level = level;
+            itemData.slotIndex = slotIdx;
 
             var img = go.GetComponent<Image>();
             if (data.sprite != null) img.sprite = data.sprite;

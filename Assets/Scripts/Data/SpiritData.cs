@@ -67,17 +67,19 @@ namespace SpiritMerge
         /// </summary>
         public static float GetAttackElementMultiplier(ElementType attacker, ElementType defender)
         {
-            if (attacker == ElementType.Fire  && defender == ElementType.Wind)  return 1.25f;
-            if (attacker == ElementType.Wind  && defender == ElementType.Earth) return 1.25f;
-            if (attacker == ElementType.Earth && defender == ElementType.Water) return 1.25f;
+            // 강함 (1.25배): 불 > 자연, 물 > 불, 자연 > 물, 번개 > 물
+            if (attacker == ElementType.Fire  && defender == ElementType.Earth) return 1.25f;
             if (attacker == ElementType.Water && defender == ElementType.Fire)  return 1.25f;
+            if (attacker == ElementType.Earth && defender == ElementType.Water) return 1.25f;
+            if (attacker == ElementType.Wind  && defender == ElementType.Water) return 1.25f;
             if (attacker == ElementType.Dark  && defender == ElementType.Light) return 1.25f;
             if (attacker == ElementType.Light && defender == ElementType.Dark)  return 1.25f;
 
+            // 약함 (0.85배): 불 < 물, 물 < 자연, 자연 < 불, 번개 < 자연
             if (attacker == ElementType.Fire  && defender == ElementType.Water) return 0.85f;
             if (attacker == ElementType.Water && defender == ElementType.Earth) return 0.85f;
-            if (attacker == ElementType.Earth && defender == ElementType.Wind)  return 0.85f;
-            if (attacker == ElementType.Wind  && defender == ElementType.Fire)  return 0.85f;
+            if (attacker == ElementType.Earth && defender == ElementType.Fire)  return 0.85f;
+            if (attacker == ElementType.Wind  && defender == ElementType.Earth) return 0.85f;
             if (attacker == ElementType.Dark  && defender == ElementType.Dark)  return 0.85f;
             if (attacker == ElementType.Light && defender == ElementType.Light) return 0.85f;
 
