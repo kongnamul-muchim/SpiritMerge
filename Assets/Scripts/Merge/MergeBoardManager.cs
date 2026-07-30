@@ -211,7 +211,7 @@ namespace SpiritMerge.Merge
         /// <summary>
         /// 현재 선택 해제 (재사용)
         /// </summary>
-        void DeselectCurrent()
+        public void DeselectCurrent()
         {
             if (selectedSlot == -1) return;
             HighlightSlot(selectedSlot, false);

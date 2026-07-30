@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using SpiritMerge.Battle;
-using SpiritMerge.Presentation.UI.HUD;
 using SpiritMerge.Merge;
 
 namespace SpiritMerge
@@ -39,6 +38,9 @@ namespace SpiritMerge
 
             // ⭐ 게임 시작 시 자동 전투
             StartAutoBattle();
+
+            // ⭐ 화면 전체 클릭 → MergeBoard 선택 해제
+            SetupGlobalDeselect();
 
             GameLogger.Info("[GM] 모든 시스템 초기화 완료!");
         }
@@ -289,6 +291,38 @@ namespace SpiritMerge
                 b.onClick.RemoveAllListeners();
                 b.onClick.AddListener(() => { ruby += 10; UpdateRubyDisplay(); GameLogger.Info($"[GM] 루비 +10 (테스트, 잔액: {ruby})"); });
             }
+        }
+
+        // ── 화면 전체 클릭 → MergeBoard 선택 해제 ──
+        void SetupGlobalDeselect()
+        {
+            var board = FindObjectOfType<MergeBoardManager>();
+            if (board == null) return;
+
+            string[] targetNames = { "ScreenBackground", "TopBar", "BattleArea", "BottomMenu" };
+            foreach (var name in targetNames)
+            {
+                var go = GameObject.Find(name);
+                if (go == null) continue;
+
+                var img = go.GetComponent<Image>();
+                if (img == null)
+                {
+                    img = go.AddComponent<Image>();
+                    img.color = new Color(0, 0, 0, 0);
+                }
+                img.raycastTarget = true;
+
+                var btn = go.GetComponent<Button>();
+                if (btn == null)
+                {
+                    btn = go.AddComponent<Button>();
+                    btn.transition = Selectable.Transition.None;
+                    var capturedBoard = board;
+                    btn.onClick.AddListener(() => capturedBoard.DeselectCurrent());
+                }
+            }
+            GameLogger.Info("[GM] 화면 전체 클릭 → MergeBoard 선택 해제 설정 완료");
         }
     }
 }

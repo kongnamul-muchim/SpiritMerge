@@ -1075,3 +1075,72 @@
 | 18:05:27.859 | INFO | [MB] 빈 슬롯 클릭 → 선택 해제: Slot_5 |
 | 18:05:28.365 | INFO | | 18:05:28.364 | INFO | [MB] 슬롯 선택: Slot_0 |
 | 18:05:28.364 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:07:56.897 | INFO | | 18:07:56.889 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:07:56.889 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:07:56.897 | INFO | | 18:07:56.897 | INFO | [GM] GameManager 시작 |
+| 18:07:56.897 | INFO | [GM] GameManager 시작 |
+| 18:07:56.898 | INFO | | 18:07:56.898 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:07:56.898 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:07:56.899 | INFO | | 18:07:56.899 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:07:56.899 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:07:56.899 | INFO | | 18:07:56.899 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:07:56.899 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:07:56.899 | INFO | | 18:07:56.899 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:07:56.899 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:07:56.902 | ERROR | NullReferenceException: Object reference not set to an instance of an object
+| 18:07:56.902 |   | SpiritMerge.Merge.MergeBoardManager.GetActiveSpiritData () (at Assets/Scripts/Merge/MergeBoardManager.cs:352)
+| 18:07:56.902 |   | SpiritMerge.GameManager.GiveStarterSpirit () (at Assets/Scripts/Manager/GameManager.cs:81)
+| 18:07:56.902 |   | SpiritMerge.GameManager.StartAutoBattle () (at Assets/Scripts/Manager/GameManager.cs:57)
+| 18:07:56.902 |   | SpiritMerg...
+| 18:07:56.904 | INFO | | 18:07:56.904 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:07:56.904 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:07:56.904 | INFO | | 18:07:56.904 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:07:56.904 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:07:57.889 | INFO | | 18:07:57.888 | INFO | [GM] 소환 버튼 클릭! |
+| 18:07:57.888 | INFO | [GM] 소환 버튼 클릭! |
+| 18:07:57.889 | INFO | | 18:07:57.889 | INFO | [GM] 소환할 정령 선택: Wind_2_WindCloud |
+| 18:07:57.889 | INFO | [GM] 소환할 정령 선택: Wind_2_WindCloud |
+| 18:07:57.889 | INFO | | 18:07:57.889 | INFO | [MB] 소환 시도: Wind_2_WindCloud |
+| 18:07:57.889 | INFO | [MB] 소환 시도: Wind_2_WindCloud |
+| 18:07:57.894 | INFO | | 18:07:57.894 | INFO | [MB] 소환 성공: Wind_2_WindCloud Lv.1 → Slot_0 |
+| 18:07:57.894 | INFO | [MB] 소환 성공: Wind_2_WindCloud Lv.1 → Slot_0 |
+| 18:07:57.895 | INFO | | 18:07:57.894 | INFO | [GM] 소환 성공: Wind_2_WindCloud (골드: 0) |
+| 18:07:57.894 | INFO | [GM] 소환 성공: Wind_2_WindCloud (골드: 0) |
+| 18:07:58.543 | INFO | | 18:07:58.543 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:07:58.543 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:07:58.830 | INFO | | 18:07:58.830 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:07:58.830 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:07:59.430 | INFO | | 18:07:59.429 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:07:59.429 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:01.277 | INFO | | 18:08:01.277 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:01.277 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:02.047 | INFO | | 18:08:02.047 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:02.047 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:02.525 | INFO | | 18:08:02.525 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:02.525 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:03.176 | INFO | | 18:08:03.175 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:03.175 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:06.055 | INFO | | 18:08:06.055 | INFO | [GM] 골드 +100 (테스트, 잔액: 100) |
+| 18:08:06.055 | INFO | [GM] 골드 +100 (테스트, 잔액: 100) |
+| 18:08:06.401 | INFO | | 18:08:06.401 | INFO | [GM] 골드 +100 (테스트, 잔액: 200) |
+| 18:08:06.401 | INFO | [GM] 골드 +100 (테스트, 잔액: 200) |
+| 18:08:06.711 | INFO | | 18:08:06.711 | INFO | [GM] 골드 +100 (테스트, 잔액: 300) |
+| 18:08:06.711 | INFO | [GM] 골드 +100 (테스트, 잔액: 300) |
+| 18:08:07.459 | INFO | | 18:08:07.459 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:07.459 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:07.948 | INFO | | 18:08:07.948 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:07.948 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:09.760 | INFO | | 18:08:09.760 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:09.760 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:10.249 | INFO | | 18:08:10.249 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:10.249 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:10.620 | INFO | | 18:08:10.620 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:10.620 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:12.808 | INFO | | 18:08:12.808 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:12.808 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:13.614 | INFO | | 18:08:13.614 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:13.614 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:14.302 | INFO | | 18:08:14.302 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:14.302 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:08:14.619 | INFO | | 18:08:14.619 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:08:14.619 | INFO | [MB] 선택 해제: Slot_0 |
