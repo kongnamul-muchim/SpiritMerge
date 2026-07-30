@@ -148,10 +148,14 @@ namespace SpiritMerge.Editor
             var spawner = battleArea.GetComponent<MonsterSpawner>();
             if (spawner == null) spawner = battleArea.AddComponent<MonsterSpawner>();
             var monsterPrefab = Resources.Load<GameObject>("Prefabs/Monster");
-            if (monsterPrefab != null)
+            var spawnPointPrefab = Resources.Load<GameObject>("Prefabs/SpawnPoint");
+            if (monsterPrefab != null || spawnPointPrefab != null)
             {
                 var so = new SerializedObject(spawner);
-                so.FindProperty("monsterPrefab").objectReferenceValue = monsterPrefab;
+                if (monsterPrefab != null)
+                    so.FindProperty("monsterPrefab").objectReferenceValue = monsterPrefab;
+                if (spawnPointPrefab != null)
+                    so.FindProperty("spawnPointPrefab").objectReferenceValue = spawnPointPrefab;
                 so.ApplyModifiedProperties();
             }
 
