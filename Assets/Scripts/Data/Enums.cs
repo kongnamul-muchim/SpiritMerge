@@ -52,15 +52,6 @@ namespace SpiritMerge
         Legendary
     }
 
-    public enum RarityColor
-    {
-        White,
-        Green,
-        Blue,
-        Purple,
-        Gold
-    }
-
     #endregion
 
     #region Serializable Data Structures

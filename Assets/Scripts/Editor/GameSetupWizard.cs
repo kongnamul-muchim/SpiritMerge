@@ -199,25 +199,9 @@ namespace SpiritMerge.Editor
                 return;
             }
 
-            // MergeBoard 참조 연결 (MergeUIRebuilder가 만든 Slot_0~15 사용)
-            var mergeUI = mergeArea.GetComponent<MergeUI>();
-            if (mergeUI == null) mergeUI = mergeArea.AddComponent<MergeUI>();
+            // MergeBoard는 MergeBoardManager가 처리 (구 MergeUI → 제거됨)
 
-            // SummonBtn 이벤트 연결
-            var summonBtn = mergeArea.transform.Find("SummonBtn");
-            if (summonBtn != null)
-            {
-                var btn = summonBtn.GetComponent<UnityEngine.UI.Button>();
-                if (btn != null)
-                {
-                    // MergeUI.Summon 연결
-                    var mergeUISo = new SerializedObject(mergeUI);
-                    // 런타임에 UnityEvent로 연결
-                    Debug.Log("[GameSetup] 🔄 SummonBtn 찾음 (런타임 연결 필요)");
-                }
-            }
-
-            Debug.Log("[GameSetup] 🔄 머지보드 설정 완료");
+            Debug.Log("[GameSetup] 🔄 머지보드 설정 완료 (MergeBoardManager 사용)");
         }
     }
 }
