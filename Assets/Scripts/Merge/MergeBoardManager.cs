@@ -22,6 +22,7 @@ namespace SpiritMerge.Merge
         // 16개 슬롯의 현재 아이템 (null = 빈 슬롯)
         private GameObject[] slotItems;
         private int selectedSlot = -1;
+        private SpiritData[] _allSpiritCache;
 
         void Start()
         {
@@ -142,7 +143,9 @@ namespace SpiritMerge.Merge
             itemData.spiritData = data; // 원본 데이터 참조 (전투 배치용)
 
             var img = go.GetComponent<Image>();
-            if (data.sprite != null) img.sprite = data.sprite;
+            // 레벨에 맞는 스프라이트 조회 (Lv.1→1성, Lv.2→2성, ...)
+            var lvSprite = GetSpiritSprite(data.element, level);
+            img.sprite = lvSprite ?? data.sprite;
             img.color = Color.white;
 
             // 레벨 텍스트 (Slot 내 LevelText 찾기)
@@ -174,6 +177,9 @@ namespace SpiritMerge.Merge
 
             // 속성 표시 (테두리 색)
             img.color = GetElementColor(data.element);
+
+            // 최대 레벨 테두리 (Lv.6 → 노란색 Outline)
+            UpdateMaxLevelEffect(go, level);
 
             // 버튼 클릭 (ColorTint OFF — 수동 색상 제어)
             var btn = go.GetComponent<Button>();
@@ -342,6 +348,17 @@ namespace SpiritMerge.Merge
             toData.level = newLevel;
             slotItems[to].transform.localScale = Vector3.one * (0.8f + newLevel * 0.1f);
 
+            // 🖼️ 새 레벨에 맞는 스프라이트로 변경
+            var newSprite = GetSpiritSprite(toData.element, newLevel);
+            if (newSprite != null)
+            {
+                var mergeImg = slotItems[to].GetComponent<Image>();
+                if (mergeImg != null) mergeImg.sprite = newSprite;
+            }
+
+            // 🌟 최대 레벨 도달 시 노란 테두리
+            UpdateMaxLevelEffect(slotItems[to], newLevel);
+
             // to 슬롯 LevelText 업데이트
             var toSlotTr = transform.Find($"MergeBoard/Slot_{to}");
             if (toSlotTr != null)
@@ -391,6 +408,51 @@ namespace SpiritMerge.Merge
                 ElementType.Light => "빛",
                 _                 => "?"
             };
+        }
+
+        /// <summary>
+        /// 속성 + 레벨에 맞는 스프라이트 반환
+        /// Lv.1→1성, Lv.2→2성, ..., Lv.5/6→5성
+        /// </summary>
+        Sprite GetSpiritSprite(ElementType element, int level)
+        {
+            if (_allSpiritCache == null)
+                _allSpiritCache = Resources.LoadAll<SpiritData>("Data/Spirits");
+
+            SpiritGrade grade = level switch
+            {
+                1 => SpiritGrade.OneStar,
+                2 => SpiritGrade.TwoStar,
+                3 => SpiritGrade.ThreeStar,
+                4 => SpiritGrade.FourStar,
+                5 => SpiritGrade.FiveStar,
+                _ => SpiritGrade.FiveStar // Lv.6+
+            };
+
+            foreach (var sd in _allSpiritCache)
+            {
+                if (sd.element == element && sd.grade == grade && sd.sprite != null)
+                    return sd.sprite;
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// 최대 레벨(Lv.6) 도달 시 노란 테두리(Outline) 표시
+        /// </summary>
+        void UpdateMaxLevelEffect(GameObject go, int level)
+        {
+            var outline = go.GetComponent<Outline>();
+            if (level >= maxLevel)
+            {
+                if (outline == null) outline = go.AddComponent<Outline>();
+                outline.effectColor = Color.yellow;
+                outline.effectDistance = new Vector2(2, 2);
+            }
+            else
+            {
+                if (outline != null) Destroy(outline);
+            }
         }
 
         /// <summary>
