@@ -63,8 +63,41 @@ namespace SpiritMerge.Merge
             GameLogger.Info("[MB] 16개 슬롯 준비 완료");
         }
 
+        void Update()
+        {
+            // 화면 어디든 클릭 시 MergeBoard 요소가 아니면 선택 해제
+            if (selectedSlot != -1 && Input.GetMouseButtonDown(0))
+            {
+                var es = UnityEngine.EventSystems.EventSystem.current;
+                if (es == null) { DeselectCurrent(); return; }
+
+                var pointerData = new UnityEngine.EventSystems.PointerEventData(es);
+                pointerData.position = Input.mousePosition;
+                var results = new System.Collections.Generic.List<UnityEngine.EventSystems.RaycastResult>();
+                es.RaycastAll(pointerData, results);
+
+                bool isMergeElement = false;
+                foreach (var r in results)
+                {
+                    // SpiritItem / Slot Inner / SummonBtn / MergeBoardManager 영역
+                    if (r.gameObject.GetComponentInParent<MergeBoardManager>() != null ||
+                        r.gameObject.name == "SummonBtn")
+                    {
+                        isMergeElement = true;
+                        break;
+                    }
+                }
+
+                if (!isMergeElement)
+                {
+                    DeselectCurrent();
+                    GameLogger.Info("[MB] 화면 클릭 → 선택 해제 (MergeBoard 외부)");
+                }
+            }
+        }
+
         /// <summary>
-        /// 소환: GameManager가 호출
+        /// MergeArea 전체에 투명 클릭 영역 추가 → 아무 곳이나 눌러도 선택 해제
         /// </summary>
         public bool TrySummon(SpiritData data)
         {
