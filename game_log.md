@@ -1144,3 +1144,62 @@
 | 18:08:14.302 | INFO | [MB] 슬롯 선택: Slot_0 |
 | 18:08:14.619 | INFO | | 18:08:14.619 | INFO | [MB] 선택 해제: Slot_0 |
 | 18:08:14.619 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:10:34.407 | INFO | | 18:10:34.400 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:10:34.400 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:10:34.408 | INFO | | 18:10:34.408 | INFO | [GM] GameManager 시작 |
+| 18:10:34.408 | INFO | [GM] GameManager 시작 |
+| 18:10:34.408 | INFO | | 18:10:34.408 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:10:34.408 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:10:34.410 | INFO | | 18:10:34.409 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:10:34.409 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:10:34.410 | INFO | | 18:10:34.410 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:10:34.410 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:10:34.410 | INFO | | 18:10:34.410 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:10:34.410 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:10:34.414 | ERROR | NullReferenceException: Object reference not set to an instance of an object
+| 18:10:34.414 |   | SpiritMerge.Merge.MergeBoardManager.GetActiveSpiritData () (at Assets/Scripts/Merge/MergeBoardManager.cs:352)
+| 18:10:34.414 |   | SpiritMerge.GameManager.GiveStarterSpirit () (at Assets/Scripts/Manager/GameManager.cs:83)
+| 18:10:34.414 |   | SpiritMerge.GameManager.StartAutoBattle () (at Assets/Scripts/Manager/GameManager.cs:59)
+| 18:10:34.414 |   | SpiritMerg...
+| 18:10:34.415 | INFO | | 18:10:34.415 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:10:34.415 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:10:34.415 | INFO | | 18:10:34.415 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:10:34.415 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:11:01.129 | INFO | | 18:11:01.129 | INFO | [GM] 소환 버튼 클릭! |
+| 18:11:01.129 | INFO | [GM] 소환 버튼 클릭! |
+| 18:11:01.129 | INFO | | 18:11:01.129 | INFO | [GM] 소환할 정령 선택: Wind_4_ThunderEagle |
+| 18:11:01.129 | INFO | [GM] 소환할 정령 선택: Wind_4_ThunderEagle |
+| 18:11:01.130 | INFO | | 18:11:01.130 | INFO | [MB] 소환 시도: Wind_4_ThunderEagle |
+| 18:11:01.130 | INFO | [MB] 소환 시도: Wind_4_ThunderEagle |
+| 18:11:01.148 | INFO | | 18:11:01.148 | INFO | [MB] 소환 성공: Wind_4_ThunderEagle Lv.1 → Slot_0 |
+| 18:11:01.148 | INFO | [MB] 소환 성공: Wind_4_ThunderEagle Lv.1 → Slot_0 |
+| 18:11:01.148 | INFO | | 18:11:01.148 | INFO | [GM] 소환 성공: Wind_4_ThunderEagle (골드: 0) |
+| 18:11:01.148 | INFO | [GM] 소환 성공: Wind_4_ThunderEagle (골드: 0) |
+| 18:11:01.591 | INFO | | 18:11:01.591 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:11:01.591 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:11:01.910 | INFO | | 18:11:01.908 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:11:01.908 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:11:02.416 | INFO | | 18:11:02.415 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:11:02.415 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:11:04.945 | INFO | | 18:11:04.945 | INFO | [GM] 루비 +10 (테스트, 잔액: 110) |
+| 18:11:04.945 | INFO | [GM] 루비 +10 (테스트, 잔액: 110) |
+| 18:11:05.136 | INFO | | 18:11:05.136 | INFO | [GM] 루비 +10 (테스트, 잔액: 120) |
+| 18:11:05.136 | INFO | [GM] 루비 +10 (테스트, 잔액: 120) |
+| 18:11:05.670 | INFO | | 18:11:05.669 | INFO | [GM] 골드 +100 (테스트, 잔액: 100) |
+| 18:11:05.669 | INFO | [GM] 골드 +100 (테스트, 잔액: 100) |
+| 18:11:05.872 | INFO | | 18:11:05.872 | INFO | [GM] 골드 +100 (테스트, 잔액: 200) |
+| 18:11:05.872 | INFO | [GM] 골드 +100 (테스트, 잔액: 200) |
+| 18:11:06.036 | INFO | | 18:11:06.036 | INFO | [GM] 골드 +100 (테스트, 잔액: 300) |
+| 18:11:06.036 | INFO | [GM] 골드 +100 (테스트, 잔액: 300) |
+| 18:11:06.158 | INFO | | 18:11:06.158 | INFO | [GM] 골드 +100 (테스트, 잔액: 400) |
+| 18:11:06.158 | INFO | [GM] 골드 +100 (테스트, 잔액: 400) |
+| 18:11:06.312 | INFO | | 18:11:06.312 | INFO | [GM] 골드 +100 (테스트, 잔액: 500) |
+| 18:11:06.312 | INFO | [GM] 골드 +100 (테스트, 잔액: 500) |
+| 18:11:06.481 | INFO | | 18:11:06.481 | INFO | [GM] 골드 +100 (테스트, 잔액: 600) |
+| 18:11:06.481 | INFO | [GM] 골드 +100 (테스트, 잔액: 600) |
+| 18:11:07.927 | INFO | | 18:11:07.926 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:11:07.926 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:11:08.555 | INFO | | 18:11:08.553 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:11:08.553 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:11:08.810 | INFO | | 18:11:08.810 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:11:08.810 | INFO | [MB] 선택 해제: Slot_0 |

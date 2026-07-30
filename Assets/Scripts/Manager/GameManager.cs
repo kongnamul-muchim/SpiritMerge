@@ -299,6 +299,19 @@ namespace SpiritMerge
             var board = FindObjectOfType<MergeBoardManager>();
             if (board == null) return;
 
+            // 모든 Button.onClick에 DeselectCurrent 추가 (MergeBoard 영역 제외)
+            var allButtons = FindObjectsOfType<Button>();
+            foreach (var btn in allButtons)
+            {
+                // MergeBoard 내부 버튼(SpiritItem, Slot Inner)은 제외
+                if (btn.GetComponentInParent<MergeBoardManager>() != null) continue;
+                // SummonBtn은 GameManager.OnSummonClicked에서 직접 처리
+                if (btn.name == "SummonBtn") continue;
+
+                btn.onClick.AddListener(() => board.DeselectCurrent());
+            }
+
+            // UI 영역 빈 공간 → 투명 Button 추가
             string[] targetNames = { "ScreenBackground", "TopBar", "BattleArea", "BottomMenu" };
             foreach (var name in targetNames)
             {
@@ -318,8 +331,7 @@ namespace SpiritMerge
                 {
                     btn = go.AddComponent<Button>();
                     btn.transition = Selectable.Transition.None;
-                    var capturedBoard = board;
-                    btn.onClick.AddListener(() => capturedBoard.DeselectCurrent());
+                    btn.onClick.AddListener(() => board.DeselectCurrent());
                 }
             }
             GameLogger.Info("[GM] 화면 전체 클릭 → MergeBoard 선택 해제 설정 완료");

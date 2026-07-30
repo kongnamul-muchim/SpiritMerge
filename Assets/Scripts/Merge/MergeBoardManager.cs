@@ -15,6 +15,9 @@ namespace SpiritMerge.Merge
         public int summonCost = 500;
         public int maxLevel = 6;
 
+        [Header("UI")]
+        public TMPro.TextMeshProUGUI countLabel; // "합성 (0/16)" 표시
+
         // 16개 슬롯의 현재 아이템 (null = 빈 슬롯)
         private GameObject[] slotItems;
         private int selectedSlot = -1;
@@ -49,6 +52,14 @@ namespace SpiritMerge.Merge
                     }
                 }
             }
+            // 카운트 레이블 자동 연결 (MergeSectionHeader)
+            if (countLabel == null)
+            {
+                var header = transform.Find("MergeSectionHeader")?.GetComponent<TMPro.TextMeshProUGUI>();
+                if (header != null) countLabel = header;
+            }
+            UpdateCount();
+
             GameLogger.Info("[MB] 16개 슬롯 준비 완료");
         }
 
@@ -66,6 +77,7 @@ namespace SpiritMerge.Merge
 
                 slotItems[i] = CreateItem(slot, data, 1, i);
                 GameLogger.Info($"[MB] 소환 성공: {data.name} Lv.1 → Slot_{i}");
+                UpdateCount();
                 return true;
             }
             GameLogger.Warn("[MB] 소환 실패: 빈 슬롯 없음");
@@ -259,6 +271,7 @@ namespace SpiritMerge.Merge
             string name = data?.spiritName ?? "?";
             HighlightSlot(from, false); // slotItems[from]==null → 조용히 실패
             selectedSlot = -1;
+            UpdateCount();
             GameLogger.Info($"[MB] 이동 완료: Slot_{from} → Slot_{to} ({name})");
         }
 
@@ -302,6 +315,7 @@ namespace SpiritMerge.Merge
 
             HighlightSlot(from, false);
             selectedSlot = -1;
+            UpdateCount();
             GameLogger.Info($"[MB] ✨ 합성 완료! Slot_{to} → Lv.{newLevel}");
         }
 
@@ -357,6 +371,20 @@ namespace SpiritMerge.Merge
                 }
             }
             return list.ToArray();
+        }
+
+        /// <summary>
+        /// 머지보드 정령 카운트 업데이트 → "합성 (3/16)"
+        /// </summary>
+        void UpdateCount()
+        {
+            if (countLabel == null) return;
+            int count = 0;
+            for (int i = 0; i < 16; i++)
+            {
+                if (slotItems[i] != null) count++;
+            }
+            countLabel.text = $"합성 ({count}/16)";
         }
     }
 
