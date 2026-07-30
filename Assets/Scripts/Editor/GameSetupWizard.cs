@@ -180,69 +180,10 @@ namespace SpiritMerge.Editor
             bmSo.FindProperty("battleField").objectReferenceValue = battleArea.transform;
             bmSo.ApplyModifiedProperties();
 
-            // 배틀 시작 버튼 (없으면 생성)
-            var startBtn = battleArea.transform.Find("StartBattleBtn");
-            if (startBtn == null)
-            {
-                var btn = new GameObject("StartBattleBtn", typeof(RectTransform), typeof(UnityEngine.UI.Button),
-                    typeof(UnityEngine.UI.Image));
-                btn.transform.SetParent(battleArea.transform, false);
-                var btnRt = btn.GetComponent<RectTransform>();
-                btnRt.anchorMin = new Vector2(0.3f, 0.35f);
-                btnRt.anchorMax = new Vector2(0.7f, 0.5f);
-                btnRt.offsetMin = Vector2.zero;
-                btnRt.offsetMax = Vector2.zero;
+            // ※ 전투 시작 버튼 불필요 — GameManager.Start()가 자동 전투 시작
+            // (방치형 게임에 시작 버튼은 없음)
 
-                // 버튼 텍스트
-                var txt = new GameObject("Text", typeof(RectTransform),
-                    typeof(TMPro.TextMeshProUGUI));
-                txt.transform.SetParent(btn.transform, false);
-                var txtRt = txt.GetComponent<RectTransform>();
-                txtRt.anchorMin = Vector2.zero;
-                txtRt.anchorMax = Vector2.one;
-                txtRt.offsetMin = Vector2.zero;
-                txtRt.offsetMax = Vector2.zero;
-                var tmp = txt.GetComponent<TMPro.TextMeshProUGUI>();
-                tmp.text = "전투 시작";
-                tmp.fontSize = 24;
-                tmp.alignment = TMPro.TextAlignmentOptions.Midline;
-                tmp.color = Color.white;
-                var font = Resources.Load<TMPro.TMP_FontAsset>(
-                    "Fonts & Materials/NotoSansKR-VariableFont_wght SDF");
-                if (font != null) tmp.font = font;
-
-                var btnComp = btn.GetComponent<UnityEngine.UI.Button>();
-                var colors = btnComp.colors;
-                colors.normalColor = new Color(0.2f, 0.4f, 0.8f);
-                btnComp.colors = colors;
-
-                // 버튼 이벤트 연결
-                var btnImg = btn.GetComponent<UnityEngine.UI.Image>();
-                btnImg.sprite = null;
-                btnImg.color = new Color(0.2f, 0.4f, 0.8f);
-
-                Undo.RegisterCreatedObjectUndo(btn, "StartBattleBtn");
-
-                // 버튼 클릭 → BattleManager.StartBattle(1) 연결
-                var battleManager = battleArea.GetComponent<BattleManager>();
-                if (battleManager != null)
-                {
-                    var btnSo = new SerializedObject(btnComp);
-                    var onClickProp = btnSo.FindProperty("m_OnClick");
-                    onClickProp.ClearArray();
-                    onClickProp.InsertArrayElementAtIndex(0);
-                    var evt = onClickProp.GetArrayElementAtIndex(0);
-                    evt.FindPropertyRelative("m_CallState").enumValueIndex = 2; // PersistentListener
-                    evt.FindPropertyRelative("m_Target").objectReferenceValue = battleManager;
-                    evt.FindPropertyRelative("m_MethodName").stringValue = nameof(BattleManager.StartBattle);
-                    evt.FindPropertyRelative("m_Arguments").FindPropertyRelative("m_IntArgument").intValue = 1;
-                    evt.FindPropertyRelative("m_Arguments").FindPropertyRelative("m_ObjectArgumentAssemblyTypeName" +
-                        "").stringValue = "int, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089";
-                    btnSo.ApplyModifiedProperties();
-                }
-            }
-
-            Debug.Log("[GameSetup] 🎮 배틀 씬 설정 완료");
+            Debug.Log("[GameSetup] 🎮 배틀 씬 설정 완료 (자동 전투 모드)");
         }
 
         static void SetupMergeBoard()

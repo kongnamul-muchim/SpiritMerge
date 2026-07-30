@@ -547,3 +547,24 @@
 | 23:54:03.553 | INFO | [MB] 슬롯 선택: Slot_3 |
 | 23:54:03.833 | INFO | | 23:54:03.833 | INFO | [MB] 슬롯 선택 해제: Slot_3 |
 | 23:54:03.833 | INFO | [MB] 슬롯 선택 해제: Slot_3 |
+| 17:54:28.443 | INFO | | 17:54:28.434 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 17:54:28.434 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 17:54:28.443 | INFO | | 17:54:28.443 | INFO | [GM] GameManager 시작 |
+| 17:54:28.443 | INFO | [GM] GameManager 시작 |
+| 17:54:28.444 | INFO | | 17:54:28.444 | INFO | [GM] 전투 시스템 준비 완료 |
+| 17:54:28.444 | INFO | [GM] 전투 시스템 준비 완료 |
+| 17:54:28.445 | INFO | | 17:54:28.445 | INFO | [GM] 머지 시스템 준비 완료 |
+| 17:54:28.445 | INFO | [GM] 머지 시스템 준비 완료 |
+| 17:54:28.445 | INFO | | 17:54:28.445 | INFO | [GM] SummonBtn 연결 완료 |
+| 17:54:28.445 | INFO | [GM] SummonBtn 연결 완료 |
+| 17:54:28.446 | INFO | | 17:54:28.445 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 17:54:28.445 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 17:54:28.449 | ERROR | NullReferenceException: Object reference not set to an instance of an object
+| 17:54:28.449 |   | SpiritMerge.Merge.MergeBoardManager.GetActiveSpiritData () (at Assets/Scripts/Merge/MergeBoardManager.cs:273)
+| 17:54:28.449 |   | SpiritMerge.GameManager.GiveStarterSpirit () (at Assets/Scripts/Manager/GameManager.cs:81)
+| 17:54:28.449 |   | SpiritMerge.GameManager.StartAutoBattle () (at Assets/Scripts/Manager/GameManager.cs:57)
+| 17:54:28.449 |   | SpiritMerg...
+| 17:54:28.449 | INFO | | 17:54:28.449 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 17:54:28.449 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 17:54:28.449 | INFO | | 17:54:28.449 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 17:54:28.449 | INFO | [MB] 16개 슬롯 준비 완료 |
