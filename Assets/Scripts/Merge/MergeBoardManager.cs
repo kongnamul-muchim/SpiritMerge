@@ -32,6 +32,18 @@ namespace SpiritMerge.Merge
                     // 빈 슬롯의 LevelText 초기화 (기본 텍스트 제거)
                     var lv = tr.Find("LevelText")?.GetComponent<TMPro.TextMeshProUGUI>();
                     if (lv != null) lv.text = "";
+
+                    // 빈 슬롯 클릭 → 선택 해제 (SpiritItem이 없을 때만 동작)
+                    var inner = tr.Find("Inner")?.GetComponent<Image>();
+                    if (inner != null)
+                    {
+                        var btn = inner.gameObject.GetComponent<Button>();
+                        if (btn == null) btn = inner.gameObject.AddComponent<Button>();
+                        btn.transition = Selectable.Transition.None;
+                        int slotIdx = i;
+                        btn.onClick.RemoveAllListeners();
+                        btn.onClick.AddListener(() => OnSlotClicked(slotIdx));
+                    }
                 }
             }
             GameLogger.Info("[MB] 16개 슬롯 준비 완료");
@@ -170,6 +182,23 @@ namespace SpiritMerge.Merge
                     HighlightSlot(idx, true);
                 }
             }
+        }
+
+        /// <summary>
+        /// 빈 슬롯 클릭 → 선택 해제 (SpiritItem이 없는 슬롯의 Inner 클릭)
+        /// SpiritItem이 있는 슬롯은 OnItemClicked가 우선 처리함
+        /// </summary>
+        void OnSlotClicked(int idx)
+        {
+            if (idx < 0 || idx >= 16) return;
+            // SpiritItem이 있는 슬롯은 무시 (OnItemClicked가 처리)
+            if (slotItems[idx] != null) return;
+            if (selectedSlot == -1) return;
+
+            // 빈 슬롯 클릭 = 선택 해제
+            HighlightSlot(selectedSlot, false);
+            selectedSlot = -1;
+            GameLogger.Info($"[MB] 빈 슬롯 클릭 → 선택 해제: Slot_{idx}");
         }
 
         void MoveItem(int from, int to)
