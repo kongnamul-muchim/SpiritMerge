@@ -568,3 +568,154 @@
 | 17:54:28.449 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
 | 17:54:28.449 | INFO | | 17:54:28.449 | INFO | [MB] 16개 슬롯 준비 완료 |
 | 17:54:28.449 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:00:53.553 | INFO | | 18:00:53.546 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:00:53.546 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:00:53.553 | INFO | | 18:00:53.553 | INFO | [GM] GameManager 시작 |
+| 18:00:53.553 | INFO | [GM] GameManager 시작 |
+| 18:00:53.554 | INFO | | 18:00:53.554 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:00:53.554 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:00:53.555 | INFO | | 18:00:53.555 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:00:53.555 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:00:53.556 | INFO | | 18:00:53.556 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:00:53.556 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:00:53.556 | INFO | | 18:00:53.556 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:00:53.556 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:00:53.560 | ERROR | NullReferenceException: Object reference not set to an instance of an object
+| 18:00:53.560 |   | SpiritMerge.Merge.MergeBoardManager.GetActiveSpiritData () (at Assets/Scripts/Merge/MergeBoardManager.cs:273)
+| 18:00:53.560 |   | SpiritMerge.GameManager.GiveStarterSpirit () (at Assets/Scripts/Manager/GameManager.cs:81)
+| 18:00:53.560 |   | SpiritMerge.GameManager.StartAutoBattle () (at Assets/Scripts/Manager/GameManager.cs:57)
+| 18:00:53.560 |   | SpiritMerg...
+| 18:00:53.560 | INFO | | 18:00:53.560 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:00:53.560 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:00:53.560 | INFO | | 18:00:53.560 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:00:53.560 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:00:56.950 | INFO | | 18:00:56.950 | INFO | [GM] 소환 버튼 클릭! |
+| 18:00:56.950 | INFO | [GM] 소환 버튼 클릭! |
+| 18:00:56.953 | INFO | | 18:00:56.953 | INFO | [GM] 소환할 정령 선택: Light_4_AuroraDeer |
+| 18:00:56.953 | INFO | [GM] 소환할 정령 선택: Light_4_AuroraDeer |
+| 18:00:56.953 | INFO | | 18:00:56.953 | INFO | [MB] 소환 시도: Light_4_AuroraDeer |
+| 18:00:56.953 | INFO | [MB] 소환 시도: Light_4_AuroraDeer |
+| 18:00:56.958 | INFO | | 18:00:56.958 | INFO | [MB] 소환 성공: Light_4_AuroraDeer Lv.1 → Slot_0 |
+| 18:00:56.958 | INFO | [MB] 소환 성공: Light_4_AuroraDeer Lv.1 → Slot_0 |
+| 18:00:56.958 | INFO | | 18:00:56.958 | INFO | [GM] 소환 성공: Light_4_AuroraDeer (골드: 0) |
+| 18:00:56.958 | INFO | [GM] 소환 성공: Light_4_AuroraDeer (골드: 0) |
+| 18:00:58.292 | INFO | | 18:00:58.291 | INFO | [GM] 소환 버튼 클릭! |
+| 18:00:58.291 | INFO | [GM] 소환 버튼 클릭! |
+| 18:00:58.292 | WARN | | 18:00:58.292 | WARN | [GM] 골드 부족: 0/500 |
+| 18:00:58.292 | WARN | [GM] 골드 부족: 0/500 |
+| 18:00:59.412 | INFO | | 18:00:59.412 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:00:59.412 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:01:05.794 | INFO | | 18:01:05.794 | INFO | [GM] 골드 +100 (테스트, 잔액: 100) |
+| 18:01:05.794 | INFO | [GM] 골드 +100 (테스트, 잔액: 100) |
+| 18:01:05.940 | INFO | | 18:01:05.940 | INFO | [GM] 골드 +100 (테스트, 잔액: 200) |
+| 18:01:05.940 | INFO | [GM] 골드 +100 (테스트, 잔액: 200) |
+| 18:01:06.145 | INFO | | 18:01:06.145 | INFO | [GM] 골드 +100 (테스트, 잔액: 300) |
+| 18:01:06.145 | INFO | [GM] 골드 +100 (테스트, 잔액: 300) |
+| 18:01:06.271 | INFO | | 18:01:06.271 | INFO | [GM] 골드 +100 (테스트, 잔액: 400) |
+| 18:01:06.271 | INFO | [GM] 골드 +100 (테스트, 잔액: 400) |
+| 18:01:06.390 | INFO | | 18:01:06.390 | INFO | [GM] 골드 +100 (테스트, 잔액: 500) |
+| 18:01:06.390 | INFO | [GM] 골드 +100 (테스트, 잔액: 500) |
+| 18:01:06.583 | INFO | | 18:01:06.583 | INFO | [GM] 골드 +100 (테스트, 잔액: 600) |
+| 18:01:06.583 | INFO | [GM] 골드 +100 (테스트, 잔액: 600) |
+| 18:01:06.726 | INFO | | 18:01:06.726 | INFO | [GM] 골드 +100 (테스트, 잔액: 700) |
+| 18:01:06.726 | INFO | [GM] 골드 +100 (테스트, 잔액: 700) |
+| 18:01:06.844 | INFO | | 18:01:06.844 | INFO | [GM] 골드 +100 (테스트, 잔액: 800) |
+| 18:01:06.844 | INFO | [GM] 골드 +100 (테스트, 잔액: 800) |
+| 18:01:06.964 | INFO | | 18:01:06.964 | INFO | [GM] 골드 +100 (테스트, 잔액: 900) |
+| 18:01:06.964 | INFO | [GM] 골드 +100 (테스트, 잔액: 900) |
+| 18:01:07.076 | INFO | | 18:01:07.076 | INFO | [GM] 골드 +100 (테스트, 잔액: 1000) |
+| 18:01:07.076 | INFO | [GM] 골드 +100 (테스트, 잔액: 1000) |
+| 18:01:07.211 | INFO | | 18:01:07.211 | INFO | [GM] 골드 +100 (테스트, 잔액: 1100) |
+| 18:01:07.211 | INFO | [GM] 골드 +100 (테스트, 잔액: 1100) |
+| 18:01:07.313 | INFO | | 18:01:07.313 | INFO | [GM] 골드 +100 (테스트, 잔액: 1200) |
+| 18:01:07.313 | INFO | [GM] 골드 +100 (테스트, 잔액: 1200) |
+| 18:01:07.425 | INFO | | 18:01:07.425 | INFO | [GM] 골드 +100 (테스트, 잔액: 1300) |
+| 18:01:07.425 | INFO | [GM] 골드 +100 (테스트, 잔액: 1300) |
+| 18:01:07.633 | INFO | | 18:01:07.633 | INFO | [GM] 골드 +100 (테스트, 잔액: 1400) |
+| 18:01:07.633 | INFO | [GM] 골드 +100 (테스트, 잔액: 1400) |
+| 18:01:07.760 | INFO | | 18:01:07.760 | INFO | [GM] 골드 +100 (테스트, 잔액: 1500) |
+| 18:01:07.760 | INFO | [GM] 골드 +100 (테스트, 잔액: 1500) |
+| 18:01:07.891 | INFO | | 18:01:07.891 | INFO | [GM] 골드 +100 (테스트, 잔액: 1600) |
+| 18:01:07.891 | INFO | [GM] 골드 +100 (테스트, 잔액: 1600) |
+| 18:01:08.438 | INFO | | 18:01:08.438 | INFO | [MB] 슬롯 선택 해제: Slot_0 |
+| 18:01:08.438 | INFO | [MB] 슬롯 선택 해제: Slot_0 |
+| 18:01:09.533 | INFO | | 18:01:09.533 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:09.533 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:09.533 | INFO | | 18:01:09.533 | INFO | [GM] 소환할 정령 선택: Dark_2_DarkOrb |
+| 18:01:09.533 | INFO | [GM] 소환할 정령 선택: Dark_2_DarkOrb |
+| 18:01:09.533 | INFO | | 18:01:09.533 | INFO | [MB] 소환 시도: Dark_2_DarkOrb |
+| 18:01:09.533 | INFO | [MB] 소환 시도: Dark_2_DarkOrb |
+| 18:01:09.535 | INFO | | 18:01:09.535 | INFO | [MB] 소환 성공: Dark_2_DarkOrb Lv.1 → Slot_1 |
+| 18:01:09.535 | INFO | [MB] 소환 성공: Dark_2_DarkOrb Lv.1 → Slot_1 |
+| 18:01:09.535 | INFO | | 18:01:09.535 | INFO | [GM] 소환 성공: Dark_2_DarkOrb (골드: 1100) |
+| 18:01:09.535 | INFO | [GM] 소환 성공: Dark_2_DarkOrb (골드: 1100) |
+| 18:01:10.455 | INFO | | 18:01:10.454 | INFO | [MB] 슬롯 선택: Slot_1 |
+| 18:01:10.454 | INFO | [MB] 슬롯 선택: Slot_1 |
+| 18:01:11.346 | INFO | | 18:01:11.346 | INFO | [MB] 합성 불가: from=Dark Lv.1  to=Light Lv.1  maxLv=6 |
+| 18:01:11.346 | INFO | [MB] 합성 불가: from=Dark Lv.1  to=Light Lv.1  maxLv=6 |
+| 18:01:11.346 | INFO | | 18:01:11.346 | INFO | [MB] 선택 전환: Slot_1 → Slot_0 |
+| 18:01:11.346 | INFO | [MB] 선택 전환: Slot_1 → Slot_0 |
+| 18:01:12.185 | INFO | | 18:01:12.185 | INFO | [MB] 합성 불가: from=Light Lv.1  to=Dark Lv.1  maxLv=6 |
+| 18:01:12.185 | INFO | [MB] 합성 불가: from=Light Lv.1  to=Dark Lv.1  maxLv=6 |
+| 18:01:12.185 | INFO | | 18:01:12.185 | INFO | [MB] 선택 전환: Slot_0 → Slot_1 |
+| 18:01:12.185 | INFO | [MB] 선택 전환: Slot_0 → Slot_1 |
+| 18:01:13.602 | INFO | | 18:01:13.601 | INFO | [MB] 합성 불가: from=Dark Lv.1  to=Light Lv.1  maxLv=6 |
+| 18:01:13.601 | INFO | [MB] 합성 불가: from=Dark Lv.1  to=Light Lv.1  maxLv=6 |
+| 18:01:13.602 | INFO | | 18:01:13.602 | INFO | [MB] 선택 전환: Slot_1 → Slot_0 |
+| 18:01:13.602 | INFO | [MB] 선택 전환: Slot_1 → Slot_0 |
+| 18:01:14.251 | INFO | | 18:01:14.251 | INFO | [MB] 합성 불가: from=Light Lv.1  to=Dark Lv.1  maxLv=6 |
+| 18:01:14.251 | INFO | [MB] 합성 불가: from=Light Lv.1  to=Dark Lv.1  maxLv=6 |
+| 18:01:14.252 | INFO | | 18:01:14.252 | INFO | [MB] 선택 전환: Slot_0 → Slot_1 |
+| 18:01:14.252 | INFO | [MB] 선택 전환: Slot_0 → Slot_1 |
+| 18:01:14.743 | INFO | | 18:01:14.743 | INFO | [MB] 합성 불가: from=Dark Lv.1  to=Light Lv.1  maxLv=6 |
+| 18:01:14.743 | INFO | [MB] 합성 불가: from=Dark Lv.1  to=Light Lv.1  maxLv=6 |
+| 18:01:14.743 | INFO | | 18:01:14.743 | INFO | [MB] 선택 전환: Slot_1 → Slot_0 |
+| 18:01:14.743 | INFO | [MB] 선택 전환: Slot_1 → Slot_0 |
+| 18:01:15.360 | INFO | | 18:01:15.360 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:15.360 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:15.360 | INFO | | 18:01:15.360 | INFO | [GM] 소환할 정령 선택: Dark_4_ShadowLord |
+| 18:01:15.360 | INFO | [GM] 소환할 정령 선택: Dark_4_ShadowLord |
+| 18:01:15.360 | INFO | | 18:01:15.360 | INFO | [MB] 소환 시도: Dark_4_ShadowLord |
+| 18:01:15.360 | INFO | [MB] 소환 시도: Dark_4_ShadowLord |
+| 18:01:15.362 | INFO | | 18:01:15.362 | INFO | [MB] 소환 성공: Dark_4_ShadowLord Lv.1 → Slot_2 |
+| 18:01:15.362 | INFO | [MB] 소환 성공: Dark_4_ShadowLord Lv.1 → Slot_2 |
+| 18:01:15.363 | INFO | | 18:01:15.363 | INFO | [GM] 소환 성공: Dark_4_ShadowLord (골드: 600) |
+| 18:01:15.363 | INFO | [GM] 소환 성공: Dark_4_ShadowLord (골드: 600) |
+| 18:01:15.496 | INFO | | 18:01:15.496 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:15.496 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:15.497 | INFO | | 18:01:15.497 | INFO | [GM] 소환할 정령 선택: Fire_1_Spark |
+| 18:01:15.497 | INFO | [GM] 소환할 정령 선택: Fire_1_Spark |
+| 18:01:15.497 | INFO | | 18:01:15.497 | INFO | [MB] 소환 시도: Fire_1_Spark |
+| 18:01:15.497 | INFO | [MB] 소환 시도: Fire_1_Spark |
+| 18:01:15.498 | INFO | | 18:01:15.498 | INFO | [MB] 소환 성공: Fire_1_Spark Lv.1 → Slot_3 |
+| 18:01:15.498 | INFO | [MB] 소환 성공: Fire_1_Spark Lv.1 → Slot_3 |
+| 18:01:15.498 | INFO | | 18:01:15.498 | INFO | [GM] 소환 성공: Fire_1_Spark (골드: 100) |
+| 18:01:15.498 | INFO | [GM] 소환 성공: Fire_1_Spark (골드: 100) |
+| 18:01:15.894 | INFO | | 18:01:15.894 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:15.894 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:15.894 | WARN | | 18:01:15.894 | WARN | [GM] 골드 부족: 100/500 |
+| 18:01:15.894 | WARN | [GM] 골드 부족: 100/500 |
+| 18:01:16.010 | INFO | | 18:01:16.010 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:16.010 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:16.010 | WARN | | 18:01:16.010 | WARN | [GM] 골드 부족: 100/500 |
+| 18:01:16.010 | WARN | [GM] 골드 부족: 100/500 |
+| 18:01:16.129 | INFO | | 18:01:16.129 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:16.129 | INFO | [GM] 소환 버튼 클릭! |
+| 18:01:16.129 | WARN | | 18:01:16.129 | WARN | [GM] 골드 부족: 100/500 |
+| 18:01:16.129 | WARN | [GM] 골드 부족: 100/500 |
+| 18:01:16.573 | INFO | | 18:01:16.573 | INFO | [MB] 합성 불가: from=Light Lv.1  to=Dark Lv.1  maxLv=6 |
+| 18:01:16.573 | INFO | [MB] 합성 불가: from=Light Lv.1  to=Dark Lv.1  maxLv=6 |
+| 18:01:16.573 | INFO | | 18:01:16.573 | INFO | [MB] 선택 전환: Slot_0 → Slot_1 |
+| 18:01:16.573 | INFO | [MB] 선택 전환: Slot_0 → Slot_1 |
+| 18:01:16.866 | INFO | | 18:01:16.866 | INFO | [MB] 합성 시도: Slot_1(Lv.1) + Slot_2(Lv.1) → Lv.2 |
+| 18:01:16.866 | INFO | [MB] 합성 시도: Slot_1(Lv.1) + Slot_2(Lv.1) → Lv.2 |
+| 18:01:16.868 | INFO | | 18:01:16.868 | INFO | [MB] ✨ 합성! Slot_1(Lv.1) + Slot_2(Lv.1) → Lv.2 |
+| 18:01:16.868 | INFO | [MB] ✨ 합성! Slot_1(Lv.1) + Slot_2(Lv.1) → Lv.2 |
+| 18:01:16.869 | INFO | | 18:01:16.868 | INFO | [MB] ✨ 합성 완료! Slot_2 → Lv.2 |
+| 18:01:16.868 | INFO | [MB] ✨ 합성 완료! Slot_2 → Lv.2 |
+| 18:01:17.937 | INFO | | 18:01:17.937 | INFO | [MB] 슬롯 선택: Slot_2 |
+| 18:01:17.937 | INFO | [MB] 슬롯 선택: Slot_2 |
+| 18:01:19.751 | INFO | | 18:01:19.751 | INFO | [MB] 슬롯 선택 해제: Slot_2 |
+| 18:01:19.751 | INFO | [MB] 슬롯 선택 해제: Slot_2 |
+| 18:01:20.275 | INFO | | 18:01:20.275 | INFO | [MB] 슬롯 선택: Slot_2 |
+| 18:01:20.275 | INFO | [MB] 슬롯 선택: Slot_2 |

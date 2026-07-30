@@ -27,6 +27,12 @@ namespace SpiritMerge.Merge
             {
                 var tr = transform.Find($"MergeBoard/Slot_{i}");
                 if (tr == null) GameLogger.Warn($"[MB] Slot_{i} 없음!");
+                else
+                {
+                    // 빈 슬롯의 LevelText 초기화 (기본 텍스트 제거)
+                    var lv = tr.Find("LevelText")?.GetComponent<TMPro.TextMeshProUGUI>();
+                    if (lv != null) lv.text = "";
+                }
             }
             GameLogger.Info("[MB] 16개 슬롯 준비 완료");
         }
@@ -173,9 +179,16 @@ namespace SpiritMerge.Merge
             slotItems[to] = spirit;
             slotItems[from] = null;
 
+            // from 슬롯 LevelText 정리
+            var fromSlotTr = transform.Find($"MergeBoard/Slot_{from}");
+            if (fromSlotTr != null)
+            {
+                var fromLv = fromSlotTr.Find("LevelText")?.GetComponent<TMPro.TextMeshProUGUI>();
+                if (fromLv != null) fromLv.text = "";
+            }
+
             var slot = transform.Find($"MergeBoard/Slot_{to}");
             if (slot != null) spirit.transform.SetParent(slot, false);
-
             // 인덱스 갱신
             var data = spirit.GetComponent<SpiritItemData>();
             if (data != null) data.slotIndex = to;
@@ -208,17 +221,25 @@ namespace SpiritMerge.Merge
             Destroy(slotItems[from]);
             slotItems[from] = null;
 
+            // from 슬롯 LevelText 정리
+            var fromSlotTr = transform.Find($"MergeBoard/Slot_{from}");
+            if (fromSlotTr != null)
+            {
+                var fromLv = fromSlotTr.Find("LevelText")?.GetComponent<TextMeshProUGUI>();
+                if (fromLv != null) fromLv.text = "";
+            }
+
             // to 레벨업
             toData.level = newLevel;
             slotItems[to].transform.localScale = Vector3.one * (0.8f + newLevel * 0.1f);
 
-            // LevelText 업데이트 (Slot의 자식)
-            var slotTr = transform.Find($"MergeBoard/Slot_{to}");
-            if (slotTr != null)
+            // to 슬롯 LevelText 업데이트
+            var toSlotTr = transform.Find($"MergeBoard/Slot_{to}");
+            if (toSlotTr != null)
             {
-                var lvLabel = slotTr.Find("LevelText")?.GetComponent<TextMeshProUGUI>();
-                if (lvLabel != null)
-                    lvLabel.text = $"{GetElementKorean(toData.element)} Lv.{newLevel}";
+                var toLv = toSlotTr.Find("LevelText")?.GetComponent<TextMeshProUGUI>();
+                if (toLv != null)
+                    toLv.text = $"{GetElementKorean(toData.element)} Lv.{newLevel}";
             }
 
             HighlightSlot(from, false);
