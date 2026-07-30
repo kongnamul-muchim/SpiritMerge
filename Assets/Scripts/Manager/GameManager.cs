@@ -36,7 +36,94 @@ namespace SpiritMerge
             SetupMergeSystem();
             SetupGNBTabs();
             SetupTopBar();
+
+            // ⭐ 게임 시작 시 자동 전투
+            StartAutoBattle();
+
             GameLogger.Info("[GM] 모든 시스템 초기화 완료!");
+        }
+
+        private bool _battleStarted = false;
+
+        /// <summary>
+        /// 게임 시작 시 자동 전투 실행 (방치형)
+        /// 1. 기본 정령 지급 → 2. 배틀 배치 → 3. 전투 시작
+        /// </summary>
+        void StartAutoBattle()
+        {
+            if (_battleStarted) return;
+            _battleStarted = true;
+
+            GiveStarterSpirit();
+            DeploySpiritsToBattle();
+
+            var allStages = Resources.LoadAll<StageData>("Data/Stages");
+            if (allStages.Length == 0) { GameLogger.Error("[GM] StageData 없음! 전투 불가"); return; }
+            var stage = allStages[0];
+
+            var spawner = FindObjectOfType<MonsterSpawner>();
+            if (spawner != null) spawner.InitializeSpawnPoints(stage.spawnPointCount);
+
+            var waveCtrl = FindObjectOfType<WaveController>();
+            if (waveCtrl == null) { GameLogger.Error("[GM] WaveController 없음!"); return; }
+
+            GameLogger.Info($"[GM] 전투 자동 시작: {stage.stageName}");
+            waveCtrl.StartBattle(stage);
+        }
+
+        /// <summary>
+        /// 기본 정령 지급 (MergeBoard가 비어있을 때만)
+        /// </summary>
+        void GiveStarterSpirit()
+        {
+            var board = FindObjectOfType<MergeBoardManager>();
+            if (board == null) return;
+            if (board.GetActiveSpiritData().Length > 0) return; // 이미 정령 있음
+
+            var allSpirits = Resources.LoadAll<SpiritData>("Data/Spirits");
+            var fire = System.Array.Find(allSpirits, s => s.element == ElementType.Fire);
+            if (fire != null)
+            {
+                board.TrySummon(fire);
+                GameLogger.Info($"[GM] ⭐ 기본 정령 지급: {fire.spiritName}");
+            }
+        }
+
+        /// <summary>
+        /// MergeBoard의 정령 → BattleArea에 SpiritUnit 배치
+        /// </summary>
+        void DeploySpiritsToBattle()
+        {
+            if (battleManager == null || battleManager.spiritSpawnRoot == null) return;
+
+            var board = FindObjectOfType<MergeBoardManager>();
+            if (board == null) return;
+            var spiritDatas = board.GetActiveSpiritData();
+            if (spiritDatas.Length == 0) return;
+
+            var prefab = Resources.Load<GameObject>("Prefabs/Spirit");
+            for (int i = 0; i < spiritDatas.Length; i++)
+            {
+                SpiritUnit unit = null;
+                if (prefab != null)
+                {
+                    var go = Instantiate(prefab, battleManager.spiritSpawnRoot);
+                    go.transform.localPosition = new Vector3(-1.5f + i * 1.5f, 0, 0);
+                    unit = go.GetComponent<SpiritUnit>();
+                }
+                else
+                {
+                    var go = new GameObject($"Spirit_{i}", typeof(SpriteRenderer), typeof(SpiritUnit));
+                    go.transform.SetParent(battleManager.spiritSpawnRoot, false);
+                    go.transform.localPosition = new Vector3(-1.5f + i * 1.5f, 0, 0);
+                    unit = go.GetComponent<SpiritUnit>();
+                    unit.spriteRenderer = go.GetComponent<SpriteRenderer>();
+                    if (unit.spriteRenderer != null && spiritDatas[i].sprite != null)
+                        unit.spriteRenderer.sprite = spiritDatas[i].sprite;
+                }
+                if (unit != null) unit.Initialize(spiritDatas[i]);
+            }
+            GameLogger.Info($"[GM] 전투 정령 {spiritDatas.Length}기 배치 완료");
         }
 
         // ── Gold/Ruby ──

@@ -68,6 +68,7 @@ namespace SpiritMerge.Merge
             itemData.element = data.element;
             itemData.level = level;
             itemData.slotIndex = slotIdx;
+            itemData.spiritData = data; // 원본 데이터 참조 (전투 배치용)
 
             var img = go.GetComponent<Image>();
             if (data.sprite != null) img.sprite = data.sprite;
@@ -260,6 +261,24 @@ namespace SpiritMerge.Merge
                 _                 => "?"
             };
         }
+
+        /// <summary>
+        /// 현재 보드에 배치된 정령들의 SpiritData 목록 반환 (전투 배치용)
+        /// </summary>
+        public SpiritData[] GetActiveSpiritData()
+        {
+            var list = new System.Collections.Generic.List<SpiritData>();
+            for (int i = 0; i < 16; i++)
+            {
+                if (slotItems[i] != null)
+                {
+                    var data = slotItems[i].GetComponent<SpiritItemData>();
+                    if (data != null && data.spiritData != null)
+                        list.Add(data.spiritData);
+                }
+            }
+            return list.ToArray();
+        }
     }
 
     /// <summary>
@@ -271,5 +290,6 @@ namespace SpiritMerge.Merge
         public int level = 1;
         public int slotIndex = -1;
         public ElementType element;
+        public SpiritData spiritData; // 원본 SpiritData 참조 (전투 배치용)
     }
 }
