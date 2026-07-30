@@ -1030,3 +1030,48 @@
 | 18:03:46.735 | INFO | [GM] 소환 버튼 클릭! |
 | 18:03:46.735 | WARN | | 18:03:46.735 | WARN | [GM] 골드 부족: 200/500 |
 | 18:03:46.735 | WARN | [GM] 골드 부족: 200/500 |
+| 18:05:23.071 | INFO | | 18:05:23.065 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:05:23.065 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:05:23.071 | INFO | | 18:05:23.071 | INFO | [GM] GameManager 시작 |
+| 18:05:23.071 | INFO | [GM] GameManager 시작 |
+| 18:05:23.072 | INFO | | 18:05:23.072 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:05:23.072 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:05:23.073 | INFO | | 18:05:23.072 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:05:23.072 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:05:23.073 | INFO | | 18:05:23.073 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:05:23.073 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:05:23.073 | INFO | | 18:05:23.073 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:05:23.073 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:05:23.077 | ERROR | NullReferenceException: Object reference not set to an instance of an object
+| 18:05:23.077 |   | SpiritMerge.Merge.MergeBoardManager.GetActiveSpiritData () (at Assets/Scripts/Merge/MergeBoardManager.cs:323)
+| 18:05:23.077 |   | SpiritMerge.GameManager.GiveStarterSpirit () (at Assets/Scripts/Manager/GameManager.cs:81)
+| 18:05:23.077 |   | SpiritMerge.GameManager.StartAutoBattle () (at Assets/Scripts/Manager/GameManager.cs:57)
+| 18:05:23.077 |   | SpiritMerg...
+| 18:05:23.077 | INFO | | 18:05:23.077 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:05:23.077 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:05:23.078 | INFO | | 18:05:23.078 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:05:23.078 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:05:24.238 | INFO | | 18:05:24.237 | INFO | [GM] 소환 버튼 클릭! |
+| 18:05:24.237 | INFO | [GM] 소환 버튼 클릭! |
+| 18:05:24.238 | INFO | | 18:05:24.238 | INFO | [GM] 소환할 정령 선택: Earth_3_RockBear |
+| 18:05:24.238 | INFO | [GM] 소환할 정령 선택: Earth_3_RockBear |
+| 18:05:24.238 | INFO | | 18:05:24.238 | INFO | [MB] 소환 시도: Earth_3_RockBear |
+| 18:05:24.238 | INFO | [MB] 소환 시도: Earth_3_RockBear |
+| 18:05:24.241 | INFO | | 18:05:24.241 | INFO | [MB] 소환 성공: Earth_3_RockBear Lv.1 → Slot_0 |
+| 18:05:24.241 | INFO | [MB] 소환 성공: Earth_3_RockBear Lv.1 → Slot_0 |
+| 18:05:24.241 | INFO | | 18:05:24.241 | INFO | [GM] 소환 성공: Earth_3_RockBear (골드: 0) |
+| 18:05:24.241 | INFO | [GM] 소환 성공: Earth_3_RockBear (골드: 0) |
+| 18:05:24.681 | INFO | | 18:05:24.681 | INFO | [GM] 소환 버튼 클릭! |
+| 18:05:24.681 | INFO | [GM] 소환 버튼 클릭! |
+| 18:05:24.681 | WARN | | 18:05:24.681 | WARN | [GM] 골드 부족: 0/500 |
+| 18:05:24.681 | WARN | [GM] 골드 부족: 0/500 |
+| 18:05:25.710 | INFO | | 18:05:25.709 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:05:25.709 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:05:26.593 | INFO | | 18:05:26.593 | INFO | [MB] 빈 슬롯 클릭 → 선택 해제: Slot_4 |
+| 18:05:26.593 | INFO | [MB] 빈 슬롯 클릭 → 선택 해제: Slot_4 |
+| 18:05:27.266 | INFO | | 18:05:27.266 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:05:27.266 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:05:27.859 | INFO | | 18:05:27.859 | INFO | [MB] 빈 슬롯 클릭 → 선택 해제: Slot_5 |
+| 18:05:27.859 | INFO | [MB] 빈 슬롯 클릭 → 선택 해제: Slot_5 |
+| 18:05:28.365 | INFO | | 18:05:28.364 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:05:28.364 | INFO | [MB] 슬롯 선택: Slot_0 |

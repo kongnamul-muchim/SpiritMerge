@@ -21,6 +21,9 @@ namespace SpiritMerge.Merge
 
         void Start()
         {
+            // MergeArea 전체 클릭 → 선택 해제 (빈 공간·다른 UI 영역 클릭 시)
+            SetupAreaClickHandler();
+
             slotItems = new GameObject[16];
             GameLogger.Info("[MB] MergeBoardManager 시작, 16개 슬롯 초기화");
             for (int i = 0; i < 16; i++)
@@ -144,10 +147,7 @@ namespace SpiritMerge.Merge
             }
             else if (selectedSlot == idx)
             {
-                // 같은 슬롯 → 선택 해제
-                HighlightSlot(idx, false);
-                GameLogger.Info($"[MB] 슬롯 선택 해제: Slot_{idx}");
-                selectedSlot = -1;
+                DeselectCurrent(); // 같은 슬롯 → 선택 해제
             }
             else if (slotItems[idx] == null)
             {
@@ -177,11 +177,46 @@ namespace SpiritMerge.Merge
                 {
                     // 다른 정령 → 선택 전환
                     GameLogger.Info($"[MB] 선택 전환: Slot_{selectedSlot} → Slot_{idx}");
-                    HighlightSlot(selectedSlot, false);
+                    DeselectCurrent();
                     selectedSlot = idx;
                     HighlightSlot(idx, true);
                 }
             }
+        }
+
+        /// <summary>
+        /// MergeArea 전체에 투명 클릭 영역 추가 → 아무 곳이나 눌러도 선택 해제
+        /// </summary>
+        void SetupAreaClickHandler()
+        {
+            // MergeArea에 투명 Image 추가 (raycast용)
+            var areaImg = GetComponent<Image>();
+            if (areaImg == null)
+            {
+                areaImg = gameObject.AddComponent<Image>();
+                areaImg.color = new Color(0, 0, 0, 0); // 완전 투명
+                areaImg.raycastTarget = true;
+            }
+
+            // Button 추가 → 클릭 시 선택 해제
+            var areaBtn = GetComponent<Button>();
+            if (areaBtn == null)
+            {
+                areaBtn = gameObject.AddComponent<Button>();
+                areaBtn.transition = Selectable.Transition.None;
+                areaBtn.onClick.AddListener(DeselectCurrent);
+            }
+        }
+
+        /// <summary>
+        /// 현재 선택 해제 (재사용)
+        /// </summary>
+        void DeselectCurrent()
+        {
+            if (selectedSlot == -1) return;
+            HighlightSlot(selectedSlot, false);
+            GameLogger.Info($"[MB] 선택 해제: Slot_{selectedSlot}");
+            selectedSlot = -1;
         }
 
         /// <summary>
@@ -191,14 +226,8 @@ namespace SpiritMerge.Merge
         void OnSlotClicked(int idx)
         {
             if (idx < 0 || idx >= 16) return;
-            // SpiritItem이 있는 슬롯은 무시 (OnItemClicked가 처리)
-            if (slotItems[idx] != null) return;
-            if (selectedSlot == -1) return;
-
-            // 빈 슬롯 클릭 = 선택 해제
-            HighlightSlot(selectedSlot, false);
-            selectedSlot = -1;
-            GameLogger.Info($"[MB] 빈 슬롯 클릭 → 선택 해제: Slot_{idx}");
+            if (slotItems[idx] != null) return; // SpiritItem이 있는 슬롯은 OnItemClicked가 처리
+            DeselectCurrent();
         }
 
         void MoveItem(int from, int to)
