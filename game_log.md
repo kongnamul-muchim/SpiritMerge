@@ -1203,3 +1203,74 @@
 | 18:11:08.553 | INFO | [MB] 슬롯 선택: Slot_0 |
 | 18:11:08.810 | INFO | | 18:11:08.810 | INFO | [MB] 선택 해제: Slot_0 |
 | 18:11:08.810 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:14:49.813 | INFO | | 18:14:49.806 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:14:49.806 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:14:49.814 | INFO | | 18:14:49.814 | INFO | [GM] GameManager 시작 |
+| 18:14:49.814 | INFO | [GM] GameManager 시작 |
+| 18:14:49.814 | INFO | | 18:14:49.814 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:14:49.814 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:14:49.815 | INFO | | 18:14:49.815 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:14:49.815 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:14:49.816 | INFO | | 18:14:49.816 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:14:49.816 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:14:49.816 | INFO | | 18:14:49.816 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:14:49.816 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:14:49.821 | ERROR | NullReferenceException: Object reference not set to an instance of an object
+| 18:14:49.821 |   | SpiritMerge.Merge.MergeBoardManager.GetActiveSpiritData () (at Assets/Scripts/Merge/MergeBoardManager.cs:366)
+| 18:14:49.821 |   | SpiritMerge.GameManager.GiveStarterSpirit () (at Assets/Scripts/Manager/GameManager.cs:83)
+| 18:14:49.821 |   | SpiritMerge.GameManager.StartAutoBattle () (at Assets/Scripts/Manager/GameManager.cs:59)
+| 18:14:49.821 |   | SpiritMerg...
+| 18:14:49.822 | INFO | | 18:14:49.822 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:14:49.822 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:14:49.822 | INFO | | 18:14:49.822 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:14:49.822 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:14:50.936 | INFO | | 18:14:50.936 | INFO | [GM] 소환 버튼 클릭! |
+| 18:14:50.936 | INFO | [GM] 소환 버튼 클릭! |
+| 18:14:50.938 | INFO | | 18:14:50.937 | INFO | [GM] 소환할 정령 선택: Light_5_Celestial |
+| 18:14:50.937 | INFO | [GM] 소환할 정령 선택: Light_5_Celestial |
+| 18:14:50.938 | INFO | | 18:14:50.938 | INFO | [MB] 소환 시도: Light_5_Celestial |
+| 18:14:50.938 | INFO | [MB] 소환 시도: Light_5_Celestial |
+| 18:14:50.940 | INFO | | 18:14:50.940 | INFO | [MB] 소환 성공: Light_5_Celestial Lv.1 → Slot_0 |
+| 18:14:50.940 | INFO | [MB] 소환 성공: Light_5_Celestial Lv.1 → Slot_0 |
+| 18:14:50.942 | INFO | | 18:14:50.940 | INFO | [GM] 소환 성공: Light_5_Celestial (골드: 0) |
+| 18:14:50.940 | INFO | [GM] 소환 성공: Light_5_Celestial (골드: 0) |
+| 18:14:51.987 | INFO | | 18:14:51.987 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:14:51.987 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:14:52.607 | INFO | | 18:14:52.607 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:14:52.607 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:14:53.041 | INFO | | 18:14:53.041 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:14:53.041 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:14:57.925 | INFO | | 18:14:57.925 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:14:57.925 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:14:59.392 | INFO | | 18:14:59.392 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:14:59.392 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:14:59.994 | INFO | | 18:14:59.994 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:14:59.994 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:15:00.895 | INFO | | 18:15:00.895 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:15:00.895 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:15:01.247 | INFO | | 18:15:01.247 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:15:01.247 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:15:02.123 | INFO | | 18:15:02.123 | INFO | [GM] 소환 버튼 클릭! |
+| 18:15:02.123 | INFO | [GM] 소환 버튼 클릭! |
+| 18:15:02.123 | WARN | | 18:15:02.123 | WARN | [GM] 골드 부족: 0/500 |
+| 18:15:02.123 | WARN | [GM] 골드 부족: 0/500 |
+| 18:15:03.188 | INFO | | 18:15:03.187 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:15:03.187 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:15:06.642 | INFO | | 18:15:06.642 | INFO | [GM] 소환 버튼 클릭! |
+| 18:15:06.642 | INFO | [GM] 소환 버튼 클릭! |
+| 18:15:06.642 | WARN | | 18:15:06.642 | WARN | [GM] 골드 부족: 0/500 |
+| 18:15:06.642 | WARN | [GM] 골드 부족: 0/500 |
+| 18:15:06.852 | INFO | | 18:15:06.852 | INFO | [GM] 소환 버튼 클릭! |
+| 18:15:06.852 | INFO | [GM] 소환 버튼 클릭! |
+| 18:15:06.852 | WARN | | 18:15:06.852 | WARN | [GM] 골드 부족: 0/500 |
+| 18:15:06.852 | WARN | [GM] 골드 부족: 0/500 |
+| 18:15:07.038 | INFO | | 18:15:07.038 | INFO | [GM] 소환 버튼 클릭! |
+| 18:15:07.038 | INFO | [GM] 소환 버튼 클릭! |
+| 18:15:07.039 | WARN | | 18:15:07.038 | WARN | [GM] 골드 부족: 0/500 |
+| 18:15:07.038 | WARN | [GM] 골드 부족: 0/500 |
+| 18:15:07.532 | INFO | | 18:15:07.532 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:15:07.532 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:15:09.540 | INFO | | 18:15:09.540 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:15:09.540 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:15:10.039 | INFO | | 18:15:10.039 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:15:10.039 | INFO | [MB] 선택 해제: Slot_0 |

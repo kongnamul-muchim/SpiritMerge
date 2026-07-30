@@ -299,41 +299,41 @@ namespace SpiritMerge
             var board = FindObjectOfType<MergeBoardManager>();
             if (board == null) return;
 
-            // 모든 Button.onClick에 DeselectCurrent 추가 (MergeBoard 영역 제외)
-            var allButtons = FindObjectsOfType<Button>();
-            foreach (var btn in allButtons)
+            // 1. ScreenBackground (전체화면 배경) → 빈 공간 클릭 처리
+            var bg = GameObject.Find("ScreenBackground");
+            if (bg != null)
             {
-                // MergeBoard 내부 버튼(SpiritItem, Slot Inner)은 제외
-                if (btn.GetComponentInParent<MergeBoardManager>() != null) continue;
-                // SummonBtn은 GameManager.OnSummonClicked에서 직접 처리
-                if (btn.name == "SummonBtn") continue;
+                var bgImg = bg.GetComponent<Image>();
+                if (bgImg != null) bgImg.raycastTarget = true;
 
-                btn.onClick.AddListener(() => board.DeselectCurrent());
+                var bgBtn = bg.GetComponent<Button>();
+                if (bgBtn == null) bgBtn = bg.AddComponent<Button>();
+                bgBtn.transition = Selectable.Transition.None;
+                bgBtn.onClick.AddListener(() => board.DeselectCurrent());
+                GameLogger.Info("[GM] ScreenBackground → 빈 공간 클릭 감지");
             }
 
-            // UI 영역 빈 공간 → 투명 Button 추가
-            string[] targetNames = { "ScreenBackground", "TopBar", "BattleArea", "BottomMenu" };
-            foreach (var name in targetNames)
+            // 2. GNB 각 탭에 DeselectCurrent 추가
+            var bm = GameObject.Find("BottomMenu");
+            if (bm != null)
             {
-                var go = GameObject.Find(name);
-                if (go == null) continue;
-
-                var img = go.GetComponent<Image>();
-                if (img == null)
+                for (int i = 0; i < 5; i++)
                 {
-                    img = go.AddComponent<Image>();
-                    img.color = new Color(0, 0, 0, 0);
-                }
-                img.raycastTarget = true;
-
-                var btn = go.GetComponent<Button>();
-                if (btn == null)
-                {
-                    btn = go.AddComponent<Button>();
-                    btn.transition = Selectable.Transition.None;
-                    btn.onClick.AddListener(() => board.DeselectCurrent());
+                    var tab = bm.transform.Find($"Tab_{i}");
+                    if (tab != null)
+                    {
+                        var tabBtn = tab.GetComponent<Button>();
+                        if (tabBtn != null) tabBtn.onClick.AddListener(() => board.DeselectCurrent());
+                    }
                 }
             }
+
+            // 3. TopBar GoldText/RubyText
+            var gt = GameObject.Find("GoldText")?.GetComponent<Button>();
+            if (gt != null) gt.onClick.AddListener(() => board.DeselectCurrent());
+            var rt = GameObject.Find("RubyText")?.GetComponent<Button>();
+            if (rt != null) rt.onClick.AddListener(() => board.DeselectCurrent());
+
             GameLogger.Info("[GM] 화면 전체 클릭 → MergeBoard 선택 해제 설정 완료");
         }
     }
