@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using TMPro;
 using System.Collections.Generic;
 
@@ -66,13 +67,17 @@ namespace SpiritMerge.Merge
         void Update()
         {
             // 화면 어디든 클릭 시 MergeBoard 요소가 아니면 선택 해제
-            if (selectedSlot != -1 && Input.GetMouseButtonDown(0))
+            if (selectedSlot != -1)
             {
+                // Input System: Mouse/터치 통합 처리
+                var pointer = Pointer.current;
+                if (pointer == null || !pointer.press.wasPressedThisFrame) return;
+
                 var es = UnityEngine.EventSystems.EventSystem.current;
                 if (es == null) { DeselectCurrent(); return; }
 
                 var pointerData = new UnityEngine.EventSystems.PointerEventData(es);
-                pointerData.position = Input.mousePosition;
+                pointerData.position = pointer.position.ReadValue();
                 var results = new System.Collections.Generic.List<UnityEngine.EventSystems.RaycastResult>();
                 es.RaycastAll(pointerData, results);
 
@@ -393,6 +398,7 @@ namespace SpiritMerge.Merge
         /// </summary>
         public SpiritData[] GetActiveSpiritData()
         {
+            if (slotItems == null) return new SpiritData[0]; // Start() 전에 호출될 경우
             var list = new System.Collections.Generic.List<SpiritData>();
             for (int i = 0; i < 16; i++)
             {

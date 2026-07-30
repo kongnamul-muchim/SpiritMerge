@@ -1274,3 +1274,3386 @@
 | 18:15:09.540 | INFO | [MB] 슬롯 선택: Slot_0 |
 | 18:15:10.039 | INFO | | 18:15:10.039 | INFO | [MB] 선택 해제: Slot_0 |
 | 18:15:10.039 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:17:47.901 | INFO | | 18:17:47.897 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:17:47.897 | INFO | [GameLogger] 로깅 시스템 시작 |
+| 18:17:47.901 | INFO | | 18:17:47.901 | INFO | [GM] GameManager 시작 |
+| 18:17:47.901 | INFO | [GM] GameManager 시작 |
+| 18:17:47.903 | INFO | | 18:17:47.903 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:17:47.903 | INFO | [GM] 전투 시스템 준비 완료 |
+| 18:17:47.903 | INFO | | 18:17:47.903 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:17:47.903 | INFO | [GM] 머지 시스템 준비 완료 |
+| 18:17:47.904 | INFO | | 18:17:47.904 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:17:47.904 | INFO | [GM] SummonBtn 연결 완료 |
+| 18:17:47.905 | INFO | | 18:17:47.904 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:17:47.904 | INFO | [GM] GNB 5개 탭 연결 완료 |
+| 18:17:47.907 | ERROR | NullReferenceException: Object reference not set to an instance of an object
+| 18:17:47.907 |   | SpiritMerge.Merge.MergeBoardManager.GetActiveSpiritData () (at Assets/Scripts/Merge/MergeBoardManager.cs:399)
+| 18:17:47.907 |   | SpiritMerge.GameManager.GiveStarterSpirit () (at Assets/Scripts/Manager/GameManager.cs:83)
+| 18:17:47.907 |   | SpiritMerge.GameManager.StartAutoBattle () (at Assets/Scripts/Manager/GameManager.cs:59)
+| 18:17:47.907 |   | SpiritMerg...
+| 18:17:47.908 | INFO | | 18:17:47.908 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:17:47.908 | INFO | [MB] MergeBoardManager 시작, 16개 슬롯 초기화 |
+| 18:17:47.908 | INFO | | 18:17:47.908 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:17:47.908 | INFO | [MB] 16개 슬롯 준비 완료 |
+| 18:17:52.656 | INFO | | 18:17:52.656 | INFO | [GM] 소환 버튼 클릭! |
+| 18:17:52.656 | INFO | [GM] 소환 버튼 클릭! |
+| 18:17:52.656 | INFO | | 18:17:52.656 | INFO | [GM] 소환할 정령 선택: Earth_1_SmallRock |
+| 18:17:52.656 | INFO | [GM] 소환할 정령 선택: Earth_1_SmallRock |
+| 18:17:52.657 | INFO | | 18:17:52.657 | INFO | [MB] 소환 시도: Earth_1_SmallRock |
+| 18:17:52.657 | INFO | [MB] 소환 시도: Earth_1_SmallRock |
+| 18:17:52.661 | INFO | | 18:17:52.661 | INFO | [MB] 소환 성공: Earth_1_SmallRock Lv.1 → Slot_0 |
+| 18:17:52.661 | INFO | [MB] 소환 성공: Earth_1_SmallRock Lv.1 → Slot_0 |
+| 18:17:52.661 | INFO | | 18:17:52.661 | INFO | [GM] 소환 성공: Earth_1_SmallRock (골드: 0) |
+| 18:17:52.661 | INFO | [GM] 소환 성공: Earth_1_SmallRock (골드: 0) |
+| 18:17:53.747 | INFO | | 18:17:53.745 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:17:53.745 | INFO | [MB] 슬롯 선택: Slot_0 |
+| 18:17:53.748 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.748 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.748 |   | 
+| 18:17:53.752 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.752 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.752 |   | 
+| 18:17:53.756 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.756 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.756 |   | 
+| 18:17:53.759 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.759 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.759 |   | 
+| 18:17:53.764 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.764 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.764 |   | 
+| 18:17:53.767 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.767 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.767 |   | 
+| 18:17:53.769 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.769 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.769 |   | 
+| 18:17:53.774 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.774 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.774 |   | 
+| 18:17:53.778 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.778 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.778 |   | 
+| 18:17:53.781 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.781 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.781 |   | 
+| 18:17:53.784 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.784 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.784 |   | 
+| 18:17:53.788 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.788 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.788 |   | 
+| 18:17:53.790 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.790 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.790 |   | 
+| 18:17:53.794 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.794 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.794 |   | 
+| 18:17:53.796 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.796 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.796 |   | 
+| 18:17:53.799 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.799 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.799 |   | 
+| 18:17:53.802 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.802 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.802 |   | 
+| 18:17:53.804 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.805 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.805 |   | 
+| 18:17:53.808 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.808 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.808 |   | 
+| 18:17:53.811 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.811 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.811 |   | 
+| 18:17:53.816 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.816 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.816 |   | 
+| 18:17:53.818 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.819 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.819 |   | 
+| 18:17:53.821 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.821 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.821 |   | 
+| 18:17:53.825 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.825 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.825 |   | 
+| 18:17:53.829 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.829 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.829 |   | 
+| 18:17:53.831 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.831 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.831 |   | 
+| 18:17:53.834 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.834 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.834 |   | 
+| 18:17:53.837 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.837 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.837 |   | 
+| 18:17:53.840 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.840 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.840 |   | 
+| 18:17:53.844 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.844 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.844 |   | 
+| 18:17:53.848 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.848 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.848 |   | 
+| 18:17:53.850 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.850 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.850 |   | 
+| 18:17:53.854 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.855 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.855 |   | 
+| 18:17:53.858 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.858 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.858 |   | 
+| 18:17:53.861 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.861 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.861 |   | 
+| 18:17:53.864 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.864 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.864 |   | 
+| 18:17:53.867 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.867 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.867 |   | 
+| 18:17:53.870 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.870 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.870 |   | 
+| 18:17:53.875 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.875 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.875 |   | 
+| 18:17:53.881 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.881 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.881 |   | 
+| 18:17:53.884 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.884 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.884 |   | 
+| 18:17:53.887 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.887 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.887 |   | 
+| 18:17:53.891 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.891 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.891 |   | 
+| 18:17:53.893 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.893 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.893 |   | 
+| 18:17:53.895 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.895 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.895 |   | 
+| 18:17:53.899 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.899 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.899 |   | 
+| 18:17:53.901 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.901 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.901 |   | 
+| 18:17:53.904 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.904 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.904 |   | 
+| 18:17:53.908 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.908 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.908 |   | 
+| 18:17:53.911 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.911 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.911 |   | 
+| 18:17:53.913 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.913 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.913 |   | 
+| 18:17:53.917 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.917 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.917 |   | 
+| 18:17:53.920 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.920 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.920 |   | 
+| 18:17:53.922 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.922 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.922 |   | 
+| 18:17:53.926 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.926 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.926 |   | 
+| 18:17:53.930 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.930 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.930 |   | 
+| 18:17:53.933 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.933 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.933 |   | 
+| 18:17:53.936 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.936 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.936 |   | 
+| 18:17:53.940 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.940 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.940 |   | 
+| 18:17:53.944 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.944 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.944 |   | 
+| 18:17:53.947 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.947 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.947 |   | 
+| 18:17:53.951 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.951 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.951 |   | 
+| 18:17:53.954 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.954 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.954 |   | 
+| 18:17:53.958 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.958 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.958 |   | 
+| 18:17:53.962 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.962 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.962 |   | 
+| 18:17:53.965 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.966 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.966 |   | 
+| 18:17:53.969 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.969 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.969 |   | 
+| 18:17:53.974 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.974 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.974 |   | 
+| 18:17:53.976 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.976 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.976 |   | 
+| 18:17:53.981 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.981 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.981 |   | 
+| 18:17:53.984 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.984 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.984 |   | 
+| 18:17:53.987 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.988 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.988 |   | 
+| 18:17:53.991 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.991 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.991 |   | 
+| 18:17:53.994 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.994 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.994 |   | 
+| 18:17:53.998 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:53.998 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:53.998 |   | 
+| 18:17:54.001 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.001 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.001 |   | 
+| 18:17:54.004 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.004 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.004 |   | 
+| 18:17:54.008 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.008 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.008 |   | 
+| 18:17:54.012 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.012 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.012 |   | 
+| 18:17:54.015 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.015 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.015 |   | 
+| 18:17:54.020 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.020 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.020 |   | 
+| 18:17:54.023 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.023 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.023 |   | 
+| 18:17:54.027 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.027 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.027 |   | 
+| 18:17:54.030 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.030 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.030 |   | 
+| 18:17:54.033 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.033 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.033 |   | 
+| 18:17:54.038 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.038 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.038 |   | 
+| 18:17:54.041 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.041 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.041 |   | 
+| 18:17:54.045 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.045 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.045 |   | 
+| 18:17:54.048 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.048 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.048 |   | 
+| 18:17:54.052 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.052 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.052 |   | 
+| 18:17:54.055 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.055 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.055 |   | 
+| 18:17:54.060 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.060 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.060 |   | 
+| 18:17:54.063 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.063 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.063 |   | 
+| 18:17:54.067 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.067 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.067 |   | 
+| 18:17:54.070 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.070 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.070 |   | 
+| 18:17:54.074 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.074 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.074 |   | 
+| 18:17:54.078 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.078 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.078 |   | 
+| 18:17:54.080 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.080 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.080 |   | 
+| 18:17:54.083 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.083 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.083 |   | 
+| 18:17:54.087 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.087 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.087 |   | 
+| 18:17:54.090 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.090 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.090 |   | 
+| 18:17:54.092 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.092 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.092 |   | 
+| 18:17:54.095 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.095 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.095 |   | 
+| 18:17:54.098 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.098 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.098 |   | 
+| 18:17:54.100 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.100 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.100 |   | 
+| 18:17:54.104 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.104 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.104 |   | 
+| 18:17:54.107 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.107 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.107 |   | 
+| 18:17:54.111 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.111 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.111 |   | 
+| 18:17:54.113 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.113 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.113 |   | 
+| 18:17:54.117 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.117 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.117 |   | 
+| 18:17:54.120 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.120 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.120 |   | 
+| 18:17:54.124 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.124 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.124 |   | 
+| 18:17:54.127 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.127 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.127 |   | 
+| 18:17:54.130 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.130 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.130 |   | 
+| 18:17:54.133 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.133 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.133 |   | 
+| 18:17:54.141 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.141 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.141 |   | 
+| 18:17:54.145 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.145 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.145 |   | 
+| 18:17:54.147 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.147 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.147 |   | 
+| 18:17:54.150 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.150 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.150 |   | 
+| 18:17:54.154 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.154 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.154 |   | 
+| 18:17:54.156 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.156 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.156 |   | 
+| 18:17:54.158 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.158 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.158 |   | 
+| 18:17:54.162 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.162 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.162 |   | 
+| 18:17:54.164 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.164 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.164 |   | 
+| 18:17:54.167 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.167 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.167 |   | 
+| 18:17:54.170 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.170 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.170 |   | 
+| 18:17:54.172 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.172 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.172 |   | 
+| 18:17:54.174 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.174 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.175 |   | 
+| 18:17:54.177 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.177 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.177 |   | 
+| 18:17:54.180 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.180 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.180 |   | 
+| 18:17:54.184 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.184 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.184 |   | 
+| 18:17:54.187 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.187 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.187 |   | 
+| 18:17:54.191 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.191 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.191 |   | 
+| 18:17:54.195 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.195 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.195 |   | 
+| 18:17:54.197 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.197 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.197 |   | 
+| 18:17:54.200 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.200 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.200 |   | 
+| 18:17:54.203 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.203 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.203 |   | 
+| 18:17:54.207 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.207 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.207 |   | 
+| 18:17:54.209 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.209 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.209 |   | 
+| 18:17:54.213 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.213 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.213 |   | 
+| 18:17:54.217 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.218 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.218 |   | 
+| 18:17:54.220 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.220 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.220 |   | 
+| 18:17:54.224 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.224 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.224 |   | 
+| 18:17:54.227 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.227 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.227 |   | 
+| 18:17:54.230 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.230 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.230 |   | 
+| 18:17:54.233 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.233 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.233 |   | 
+| 18:17:54.235 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.235 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.235 |   | 
+| 18:17:54.239 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.239 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.239 |   | 
+| 18:17:54.243 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.243 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.243 |   | 
+| 18:17:54.245 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.245 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.245 |   | 
+| 18:17:54.247 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.247 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.247 |   | 
+| 18:17:54.250 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.250 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.250 |   | 
+| 18:17:54.253 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.253 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.253 |   | 
+| 18:17:54.256 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.256 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.256 |   | 
+| 18:17:54.260 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.260 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.260 |   | 
+| 18:17:54.264 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.264 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.264 |   | 
+| 18:17:54.270 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.270 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.270 |   | 
+| 18:17:54.274 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.274 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.274 |   | 
+| 18:17:54.277 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.277 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.277 |   | 
+| 18:17:54.279 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.279 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.279 |   | 
+| 18:17:54.283 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.284 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.284 |   | 
+| 18:17:54.285 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.285 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.285 |   | 
+| 18:17:54.289 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.289 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.289 |   | 
+| 18:17:54.292 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.292 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.293 |   | 
+| 18:17:54.295 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.295 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.295 |   | 
+| 18:17:54.298 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.298 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.298 |   | 
+| 18:17:54.302 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.302 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.302 |   | 
+| 18:17:54.304 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.304 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.304 |   | 
+| 18:17:54.307 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.307 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.307 |   | 
+| 18:17:54.310 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.310 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.310 |   | 
+| 18:17:54.312 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.312 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.312 |   | 
+| 18:17:54.315 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.315 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.315 |   | 
+| 18:17:54.320 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.320 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.320 |   | 
+| 18:17:54.327 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.327 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.327 |   | 
+| 18:17:54.331 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.331 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.331 |   | 
+| 18:17:54.335 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.335 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.335 |   | 
+| 18:17:54.338 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.338 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.338 |   | 
+| 18:17:54.341 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.341 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.341 |   | 
+| 18:17:54.345 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.345 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.345 |   | 
+| 18:17:54.348 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.348 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.348 |   | 
+| 18:17:54.351 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.351 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.351 |   | 
+| 18:17:54.354 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.354 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.354 |   | 
+| 18:17:54.357 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.357 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.357 |   | 
+| 18:17:54.361 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.361 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.361 |   | 
+| 18:17:54.363 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.363 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.363 |   | 
+| 18:17:54.367 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.367 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.367 |   | 
+| 18:17:54.369 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.369 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.369 |   | 
+| 18:17:54.372 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.372 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.372 |   | 
+| 18:17:54.375 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.375 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.375 |   | 
+| 18:17:54.379 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.379 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.379 |   | 
+| 18:17:54.382 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.382 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.382 |   | 
+| 18:17:54.387 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.387 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.387 |   | 
+| 18:17:54.394 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.394 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.394 |   | 
+| 18:17:54.397 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.397 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.397 |   | 
+| 18:17:54.401 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.401 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.401 |   | 
+| 18:17:54.404 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.404 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.404 |   | 
+| 18:17:54.407 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.407 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.407 |   | 
+| 18:17:54.409 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.409 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.409 |   | 
+| 18:17:54.413 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.413 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.413 |   | 
+| 18:17:54.415 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.415 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.415 |   | 
+| 18:17:54.419 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.419 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.419 |   | 
+| 18:17:54.422 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.422 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.422 |   | 
+| 18:17:54.426 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.426 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.426 |   | 
+| 18:17:54.429 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.429 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.429 |   | 
+| 18:17:54.431 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.431 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.431 |   | 
+| 18:17:54.433 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.433 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.433 |   | 
+| 18:17:54.437 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.437 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.437 |   | 
+| 18:17:54.441 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.441 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.441 |   | 
+| 18:17:54.444 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.445 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.445 |   | 
+| 18:17:54.451 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.451 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.451 |   | 
+| 18:17:54.454 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.454 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.454 |   | 
+| 18:17:54.458 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.458 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.458 |   | 
+| 18:17:54.461 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.462 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.462 |   | 
+| 18:17:54.464 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.464 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.464 |   | 
+| 18:17:54.468 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.468 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.468 |   | 
+| 18:17:54.470 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.470 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.470 |   | 
+| 18:17:54.473 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.473 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.473 |   | 
+| 18:17:54.476 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.476 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.476 |   | 
+| 18:17:54.481 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.481 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.481 |   | 
+| 18:17:54.483 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.483 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.483 |   | 
+| 18:17:54.487 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.487 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.487 |   | 
+| 18:17:54.489 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.489 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.489 |   | 
+| 18:17:54.492 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.492 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.492 |   | 
+| 18:17:54.496 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.496 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.496 |   | 
+| 18:17:54.497 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.497 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.497 |   | 
+| 18:17:54.502 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.502 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.502 |   | 
+| 18:17:54.507 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.507 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.507 |   | 
+| 18:17:54.512 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.512 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.512 |   | 
+| 18:17:54.515 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.515 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.515 |   | 
+| 18:17:54.519 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.519 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.519 |   | 
+| 18:17:54.522 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.522 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.522 |   | 
+| 18:17:54.525 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.525 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.525 |   | 
+| 18:17:54.530 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.530 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.530 |   | 
+| 18:17:54.533 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.533 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.533 |   | 
+| 18:17:54.536 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.536 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.536 |   | 
+| 18:17:54.539 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.539 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.539 |   | 
+| 18:17:54.544 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.544 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.544 |   | 
+| 18:17:54.547 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.547 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.547 |   | 
+| 18:17:54.551 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.551 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.551 |   | 
+| 18:17:54.554 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.554 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.554 |   | 
+| 18:17:54.557 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.557 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.557 |   | 
+| 18:17:54.562 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.562 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.562 |   | 
+| 18:17:54.565 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.565 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.565 |   | 
+| 18:17:54.569 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.569 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.569 |   | 
+| 18:17:54.574 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.574 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.574 |   | 
+| 18:17:54.577 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.577 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.577 |   | 
+| 18:17:54.581 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.581 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.581 |   | 
+| 18:17:54.583 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.583 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.583 |   | 
+| 18:17:54.587 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.587 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.587 |   | 
+| 18:17:54.591 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.591 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.591 |   | 
+| 18:17:54.594 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.594 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.594 |   | 
+| 18:17:54.597 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.597 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.597 |   | 
+| 18:17:54.601 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.601 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.601 |   | 
+| 18:17:54.603 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.603 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.603 |   | 
+| 18:17:54.608 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.608 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.608 |   | 
+| 18:17:54.612 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.612 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.612 |   | 
+| 18:17:54.615 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.615 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.615 |   | 
+| 18:17:54.617 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.617 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.617 |   | 
+| 18:17:54.622 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.622 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.622 |   | 
+| 18:17:54.625 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.625 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.625 |   | 
+| 18:17:54.630 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.630 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.630 |   | 
+| 18:17:54.633 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.633 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.634 |   | 
+| 18:17:54.636 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.636 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.636 |   | 
+| 18:17:54.639 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.639 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.639 |   | 
+| 18:17:54.643 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.643 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.643 |   | 
+| 18:17:54.645 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.645 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.645 |   | 
+| 18:17:54.648 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.648 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.648 |   | 
+| 18:17:54.651 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.651 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.651 |   | 
+| 18:17:54.654 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.654 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.654 |   | 
+| 18:17:54.657 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.657 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.657 |   | 
+| 18:17:54.660 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.660 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.660 |   | 
+| 18:17:54.663 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.663 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.663 |   | 
+| 18:17:54.665 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.665 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.665 |   | 
+| 18:17:54.668 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.668 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.668 |   | 
+| 18:17:54.671 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.671 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.671 |   | 
+| 18:17:54.674 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.674 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.674 |   | 
+| 18:17:54.677 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.677 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.677 |   | 
+| 18:17:54.680 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.680 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.680 |   | 
+| 18:17:54.682 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.682 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.682 |   | 
+| 18:17:54.687 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.687 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.687 |   | 
+| 18:17:54.690 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.690 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.690 |   | 
+| 18:17:54.693 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.693 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.693 |   | 
+| 18:17:54.695 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.695 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.695 |   | 
+| 18:17:54.698 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.698 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.698 |   | 
+| 18:17:54.702 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.702 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.702 |   | 
+| 18:17:54.703 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.703 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.703 |   | 
+| 18:17:54.707 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.707 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.707 |   | 
+| 18:17:54.710 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.710 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.710 |   | 
+| 18:17:54.713 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.713 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.713 |   | 
+| 18:17:54.717 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.717 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.717 |   | 
+| 18:17:54.720 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.720 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.720 |   | 
+| 18:17:54.722 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.722 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.722 |   | 
+| 18:17:54.725 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.725 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.725 |   | 
+| 18:17:54.729 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.729 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.729 |   | 
+| 18:17:54.732 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.732 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.732 |   | 
+| 18:17:54.735 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.735 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.735 |   | 
+| 18:17:54.739 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.739 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.739 |   | 
+| 18:17:54.741 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.741 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.741 |   | 
+| 18:17:54.745 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.745 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.745 |   | 
+| 18:17:54.749 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.749 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.749 |   | 
+| 18:17:54.752 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.752 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.752 |   | 
+| 18:17:54.755 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.755 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.755 |   | 
+| 18:17:54.759 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.759 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.759 |   | 
+| 18:17:54.762 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.762 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.762 |   | 
+| 18:17:54.766 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.766 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.766 |   | 
+| 18:17:54.769 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.770 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.770 |   | 
+| 18:17:54.772 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.772 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.772 |   | 
+| 18:17:54.775 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.775 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.775 |   | 
+| 18:17:54.779 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.779 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.779 |   | 
+| 18:17:54.782 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.782 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.782 |   | 
+| 18:17:54.786 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.786 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.786 |   | 
+| 18:17:54.788 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.788 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.788 |   | 
+| 18:17:54.792 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.792 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.792 |   | 
+| 18:17:54.796 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.796 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.796 |   | 
+| 18:17:54.799 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.799 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.799 |   | 
+| 18:17:54.802 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.802 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.802 |   | 
+| 18:17:54.804 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.804 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.804 |   | 
+| 18:17:54.809 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.809 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.809 |   | 
+| 18:17:54.811 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.811 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.811 |   | 
+| 18:17:54.814 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.814 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.814 |   | 
+| 18:17:54.817 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.817 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.817 |   | 
+| 18:17:54.820 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.820 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.820 |   | 
+| 18:17:54.823 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.823 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.823 |   | 
+| 18:17:54.827 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.827 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.827 |   | 
+| 18:17:54.834 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.834 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.834 |   | 
+| 18:17:54.837 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.837 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.837 |   | 
+| 18:17:54.841 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.841 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.841 |   | 
+| 18:17:54.843 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.843 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.843 |   | 
+| 18:17:54.846 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.846 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.846 |   | 
+| 18:17:54.850 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.850 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.850 |   | 
+| 18:17:54.854 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.855 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.855 |   | 
+| 18:17:54.858 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.858 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.858 |   | 
+| 18:17:54.861 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.861 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.861 |   | 
+| 18:17:54.864 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.864 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.864 |   | 
+| 18:17:54.865 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.865 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.865 |   | 
+| 18:17:54.869 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.869 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.869 |   | 
+| 18:17:54.872 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.872 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.872 |   | 
+| 18:17:54.875 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.875 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.875 |   | 
+| 18:17:54.878 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.878 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.878 |   | 
+| 18:17:54.881 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.881 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.881 |   | 
+| 18:17:54.885 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.885 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.885 |   | 
+| 18:17:54.890 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.890 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.890 |   | 
+| 18:17:54.893 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.893 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.893 |   | 
+| 18:17:54.896 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.896 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.896 |   | 
+| 18:17:54.899 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.899 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.899 |   | 
+| 18:17:54.902 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.902 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.902 |   | 
+| 18:17:54.904 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.904 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.904 |   | 
+| 18:17:54.907 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.907 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.907 |   | 
+| 18:17:54.910 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.910 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.910 |   | 
+| 18:17:54.913 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.913 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.913 |   | 
+| 18:17:54.916 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.916 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.916 |   | 
+| 18:17:54.919 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.919 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.919 |   | 
+| 18:17:54.923 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.923 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.923 |   | 
+| 18:17:54.925 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.925 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.925 |   | 
+| 18:17:54.928 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.928 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.928 |   | 
+| 18:17:54.931 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.931 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.931 |   | 
+| 18:17:54.935 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.935 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.935 |   | 
+| 18:17:54.937 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.937 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.937 |   | 
+| 18:17:54.943 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.943 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.943 |   | 
+| 18:17:54.948 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.948 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.948 |   | 
+| 18:17:54.951 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.951 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.951 |   | 
+| 18:17:54.955 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.955 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.955 |   | 
+| 18:17:54.958 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.958 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.958 |   | 
+| 18:17:54.961 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.961 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.961 |   | 
+| 18:17:54.964 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.964 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.964 |   | 
+| 18:17:54.967 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.967 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.967 |   | 
+| 18:17:54.971 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.971 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.971 |   | 
+| 18:17:54.973 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.973 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.973 |   | 
+| 18:17:54.976 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.976 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.976 |   | 
+| 18:17:54.978 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.978 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.978 |   | 
+| 18:17:54.982 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.982 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.982 |   | 
+| 18:17:54.984 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.984 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.984 |   | 
+| 18:17:54.987 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.987 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.987 |   | 
+| 18:17:54.990 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.990 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.990 |   | 
+| 18:17:54.993 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.993 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.993 |   | 
+| 18:17:54.996 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.996 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.996 |   | 
+| 18:17:54.999 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:54.999 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:54.999 |   | 
+| 18:17:55.005 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.005 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.005 |   | 
+| 18:17:55.008 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.008 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.008 |   | 
+| 18:17:55.012 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.012 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.012 |   | 
+| 18:17:55.015 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.015 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.015 |   | 
+| 18:17:55.017 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.017 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.017 |   | 
+| 18:17:55.020 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.020 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.020 |   | 
+| 18:17:55.022 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.022 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.023 |   | 
+| 18:17:55.028 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.028 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.028 |   | 
+| 18:17:55.032 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.032 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.032 |   | 
+| 18:17:55.036 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.036 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.036 |   | 
+| 18:17:55.038 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.038 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.038 |   | 
+| 18:17:55.042 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.042 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.042 |   | 
+| 18:17:55.045 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.045 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.045 |   | 
+| 18:17:55.047 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.047 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.047 |   | 
+| 18:17:55.051 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.051 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.051 |   | 
+| 18:17:55.054 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.054 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.054 |   | 
+| 18:17:55.056 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.056 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.056 |   | 
+| 18:17:55.059 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.059 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.059 |   | 
+| 18:17:55.062 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.062 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.062 |   | 
+| 18:17:55.064 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.064 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.064 |   | 
+| 18:17:55.067 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.067 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.067 |   | 
+| 18:17:55.070 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.071 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.071 |   | 
+| 18:17:55.073 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.073 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.073 |   | 
+| 18:17:55.076 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.077 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.077 |   | 
+| 18:17:55.081 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.081 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.081 |   | 
+| 18:17:55.083 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.083 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.083 |   | 
+| 18:17:55.087 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.087 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.087 |   | 
+| 18:17:55.090 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.090 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.090 |   | 
+| 18:17:55.093 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.093 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.093 |   | 
+| 18:17:55.097 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.097 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.097 |   | 
+| 18:17:55.100 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.100 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.100 |   | 
+| 18:17:55.104 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.104 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.104 |   | 
+| 18:17:55.107 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.107 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.107 |   | 
+| 18:17:55.111 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.111 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.111 |   | 
+| 18:17:55.114 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.114 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.114 |   | 
+| 18:17:55.117 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.117 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.117 |   | 
+| 18:17:55.120 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.120 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.120 |   | 
+| 18:17:55.124 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.124 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.124 |   | 
+| 18:17:55.127 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.127 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.127 |   | 
+| 18:17:55.131 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.131 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.131 |   | 
+| 18:17:55.134 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.134 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.134 |   | 
+| 18:17:55.137 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.137 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.137 |   | 
+| 18:17:55.141 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.141 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.141 |   | 
+| 18:17:55.144 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.144 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.144 |   | 
+| 18:17:55.147 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.148 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.148 |   | 
+| 18:17:55.151 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.151 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.151 |   | 
+| 18:17:55.154 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.154 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.154 |   | 
+| 18:17:55.158 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.158 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.158 |   | 
+| 18:17:55.161 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.161 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.161 |   | 
+| 18:17:55.165 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.165 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.165 |   | 
+| 18:17:55.168 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.168 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.168 |   | 
+| 18:17:55.172 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.172 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.172 |   | 
+| 18:17:55.176 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.176 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.176 |   | 
+| 18:17:55.178 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.179 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.179 |   | 
+| 18:17:55.181 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.181 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.181 |   | 
+| 18:17:55.184 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.184 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.184 |   | 
+| 18:17:55.189 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.189 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.189 |   | 
+| 18:17:55.191 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.191 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.191 |   | 
+| 18:17:55.195 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.195 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.195 |   | 
+| 18:17:55.199 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.199 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.199 |   | 
+| 18:17:55.202 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.202 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.202 |   | 
+| 18:17:55.205 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.205 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.205 |   | 
+| 18:17:55.209 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.209 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.209 |   | 
+| 18:17:55.211 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.211 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.211 |   | 
+| 18:17:55.214 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.214 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.214 |   | 
+| 18:17:55.217 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.217 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.217 |   | 
+| 18:17:55.220 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.220 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.220 |   | 
+| 18:17:55.222 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.222 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.222 |   | 
+| 18:17:55.227 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.227 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.227 |   | 
+| 18:17:55.230 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.230 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.230 |   | 
+| 18:17:55.233 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.233 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.233 |   | 
+| 18:17:55.237 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.237 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.237 |   | 
+| 18:17:55.243 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.243 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.243 |   | 
+| 18:17:55.246 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.246 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.246 |   | 
+| 18:17:55.249 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.249 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.249 |   | 
+| 18:17:55.253 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.253 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.253 |   | 
+| 18:17:55.255 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.255 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.255 |   | 
+| 18:17:55.257 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.257 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.257 |   | 
+| 18:17:55.260 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.260 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.260 |   | 
+| 18:17:55.263 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.263 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.263 |   | 
+| 18:17:55.266 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.266 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.266 |   | 
+| 18:17:55.269 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.269 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.269 |   | 
+| 18:17:55.273 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.273 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.273 |   | 
+| 18:17:55.276 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.276 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.276 |   | 
+| 18:17:55.278 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.278 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.278 |   | 
+| 18:17:55.280 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.280 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.280 |   | 
+| 18:17:55.283 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.283 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.283 |   | 
+| 18:17:55.287 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.287 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.287 |   | 
+| 18:17:55.292 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.292 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.292 |   | 
+| 18:17:55.298 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.298 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.298 |   | 
+| 18:17:55.303 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.303 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.303 |   | 
+| 18:17:55.306 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.306 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.306 |   | 
+| 18:17:55.308 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.308 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.308 |   | 
+| 18:17:55.312 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.312 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.312 |   | 
+| 18:17:55.315 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.315 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.315 |   | 
+| 18:17:55.317 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.317 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.317 |   | 
+| 18:17:55.321 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.321 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.321 |   | 
+| 18:17:55.323 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.323 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.323 |   | 
+| 18:17:55.325 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.325 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.325 |   | 
+| 18:17:55.328 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.328 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.328 |   | 
+| 18:17:55.331 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.331 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.331 |   | 
+| 18:17:55.335 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.335 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.335 |   | 
+| 18:17:55.337 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.337 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.337 |   | 
+| 18:17:55.339 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.339 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.339 |   | 
+| 18:17:55.342 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.342 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.342 |   | 
+| 18:17:55.345 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.345 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.345 |   | 
+| 18:17:55.348 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.348 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.348 |   | 
+| 18:17:55.352 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.352 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.352 |   | 
+| 18:17:55.353 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.355 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.355 |   | 
+| 18:17:55.357 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.357 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.357 |   | 
+| 18:17:55.361 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.361 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.361 |   | 
+| 18:17:55.369 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.369 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.369 |   | 
+| 18:17:55.373 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.373 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.373 |   | 
+| 18:17:55.375 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.375 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.375 |   | 
+| 18:17:55.377 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.377 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.377 |   | 
+| 18:17:55.381 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.381 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.381 |   | 
+| 18:17:55.385 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.385 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.385 |   | 
+| 18:17:55.387 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.387 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.389 |   | 
+| 18:17:55.391 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.391 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.391 |   | 
+| 18:17:55.394 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.394 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.394 |   | 
+| 18:17:55.397 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.397 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.397 |   | 
+| 18:17:55.400 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.400 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.400 |   | 
+| 18:17:55.402 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.402 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.402 |   | 
+| 18:17:55.406 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.406 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.406 |   | 
+| 18:17:55.408 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.408 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.408 |   | 
+| 18:17:55.412 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.412 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.412 |   | 
+| 18:17:55.415 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.415 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.415 |   | 
+| 18:17:55.420 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.420 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.420 |   | 
+| 18:17:55.424 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.424 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.424 |   | 
+| 18:17:55.428 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.428 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.428 |   | 
+| 18:17:55.432 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.432 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.432 |   | 
+| 18:17:55.435 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.435 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.435 |   | 
+| 18:17:55.437 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.437 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.437 |   | 
+| 18:17:55.441 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.441 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.441 |   | 
+| 18:17:55.444 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.444 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.444 |   | 
+| 18:17:55.446 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.446 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.446 |   | 
+| 18:17:55.450 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.450 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.450 |   | 
+| 18:17:55.452 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.452 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.452 |   | 
+| 18:17:55.455 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.455 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.455 |   | 
+| 18:17:55.457 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.457 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.457 |   | 
+| 18:17:55.459 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.459 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.459 |   | 
+| 18:17:55.462 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.463 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.463 |   | 
+| 18:17:55.465 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.465 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.465 |   | 
+| 18:17:55.468 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.468 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.468 |   | 
+| 18:17:55.471 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.471 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.471 |   | 
+| 18:17:55.475 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.475 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.475 |   | 
+| 18:17:55.482 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.482 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.482 |   | 
+| 18:17:55.485 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.485 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.485 |   | 
+| 18:17:55.487 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.487 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.487 |   | 
+| 18:17:55.492 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.492 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.492 |   | 
+| 18:17:55.494 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.494 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.494 |   | 
+| 18:17:55.497 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.497 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.497 |   | 
+| 18:17:55.500 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.500 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.500 |   | 
+| 18:17:55.503 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.503 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.503 |   | 
+| 18:17:55.507 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.507 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.507 |   | 
+| 18:17:55.510 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.510 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.510 |   | 
+| 18:17:55.514 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.514 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.514 |   | 
+| 18:17:55.517 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.517 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.517 |   | 
+| 18:17:55.520 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.520 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.520 |   | 
+| 18:17:55.525 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.525 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.525 |   | 
+| 18:17:55.527 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.527 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.527 |   | 
+| 18:17:55.531 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.531 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.531 |   | 
+| 18:17:55.536 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.536 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.536 |   | 
+| 18:17:55.542 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.542 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.542 |   | 
+| 18:17:55.545 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.545 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.545 |   | 
+| 18:17:55.547 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.547 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.547 |   | 
+| 18:17:55.550 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.550 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.550 |   | 
+| 18:17:55.553 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.553 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.553 |   | 
+| 18:17:55.556 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.556 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.556 |   | 
+| 18:17:55.559 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.559 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.559 |   | 
+| 18:17:55.563 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.563 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.563 |   | 
+| 18:17:55.565 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.565 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.565 |   | 
+| 18:17:55.570 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.570 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.570 |   | 
+| 18:17:55.572 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.572 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.572 |   | 
+| 18:17:55.576 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.576 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.576 |   | 
+| 18:17:55.579 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.579 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.579 |   | 
+| 18:17:55.582 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.582 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.582 |   | 
+| 18:17:55.585 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.585 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.585 |   | 
+| 18:17:55.587 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.587 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.587 |   | 
+| 18:17:55.590 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.590 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.590 |   | 
+| 18:17:55.599 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.599 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.599 |   | 
+| 18:17:55.602 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.602 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.602 |   | 
+| 18:17:55.605 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.605 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.605 |   | 
+| 18:17:55.608 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.608 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.608 |   | 
+| 18:17:55.611 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.611 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.611 |   | 
+| 18:17:55.614 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.614 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.614 |   | 
+| 18:17:55.617 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.618 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.618 |   | 
+| 18:17:55.621 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.621 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.621 |   | 
+| 18:17:55.623 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.623 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.623 |   | 
+| 18:17:55.627 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.627 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.627 |   | 
+| 18:17:55.629 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.630 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.630 |   | 
+| 18:17:55.634 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.634 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.634 |   | 
+| 18:17:55.637 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.637 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.637 |   | 
+| 18:17:55.640 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.640 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.640 |   | 
+| 18:17:55.643 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.643 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.643 |   | 
+| 18:17:55.645 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.645 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.645 |   | 
+| 18:17:55.655 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.655 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.655 |   | 
+| 18:17:55.657 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.657 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.657 |   | 
+| 18:17:55.660 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.660 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.660 |   | 
+| 18:17:55.664 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.664 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.664 |   | 
+| 18:17:55.667 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.667 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.667 |   | 
+| 18:17:55.671 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.671 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.671 |   | 
+| 18:17:55.675 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.675 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.675 |   | 
+| 18:17:55.677 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.677 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.677 |   | 
+| 18:17:55.679 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.679 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.679 |   | 
+| 18:17:55.683 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.683 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.683 |   | 
+| 18:17:55.686 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.686 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.686 |   | 
+| 18:17:55.688 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.688 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.688 |   | 
+| 18:17:55.693 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.693 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.693 |   | 
+| 18:17:55.696 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.696 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.696 |   | 
+| 18:17:55.698 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.698 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.698 |   | 
+| 18:17:55.701 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.701 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.701 |   | 
+| 18:17:55.706 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.706 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.706 |   | 
+| 18:17:55.712 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.712 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.712 |   | 
+| 18:17:55.714 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.714 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.714 |   | 
+| 18:17:55.718 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.718 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.718 |   | 
+| 18:17:55.721 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.721 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.721 |   | 
+| 18:17:55.723 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.723 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.723 |   | 
+| 18:17:55.725 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.725 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.725 |   | 
+| 18:17:55.728 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.728 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.728 |   | 
+| 18:17:55.732 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.732 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.732 |   | 
+| 18:17:55.735 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.735 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.735 |   | 
+| 18:17:55.738 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.738 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.738 |   | 
+| 18:17:55.740 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.740 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.740 |   | 
+| 18:17:55.742 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.742 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.742 |   | 
+| 18:17:55.745 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.745 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.745 |   | 
+| 18:17:55.748 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.748 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.748 |   | 
+| 18:17:55.751 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.751 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.751 |   | 
+| 18:17:55.753 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.753 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.753 |   | 
+| 18:17:55.756 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.756 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.756 |   | 
+| 18:17:55.760 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.760 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.760 |   | 
+| 18:17:55.763 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.763 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.763 |   | 
+| 18:17:55.765 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.765 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.765 |   | 
+| 18:17:55.769 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.769 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.769 |   | 
+| 18:17:55.772 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.772 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.772 |   | 
+| 18:17:55.774 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.775 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.775 |   | 
+| 18:17:55.778 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.778 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.778 |   | 
+| 18:17:55.781 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.781 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.781 |   | 
+| 18:17:55.784 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.784 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.784 |   | 
+| 18:17:55.787 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.787 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.787 |   | 
+| 18:17:55.791 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.791 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.791 |   | 
+| 18:17:55.794 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.794 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.794 |   | 
+| 18:17:55.797 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.797 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.797 |   | 
+| 18:17:55.800 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.800 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.800 |   | 
+| 18:17:55.803 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.803 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.803 |   | 
+| 18:17:55.805 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.805 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.805 |   | 
+| 18:17:55.809 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.809 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.809 |   | 
+| 18:17:55.811 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.811 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.811 |   | 
+| 18:17:55.814 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.814 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.814 |   | 
+| 18:17:55.817 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.817 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.817 |   | 
+| 18:17:55.820 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.820 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.820 |   | 
+| 18:17:55.822 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.822 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.822 |   | 
+| 18:17:55.825 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.825 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.825 |   | 
+| 18:17:55.828 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.828 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.828 |   | 
+| 18:17:55.831 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.831 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.831 |   | 
+| 18:17:55.834 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.834 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.834 |   | 
+| 18:17:55.837 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.837 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.837 |   | 
+| 18:17:55.840 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.840 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.840 |   | 
+| 18:17:55.844 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.844 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.844 |   | 
+| 18:17:55.847 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.847 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.847 |   | 
+| 18:17:55.851 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.851 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.851 |   | 
+| 18:17:55.853 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.853 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.853 |   | 
+| 18:17:55.857 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.857 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.857 |   | 
+| 18:17:55.860 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.860 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.860 |   | 
+| 18:17:55.864 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.864 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.864 |   | 
+| 18:17:55.866 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.866 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.866 |   | 
+| 18:17:55.870 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.870 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.870 |   | 
+| 18:17:55.873 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.873 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.873 |   | 
+| 18:17:55.875 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.875 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.875 |   | 
+| 18:17:55.879 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.879 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.879 |   | 
+| 18:17:55.883 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.883 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.883 |   | 
+| 18:17:55.886 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.886 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.886 |   | 
+| 18:17:55.889 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.889 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.889 |   | 
+| 18:17:55.892 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.892 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.892 |   | 
+| 18:17:55.895 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.895 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.895 |   | 
+| 18:17:55.899 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.899 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.899 |   | 
+| 18:17:55.902 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.902 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.902 |   | 
+| 18:17:55.906 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.906 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.906 |   | 
+| 18:17:55.909 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.909 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.909 |   | 
+| 18:17:55.913 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.913 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.913 |   | 
+| 18:17:55.917 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.917 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.917 |   | 
+| 18:17:55.920 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.920 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.920 |   | 
+| 18:17:55.924 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.924 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.924 |   | 
+| 18:17:55.927 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.927 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.927 |   | 
+| 18:17:55.930 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.930 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.930 |   | 
+| 18:17:55.934 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.934 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.934 |   | 
+| 18:17:55.937 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.937 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.937 |   | 
+| 18:17:55.940 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.940 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.940 |   | 
+| 18:17:55.943 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.943 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.943 |   | 
+| 18:17:55.947 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.947 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.947 |   | 
+| 18:17:55.951 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.951 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.951 |   | 
+| 18:17:55.954 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.954 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.954 |   | 
+| 18:17:55.958 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.958 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.958 |   | 
+| 18:17:55.962 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.962 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.962 |   | 
+| 18:17:55.964 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.964 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.964 |   | 
+| 18:17:55.968 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.968 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.968 |   | 
+| 18:17:55.971 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.971 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.971 |   | 
+| 18:17:55.974 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.974 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.974 |   | 
+| 18:17:55.978 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.978 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.978 |   | 
+| 18:17:55.981 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.981 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.981 |   | 
+| 18:17:55.985 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.985 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.985 |   | 
+| 18:17:55.989 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.989 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.989 |   | 
+| 18:17:55.992 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.992 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.992 |   | 
+| 18:17:55.996 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.996 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.996 |   | 
+| 18:17:55.999 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:55.999 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:55.999 |   | 
+| 18:17:56.002 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.002 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.002 |   | 
+| 18:17:56.005 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.005 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.005 |   | 
+| 18:17:56.009 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.009 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.009 |   | 
+| 18:17:56.012 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.012 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.012 |   | 
+| 18:17:56.015 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.015 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.015 |   | 
+| 18:17:56.020 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.020 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.020 |   | 
+| 18:17:56.022 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.022 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.022 |   | 
+| 18:17:56.026 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.026 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.026 |   | 
+| 18:17:56.029 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.029 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.029 |   | 
+| 18:17:56.034 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.034 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.034 |   | 
+| 18:17:56.039 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.039 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.039 |   | 
+| 18:17:56.043 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.043 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.043 |   | 
+| 18:17:56.046 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.046 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.046 |   | 
+| 18:17:56.050 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.050 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.050 |   | 
+| 18:17:56.053 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.053 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.053 |   | 
+| 18:17:56.057 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.057 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.057 |   | 
+| 18:17:56.061 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.061 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.061 |   | 
+| 18:17:56.066 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.066 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.066 |   | 
+| 18:17:56.070 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.070 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.070 |   | 
+| 18:17:56.076 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.076 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.076 |   | 
+| 18:17:56.080 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.080 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.080 |   | 
+| 18:17:56.084 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.084 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.084 |   | 
+| 18:17:56.089 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.089 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.089 |   | 
+| 18:17:56.093 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.095 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.095 |   | 
+| 18:17:56.098 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.098 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.098 |   | 
+| 18:17:56.103 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.103 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.103 |   | 
+| 18:17:56.107 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.107 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.107 |   | 
+| 18:17:56.112 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.112 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.112 |   | 
+| 18:17:56.116 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.116 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.116 |   | 
+| 18:17:56.123 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.123 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.123 |   | 
+| 18:17:56.131 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.131 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.131 |   | 
+| 18:17:56.136 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.136 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.136 |   | 
+| 18:17:56.141 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.141 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.141 |   | 
+| 18:17:56.147 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.147 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.147 |   | 
+| 18:17:56.152 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.152 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.152 |   | 
+| 18:17:56.155 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.155 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.155 |   | 
+| 18:17:56.159 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.159 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.159 |   | 
+| 18:17:56.164 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.164 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.164 |   | 
+| 18:17:56.167 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.167 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.167 |   | 
+| 18:17:56.171 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.171 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.171 |   | 
+| 18:17:56.174 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.174 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.174 |   | 
+| 18:17:56.178 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.178 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.178 |   | 
+| 18:17:56.181 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.181 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.181 |   | 
+| 18:17:56.186 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.186 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.186 |   | 
+| 18:17:56.188 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.188 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.188 |   | 
+| 18:17:56.192 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.193 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.193 |   | 
+| 18:17:56.196 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.196 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.196 |   | 
+| 18:17:56.199 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.199 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.199 |   | 
+| 18:17:56.203 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.203 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.203 |   | 
+| 18:17:56.207 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.207 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.207 |   | 
+| 18:17:56.212 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.212 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.212 |   | 
+| 18:17:56.216 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.221 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.221 |   | 
+| 18:17:56.224 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.224 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.224 |   | 
+| 18:17:56.229 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.229 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.229 |   | 
+| 18:17:56.232 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.232 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.232 |   | 
+| 18:17:56.236 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.236 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.236 |   | 
+| 18:17:56.239 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.239 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.239 |   | 
+| 18:17:56.243 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.243 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.243 |   | 
+| 18:17:56.248 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.248 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.248 |   | 
+| 18:17:56.251 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.251 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.251 |   | 
+| 18:17:56.253 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.253 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.253 |   | 
+| 18:17:56.257 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.257 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.257 |   | 
+| 18:17:56.259 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.259 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.259 |   | 
+| 18:17:56.263 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.263 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.263 |   | 
+| 18:17:56.266 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.266 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.266 |   | 
+| 18:17:56.269 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.269 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.269 |   | 
+| 18:17:56.272 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.272 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.273 |   | 
+| 18:17:56.275 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.275 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.275 |   | 
+| 18:17:56.280 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.280 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.280 |   | 
+| 18:17:56.288 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.288 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.288 |   | 
+| 18:17:56.291 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.291 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.291 |   | 
+| 18:17:56.294 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.294 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.294 |   | 
+| 18:17:56.297 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.297 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.297 |   | 
+| 18:17:56.302 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.302 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.302 |   | 
+| 18:17:56.304 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.304 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.304 |   | 
+| 18:17:56.308 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.308 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.308 |   | 
+| 18:17:56.313 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.313 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.313 |   | 
+| 18:17:56.316 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.316 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.316 |   | 
+| 18:17:56.319 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.319 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.319 |   | 
+| 18:17:56.322 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.322 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.322 |   | 
+| 18:17:56.325 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.325 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.325 |   | 
+| 18:17:56.328 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.328 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.328 |   | 
+| 18:17:56.332 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.332 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.332 |   | 
+| 18:17:56.337 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.337 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.337 |   | 
+| 18:17:56.341 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.341 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.341 |   | 
+| 18:17:56.346 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.346 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.346 |   | 
+| 18:17:56.350 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.350 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.350 |   | 
+| 18:17:56.353 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.353 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.353 |   | 
+| 18:17:56.357 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.357 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.357 |   | 
+| 18:17:56.359 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.359 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.359 |   | 
+| 18:17:56.364 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.364 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.364 |   | 
+| 18:17:56.367 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.367 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.367 |   | 
+| 18:17:56.371 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.371 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.371 |   | 
+| 18:17:56.374 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.374 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.374 |   | 
+| 18:17:56.378 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.378 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.378 |   | 
+| 18:17:56.381 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.381 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.381 |   | 
+| 18:17:56.385 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.385 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.385 |   | 
+| 18:17:56.388 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.388 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.388 |   | 
+| 18:17:56.392 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.392 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.392 |   | 
+| 18:17:56.395 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.395 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.395 |   | 
+| 18:17:56.399 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.399 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.399 |   | 
+| 18:17:56.401 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.403 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.403 |   | 
+| 18:17:56.406 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.406 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.406 |   | 
+| 18:17:56.411 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.411 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.411 |   | 
+| 18:17:56.414 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.414 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.414 |   | 
+| 18:17:56.417 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.417 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.417 |   | 
+| 18:17:56.421 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.421 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.421 |   | 
+| 18:17:56.425 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.425 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.425 |   | 
+| 18:17:56.427 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.427 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.427 |   | 
+| 18:17:56.430 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.430 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.430 |   | 
+| 18:17:56.434 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.434 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.434 |   | 
+| 18:17:56.437 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.437 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.437 |   | 
+| 18:17:56.443 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.443 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.443 |   | 
+| 18:17:56.446 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.446 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.446 |   | 
+| 18:17:56.450 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.450 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.450 |   | 
+| 18:17:56.454 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.454 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.454 |   | 
+| 18:17:56.458 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.458 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.458 |   | 
+| 18:17:56.461 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.461 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.461 |   | 
+| 18:17:56.465 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.465 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.465 |   | 
+| 18:17:56.468 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.468 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.468 |   | 
+| 18:17:56.472 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.472 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.472 |   | 
+| 18:17:56.475 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.475 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.475 |   | 
+| 18:17:56.479 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.479 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.479 |   | 
+| 18:17:56.483 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.483 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.483 |   | 
+| 18:17:56.486 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.486 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.486 |   | 
+| 18:17:56.489 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.489 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.489 |   | 
+| 18:17:56.492 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.492 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.492 |   | 
+| 18:17:56.496 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.496 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.496 |   | 
+| 18:17:56.498 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.498 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.498 |   | 
+| 18:17:56.503 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.503 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.503 |   | 
+| 18:17:56.506 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.506 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.506 |   | 
+| 18:17:56.508 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.508 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.508 |   | 
+| 18:17:56.512 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.512 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.512 |   | 
+| 18:17:56.515 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.515 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.515 |   | 
+| 18:17:56.518 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.518 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.518 |   | 
+| 18:17:56.521 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.521 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.521 |   | 
+| 18:17:56.524 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.524 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.524 |   | 
+| 18:17:56.528 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.528 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.528 |   | 
+| 18:17:56.531 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.531 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.531 |   | 
+| 18:17:56.533 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.533 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.533 |   | 
+| 18:17:56.537 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.537 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.537 |   | 
+| 18:17:56.541 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.541 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.541 |   | 
+| 18:17:56.543 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.543 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.543 |   | 
+| 18:17:56.547 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.547 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.547 |   | 
+| 18:17:56.550 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.550 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.550 |   | 
+| 18:17:56.555 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.555 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.555 |   | 
+| 18:17:56.558 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.558 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.558 |   | 
+| 18:17:56.561 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.562 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.562 |   | 
+| 18:17:56.566 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.566 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.566 |   | 
+| 18:17:56.569 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.569 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.569 |   | 
+| 18:17:56.571 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.571 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.571 |   | 
+| 18:17:56.574 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.574 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.574 |   | 
+| 18:17:56.578 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.578 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.578 |   | 
+| 18:17:56.582 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.582 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.582 |   | 
+| 18:17:56.586 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.586 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.586 |   | 
+| 18:17:56.590 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.590 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.590 |   | 
+| 18:17:56.593 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.593 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.593 |   | 
+| 18:17:56.597 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.597 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.597 |   | 
+| 18:17:56.601 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.601 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.601 |   | 
+| 18:17:56.604 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.604 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.604 |   | 
+| 18:17:56.608 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.608 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.608 |   | 
+| 18:17:56.613 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.613 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.613 |   | 
+| 18:17:56.616 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.616 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.616 |   | 
+| 18:17:56.619 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.619 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.619 |   | 
+| 18:17:56.622 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.622 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.622 |   | 
+| 18:17:56.625 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.625 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.625 |   | 
+| 18:17:56.627 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.627 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.627 |   | 
+| 18:17:56.630 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.630 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.630 |   | 
+| 18:17:56.633 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.633 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.633 |   | 
+| 18:17:56.636 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.636 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.636 |   | 
+| 18:17:56.640 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.640 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.640 |   | 
+| 18:17:56.643 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.643 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.643 |   | 
+| 18:17:56.647 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.647 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.647 |   | 
+| 18:17:56.649 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.649 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.649 |   | 
+| 18:17:56.652 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.652 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.652 |   | 
+| 18:17:56.655 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.655 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.655 |   | 
+| 18:17:56.659 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.659 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.659 |   | 
+| 18:17:56.661 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.661 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.661 |   | 
+| 18:17:56.665 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.665 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.665 |   | 
+| 18:17:56.669 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.669 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.669 |   | 
+| 18:17:56.671 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.671 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.671 |   | 
+| 18:17:56.675 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.675 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.675 |   | 
+| 18:17:56.678 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.678 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.678 |   | 
+| 18:17:56.681 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.681 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.681 |   | 
+| 18:17:56.685 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.685 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.685 |   | 
+| 18:17:56.687 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.687 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.687 |   | 
+| 18:17:56.691 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.691 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.691 |   | 
+| 18:17:56.694 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.694 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.694 |   | 
+| 18:17:56.698 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.698 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.698 |   | 
+| 18:17:56.702 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.702 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.702 |   | 
+| 18:17:56.706 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.706 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.706 |   | 
+| 18:17:56.709 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.709 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.709 |   | 
+| 18:17:56.713 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.713 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.713 |   | 
+| 18:17:56.716 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.716 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.716 |   | 
+| 18:17:56.720 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.720 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.720 |   | 
+| 18:17:56.724 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.724 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.724 |   | 
+| 18:17:56.727 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.727 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.727 |   | 
+| 18:17:56.731 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.731 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.731 |   | 
+| 18:17:56.734 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.734 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.734 |   | 
+| 18:17:56.738 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.738 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.738 |   | 
+| 18:17:56.742 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.742 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.742 |   | 
+| 18:17:56.744 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.744 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.744 |   | 
+| 18:17:56.747 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.747 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.747 |   | 
+| 18:17:56.751 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.751 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.751 |   | 
+| 18:17:56.754 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.754 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.754 |   | 
+| 18:17:56.758 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.758 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.758 |   | 
+| 18:17:56.761 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.761 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.761 |   | 
+| 18:17:56.765 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.765 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.765 |   | 
+| 18:17:56.769 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.769 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.769 |   | 
+| 18:17:56.772 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.772 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.772 |   | 
+| 18:17:56.777 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.777 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.777 |   | 
+| 18:17:56.780 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.780 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.780 |   | 
+| 18:17:56.784 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.784 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.784 |   | 
+| 18:17:56.787 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.787 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.787 |   | 
+| 18:17:56.791 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.791 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.791 |   | 
+| 18:17:56.794 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.794 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.794 |   | 
+| 18:17:56.797 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.797 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.797 |   | 
+| 18:17:56.800 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.801 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.801 |   | 
+| 18:17:56.804 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.804 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.804 |   | 
+| 18:17:56.808 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.808 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.808 |   | 
+| 18:17:56.812 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.812 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.812 |   | 
+| 18:17:56.815 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.815 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.815 |   | 
+| 18:17:56.819 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.819 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.819 |   | 
+| 18:17:56.822 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.822 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.822 |   | 
+| 18:17:56.826 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.826 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.826 |   | 
+| 18:17:56.829 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.829 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.829 |   | 
+| 18:17:56.833 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.833 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.833 |   | 
+| 18:17:56.835 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.835 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.835 |   | 
+| 18:17:56.840 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.840 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.840 |   | 
+| 18:17:56.844 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.844 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.844 |   | 
+| 18:17:56.848 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.848 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.848 |   | 
+| 18:17:56.852 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.852 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.852 |   | 
+| 18:17:56.855 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.855 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.855 |   | 
+| 18:17:56.859 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.859 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.859 |   | 
+| 18:17:56.862 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.862 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.862 |   | 
+| 18:17:56.865 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.865 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.865 |   | 
+| 18:17:56.867 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.867 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.867 |   | 
+| 18:17:56.871 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.871 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.871 |   | 
+| 18:17:56.873 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.873 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.873 |   | 
+| 18:17:56.876 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.876 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.876 |   | 
+| 18:17:56.880 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.880 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.880 |   | 
+| 18:17:56.882 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.882 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.882 |   | 
+| 18:17:56.884 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.884 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.884 |   | 
+| 18:17:56.887 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.887 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.887 |   | 
+| 18:17:56.890 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.890 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.890 |   | 
+| 18:17:56.893 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.893 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.893 |   | 
+| 18:17:56.896 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.896 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.896 |   | 
+| 18:17:56.898 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.898 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.898 |   | 
+| 18:17:56.902 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.902 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.902 |   | 
+| 18:17:56.905 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.905 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.905 |   | 
+| 18:17:56.908 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.908 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.908 |   | 
+| 18:17:56.911 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.911 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.911 |   | 
+| 18:17:56.914 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.914 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.914 |   | 
+| 18:17:56.917 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.917 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.917 |   | 
+| 18:17:56.921 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.921 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.921 |   | 
+| 18:17:56.924 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.924 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.924 |   | 
+| 18:17:56.927 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.927 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.927 |   | 
+| 18:17:56.929 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.929 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.929 |   | 
+| 18:17:56.933 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.933 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.933 |   | 
+| 18:17:56.935 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.935 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.935 |   | 
+| 18:17:56.938 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.938 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.938 |   | 
+| 18:17:56.942 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.942 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.942 |   | 
+| 18:17:56.944 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.944 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.944 |   | 
+| 18:17:56.947 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.947 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.947 |   | 
+| 18:17:56.950 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.951 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.951 |   | 
+| 18:17:56.953 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.953 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.953 |   | 
+| 18:17:56.955 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.955 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.955 |   | 
+| 18:17:56.959 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.959 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.959 |   | 
+| 18:17:56.962 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.962 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.962 |   | 
+| 18:17:56.966 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.966 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.966 |   | 
+| 18:17:56.969 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.969 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.969 |   | 
+| 18:17:56.973 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.973 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.973 |   | 
+| 18:17:56.976 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.976 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.976 |   | 
+| 18:17:56.979 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.979 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.979 |   | 
+| 18:17:56.982 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.982 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.982 |   | 
+| 18:17:56.986 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.986 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.986 |   | 
+| 18:17:56.988 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.988 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.988 |   | 
+| 18:17:56.991 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.991 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.991 |   | 
+| 18:17:56.997 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:56.997 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:56.997 |   | 
+| 18:17:57.001 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.001 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.001 |   | 
+| 18:17:57.004 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.004 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.004 |   | 
+| 18:17:57.007 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.007 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.007 |   | 
+| 18:17:57.011 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.011 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.011 |   | 
+| 18:17:57.015 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.015 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.015 |   | 
+| 18:17:57.018 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.018 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.018 |   | 
+| 18:17:57.021 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.021 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.021 |   | 
+| 18:17:57.025 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.025 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.025 |   | 
+| 18:17:57.028 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.029 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.029 |   | 
+| 18:17:57.031 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.031 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.031 |   | 
+| 18:17:57.034 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.034 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.034 |   | 
+| 18:17:57.038 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.038 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.038 |   | 
+| 18:17:57.043 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.043 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.043 |   | 
+| 18:17:57.048 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.048 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.048 |   | 
+| 18:17:57.052 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.052 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.052 |   | 
+| 18:17:57.055 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.055 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.055 |   | 
+| 18:17:57.060 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.060 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.060 |   | 
+| 18:17:57.063 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.064 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.064 |   | 
+| 18:17:57.067 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.067 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.067 |   | 
+| 18:17:57.071 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.071 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.071 |   | 
+| 18:17:57.074 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.074 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.074 |   | 
+| 18:17:57.077 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.077 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.077 |   | 
+| 18:17:57.081 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.081 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.081 |   | 
+| 18:17:57.084 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.084 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.084 |   | 
+| 18:17:57.087 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.087 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.087 |   | 
+| 18:17:57.092 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.092 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.092 |   | 
+| 18:17:57.095 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.095 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.095 |   | 
+| 18:17:57.100 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.100 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.100 |   | 
+| 18:17:57.103 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.103 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.103 |   | 
+| 18:17:57.107 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.107 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.107 |   | 
+| 18:17:57.111 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.111 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.111 |   | 
+| 18:17:57.114 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.114 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.114 |   | 
+| 18:17:57.117 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.117 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.117 |   | 
+| 18:17:57.121 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.121 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.121 |   | 
+| 18:17:57.124 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.124 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.124 |   | 
+| 18:17:57.128 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.128 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.128 |   | 
+| 18:17:57.131 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.131 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.131 |   | 
+| 18:17:57.135 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.135 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.135 |   | 
+| 18:17:57.139 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.139 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.139 |   | 
+| 18:17:57.144 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.144 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.144 |   | 
+| 18:17:57.147 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.147 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.147 |   | 
+| 18:17:57.151 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.151 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.151 |   | 
+| 18:17:57.154 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.154 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.154 |   | 
+| 18:17:57.158 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.158 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.158 |   | 
+| 18:17:57.162 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.162 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.162 |   | 
+| 18:17:57.165 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.165 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.165 |   | 
+| 18:17:57.169 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.169 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.169 |   | 
+| 18:17:57.174 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.174 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.174 |   | 
+| 18:17:57.177 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.177 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.177 |   | 
+| 18:17:57.180 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.180 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.180 |   | 
+| 18:17:57.185 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.185 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.185 |   | 
+| 18:17:57.189 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.189 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.189 |   | 
+| 18:17:57.194 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.194 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.194 |   | 
+| 18:17:57.198 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.198 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.198 |   | 
+| 18:17:57.202 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.202 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.202 |   | 
+| 18:17:57.205 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.205 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.205 |   | 
+| 18:17:57.209 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.209 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.209 |   | 
+| 18:17:57.214 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.214 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.214 |   | 
+| 18:17:57.219 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.219 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.219 |   | 
+| 18:17:57.224 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.224 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.224 |   | 
+| 18:17:57.228 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.228 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.228 |   | 
+| 18:17:57.234 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.234 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.234 |   | 
+| 18:17:57.239 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.239 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.239 |   | 
+| 18:17:57.243 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.243 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.243 |   | 
+| 18:17:57.246 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.246 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.246 |   | 
+| 18:17:57.252 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.252 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.252 |   | 
+| 18:17:57.255 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.255 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.255 |   | 
+| 18:17:57.259 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.259 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.259 |   | 
+| 18:17:57.264 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.264 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.264 |   | 
+| 18:17:57.268 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.268 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.268 |   | 
+| 18:17:57.272 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.272 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.272 |   | 
+| 18:17:57.275 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.275 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.275 |   | 
+| 18:17:57.280 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.280 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.280 |   | 
+| 18:17:57.289 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.289 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.289 |   | 
+| 18:17:57.295 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.295 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.295 |   | 
+| 18:17:57.304 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.304 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.304 |   | 
+| 18:17:57.313 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.313 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.313 |   | 
+| 18:17:57.321 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.321 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.321 |   | 
+| 18:17:57.328 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.328 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.328 |   | 
+| 18:17:57.336 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.336 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.336 |   | 
+| 18:17:57.343 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.343 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.343 |   | 
+| 18:17:57.350 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.350 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.350 |   | 
+| 18:17:57.357 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.357 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.357 |   | 
+| 18:17:57.364 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.365 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.365 |   | 
+| 18:17:57.371 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.371 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.371 |   | 
+| 18:17:57.379 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.380 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.380 |   | 
+| 18:17:57.387 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.387 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.387 |   | 
+| 18:17:57.396 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.396 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.396 |   | 
+| 18:17:57.402 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.402 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.402 |   | 
+| 18:17:57.408 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.408 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.408 |   | 
+| 18:17:57.416 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.416 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.416 |   | 
+| 18:17:57.424 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.424 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.424 |   | 
+| 18:17:57.430 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.430 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.430 |   | 
+| 18:17:57.438 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.438 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.438 |   | 
+| 18:17:57.445 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.445 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.445 |   | 
+| 18:17:57.452 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.452 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.452 |   | 
+| 18:17:57.461 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.461 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.461 |   | 
+| 18:17:57.468 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.468 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.468 |   | 
+| 18:17:57.474 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.474 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.474 |   | 
+| 18:17:57.480 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.480 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.480 |   | 
+| 18:17:57.484 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.484 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.484 |   | 
+| 18:17:57.492 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.492 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.492 |   | 
+| 18:17:57.497 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.497 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.497 |   | 
+| 18:17:57.507 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.507 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.507 |   | 
+| 18:17:57.514 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.514 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.514 |   | 
+| 18:17:57.521 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.521 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.521 |   | 
+| 18:17:57.525 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.525 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.525 |   | 
+| 18:17:57.530 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.530 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.530 |   | 
+| 18:17:57.535 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.535 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.535 |   | 
+| 18:17:57.540 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.540 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.540 |   | 
+| 18:17:57.543 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.543 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.543 |   | 
+| 18:17:57.548 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.548 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.548 |   | 
+| 18:17:57.551 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.551 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.551 |   | 
+| 18:17:57.555 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.555 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.555 |   | 
+| 18:17:57.560 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.560 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.560 |   | 
+| 18:17:57.563 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.563 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.563 |   | 
+| 18:17:57.567 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.567 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.567 |   | 
+| 18:17:57.570 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.570 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.570 |   | 
+| 18:17:57.575 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.575 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.575 |   | 
+| 18:17:57.579 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.579 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.579 |   | 
+| 18:17:57.589 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.598 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.598 |   | 
+| 18:17:57.605 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.605 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.605 |   | 
+| 18:17:57.608 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.608 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.608 |   | 
+| 18:17:57.613 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.613 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.613 |   | 
+| 18:17:57.618 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.618 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.618 |   | 
+| 18:17:57.622 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.622 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.622 |   | 
+| 18:17:57.625 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.625 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.625 |   | 
+| 18:17:57.629 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.629 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.629 |   | 
+| 18:17:57.633 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.633 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.633 |   | 
+| 18:17:57.637 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.637 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.637 |   | 
+| 18:17:57.641 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.641 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.641 |   | 
+| 18:17:57.646 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.646 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.646 |   | 
+| 18:17:57.649 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.649 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.649 |   | 
+| 18:17:57.654 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.654 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.654 |   | 
+| 18:17:57.659 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.659 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.659 |   | 
+| 18:17:57.665 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.665 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.665 |   | 
+| 18:17:57.672 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.672 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.672 |   | 
+| 18:17:57.676 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.676 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.676 |   | 
+| 18:17:57.680 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.680 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.680 |   | 
+| 18:17:57.683 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.684 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.684 |   | 
+| 18:17:57.687 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.687 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.687 |   | 
+| 18:17:57.690 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.690 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.690 |   | 
+| 18:17:57.693 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.693 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.693 |   | 
+| 18:17:57.696 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.696 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.696 |   | 
+| 18:17:57.699 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.699 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.699 |   | 
+| 18:17:57.702 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.702 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.702 |   | 
+| 18:17:57.705 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.705 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.705 |   | 
+| 18:17:57.708 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.708 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.708 |   | 
+| 18:17:57.711 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.711 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.711 |   | 
+| 18:17:57.714 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.714 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.714 |   | 
+| 18:17:57.717 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.717 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.717 |   | 
+| 18:17:57.720 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.720 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.720 |   | 
+| 18:17:57.724 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.724 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.724 |   | 
+| 18:17:57.729 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.729 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.729 |   | 
+| 18:17:57.731 | ERROR | InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+| 18:17:57.731 |   | SpiritMerge.Merge.MergeBoardManager.Update () (at Assets/Scripts/Merge/MergeBoardManager.cs:69)
+| 18:17:57.731 |   | 
+| 18:17:57.735 | INFO | | 18:17:57.735 | INFO | [MB] 선택 해제: Slot_0 |
+| 18:17:57.735 | INFO | [MB] 선택 해제: Slot_0 |
