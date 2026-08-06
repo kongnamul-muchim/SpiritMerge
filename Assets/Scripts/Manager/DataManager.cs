@@ -12,6 +12,8 @@ namespace SpiritMerge
     public class DataManager : MonoBehaviour
     {
         private string SaveFilePath => Path.Combine(Application.persistentDataPath, "save.json");
+        private string BackupFilePath => Path.Combine(Application.persistentDataPath, "save.backup.json");
+        private string TempFilePath => Path.Combine(Application.persistentDataPath, "save.tmp");
 
         [Header("SpiritData 테이블")]
         public List<SpiritData> spiritDatabase = new List<SpiritData>();
@@ -66,14 +68,24 @@ namespace SpiritMerge
         }
 
         /// <summary>
-        /// 게임 저장
+        /// 게임 저장 — ⭐ 원자적 쓰기 (tmp에 쓰고 → 기존을 백업으로 → tmp를 save로 교체)
+        /// 쓰는 도중 강제종료돼도 기존 save.json은 안전하고, 손상 시 백업으로 복구
         /// </summary>
         public void SaveGame(SaveData data)
         {
             try
             {
                 string json = JsonUtility.ToJson(data, true);
-                File.WriteAllText(SaveFilePath, json);
+                File.WriteAllText(TempFilePath, json);
+
+                // 기존 save.json → backup (이전 상태 보존)
+                if (File.Exists(SaveFilePath))
+                    File.Copy(SaveFilePath, BackupFilePath, true);
+
+                // tmp → save 교체 (성공 시에만)
+                File.Copy(TempFilePath, SaveFilePath, true);
+                File.Delete(TempFilePath);
+
                 Debug.Log($"[DataManager] Saved to {SaveFilePath}");
             }
             catch (System.Exception e)
@@ -83,26 +95,38 @@ namespace SpiritMerge
         }
 
         /// <summary>
-        /// 게임 로드
+        /// 게임 로드 — 메인 손상 시 백업 파일로 복구
         /// </summary>
         public SaveData LoadGame()
         {
-            if (!File.Exists(SaveFilePath))
+            var main = TryLoad(SaveFilePath);
+            if (main != null) return main;
+
+            var backup = TryLoad(BackupFilePath);
+            if (backup != null)
             {
-                Debug.Log("[DataManager] No save file found");
-                return null;
+                Debug.LogWarning("[DataManager] 메인 저장 파일 손상 → 백업으로 복구");
+                return backup;
             }
 
+            Debug.Log("[DataManager] 저장 파일 없음");
+            return null;
+        }
+
+        SaveData TryLoad(string path)
+        {
+            if (!File.Exists(path)) return null;
             try
             {
-                string json = File.ReadAllText(SaveFilePath);
+                string json = File.ReadAllText(path);
                 SaveData data = JsonUtility.FromJson<SaveData>(json);
+                if (data == null || data.gold < 0 || data.playerLevel < 1) return null;
                 Debug.Log($"[DataManager] Loaded save file ({json.Length} bytes)");
                 return data;
             }
             catch (System.Exception e)
             {
-                Debug.LogError($"[DataManager] Load failed: {e.Message}");
+                Debug.LogError($"[DataManager] Load failed ({path}): {e.Message}");
                 return null;
             }
         }
@@ -113,10 +137,10 @@ namespace SpiritMerge
         public void DeleteSave()
         {
             if (File.Exists(SaveFilePath))
-            {
                 File.Delete(SaveFilePath);
-                Debug.Log("[DataManager] Save deleted");
-            }
+            if (File.Exists(BackupFilePath))
+                File.Delete(BackupFilePath);
+            Debug.Log("[DataManager] Save deleted");
         }
     }
 }

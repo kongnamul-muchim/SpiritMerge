@@ -21,9 +21,9 @@ MonoBehaviour:
   goldReward: 270
   rubyReward: 0
   expReward: 130
-  hpMultiplier: 1.5
-  atkMultiplier: 1
-  totalMonsterCount: 22
+  hpMultiplier: 1.6
+  atkMultiplier: 0.6
+  totalMonsterCount: 16
   spawnPointCount: 5
   summonCost: 500
   bossHpMultiplier: 10

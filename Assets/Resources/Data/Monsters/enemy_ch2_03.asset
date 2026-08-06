@@ -18,8 +18,8 @@ MonoBehaviour:
   isBoss: 1
   sprite: {fileID: 21300000, guid: 6c408bd786b2a01419d58ca0f1874ae9, type: 3}
   baseATK: 20
-  baseHP: 100
-  baseDEF: 10
-  baseSpeed: 1.5
-  goldReward: 50
-  expReward: 20
+  baseHP: 120
+  baseDEF: 9
+  baseSpeed: 1.4
+  goldReward: 70
+  expReward: 36

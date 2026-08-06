@@ -48,20 +48,8 @@ namespace SpiritMerge.Editor
                     Debug.Log("[Apply] ✅ BattleManager 추가");
                 }
 
-                if (bm.spiritSpawnRoot == null)
-                {
-                    var ssr = new GameObject("SpiritSpawnRoot");
-                    ssr.transform.SetParent(battleArea.transform, false);
-                    bm.spiritSpawnRoot = ssr.transform;
-                    EditorUtility.SetDirty(bm);
-                }
-                if (bm.enemySpawnRoot == null)
-                {
-                    var esr = new GameObject("EnemySpawnRoot");
-                    esr.transform.SetParent(battleArea.transform, false);
-                    bm.enemySpawnRoot = esr.transform;
-                    EditorUtility.SetDirty(bm);
-                }
+                // ⭐ SpiritSpawnRoot/EnemySpawnRoot 생성 제거:
+                // 정령은 SpiritGroup/SpiritSlot, 몬스터는 EnemyGroup/EnemySlot UI 슬롯 기반 배치
 
                 if (battleArea.GetComponent<MonsterSpawner>() == null)
                 {

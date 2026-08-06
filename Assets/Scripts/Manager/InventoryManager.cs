@@ -9,7 +9,18 @@ namespace SpiritMerge
     /// </summary>
     public class InventoryManager : MonoBehaviour
     {
-        public static InventoryManager Instance;
+        // ⭐ 도메인 리로드(재컴파일) 후에도 staticMatch 유지 — null이면 씬에서 자동 재연결
+        private static InventoryManager _instance;
+        public static InventoryManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = UnityEngine.Object.FindAnyObjectByType<InventoryManager>();
+                return _instance;
+            }
+            private set { _instance = value; }
+        }
 
         [Header("인벤토리")]
         public List<OwnedEquipment> equipmentList = new List<OwnedEquipment>();
@@ -18,10 +29,15 @@ namespace SpiritMerge
 
         private void Awake()
         {
-            if (Instance == null)
-                Instance = this;
+            if (_instance == null)
+                _instance = this;
             else
                 Destroy(gameObject);
+        }
+
+        private void OnDestroy()
+        {
+            if (_instance == this) _instance = null;
         }
 
         public void AddEquipment(string dataId)

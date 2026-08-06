@@ -30,6 +30,10 @@
 # macOS
 .DS_Store
 
+# ─── 게임 런타임 로그 (태그별 분리 — game_log/) ──
+/game_log/
+/game_log.md
+
 # Git LFS
 # 추후 대용량 에셋 추가 시 주석 해제
 #*.png filter=lfs diff=lfs merge=lfs -text

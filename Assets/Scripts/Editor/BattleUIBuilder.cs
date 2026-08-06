@@ -6,8 +6,13 @@ using TMPro;
 namespace SpiritMerge.Editor
 {
     /// <summary>
-    /// BattleArea UI 리빌더 v2 — 웹 시안 기반, 폰트 키움, TopBar 레이아웃 맞춤
+    /// BattleArea UI 리빌더 v3 — Slider 기반 HP/CD 바
     /// 
+    /// v3 변경점:
+    /// - HPBar/CDBar를 UnityEngine.UI.Slider로 생성 (value로 자연스럽게 조절)
+    ///   - Image.Filled 방식은 화면에 fillAmount가 반영되지 않는 문제가 있었음
+    ///   - Slider.fillRect로 Fill을 지정하면 value → anchor 자동 조절로 화면 반영 보장
+    ///
     /// 실행: SpiritMerge > UI > Rebuild Battle UI
     /// </summary>
     public static class BattleUIBuilder
@@ -93,29 +98,27 @@ namespace SpiritMerge.Editor
                 img.color = Color.white;
                 img.raycastTarget = false;
 
-                // Lv (좌측 상단)
-                var lvl = CreateLabel("LvText", slot.transform,
-                    "Lv.3", 13, new Color(0.8f, 0.3f, 0.3f, 0.8f), TextAlignmentOptions.TopLeft);
-                SetAnchors(lvl, 0.05f, 0.7f, 0.5f, 1.0f);
-                lvl.GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Bold;
+                // Lv (좌측 상단) — ⭐ 몬스터에 레벨 개념이 없으므로 LvText 생성 제거
+                // (과거 하드코딩 "Lv.3"이 모든 몬스터에 붙어 이상하게 보였음)
+                // var lvl = CreateLabel("LvText", slot.transform,
+                //     "Lv.3", 13, new Color(0.8f, 0.3f, 0.3f, 0.8f), TextAlignmentOptions.TopLeft);
+                // SetAnchors(lvl, 0.05f, 0.7f, 0.5f, 0.9f);
+                // lvl.GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Bold;
 
                 // 속성 아이콘 (우측 상단, 임시 ●)
                 var elem = CreateLabel("ElemIcon", slot.transform,
                     "●", 11, new Color(1f, 0.5f, 0.2f, 0.7f), TextAlignmentOptions.TopRight);
-                SetAnchors(elem, 0.5f, 0.7f, 0.95f, 1.0f);
+                SetAnchors(elem, 0.5f, 0.7f, 0.95f, 0.9f);
 
-                // HP 바 (하단)
-                var hpBg = new GameObject("HPBar", typeof(RectTransform), typeof(Image));
-                Undo.RegisterCreatedObjectUndo(hpBg, "HPBar");
-                hpBg.transform.SetParent(slot.transform, false);
-                SetAnchors(hpBg, 0.1f, 0.0f, 0.9f, 0.1f);
-                hpBg.GetComponent<Image>().color = new Color(0.3f, 0.1f, 0.1f, 0.5f);
+                // HP 바 (하단) — ⭐ Slider 기반
+                var hpSlider = CreateBar(slot.transform, "HPBar",
+                    new Vector2(0.1f, 0.0f), new Vector2(0.9f, 0.1f),
+                    new Color(0.3f, 0.1f, 0.1f, 0.5f), new Color(1f, 0.2f, 0.2f, 0.7f), 1f);
 
-                var hpFill = new GameObject("HPFill", typeof(RectTransform), typeof(Image));
-                Undo.RegisterCreatedObjectUndo(hpFill, "HPFill");
-                hpFill.transform.SetParent(hpBg.transform, false);
-                SetAnchors(hpFill, 0f, 0f, 0.65f, 1f);
-                hpFill.GetComponent<Image>().color = new Color(1f, 0.2f, 0.2f, 0.7f);
+                // 공격 쿨타임 바 (슬롯 상단) — ⭐ Slider 기반
+                var cdSlider = CreateBar(slot.transform, "CDBar",
+                    new Vector2(0.1f, 0.93f), new Vector2(0.9f, 0.99f),
+                    new Color(0.2f, 0.15f, 0.05f, 0.5f), new Color(1f, 0.85f, 0.3f, 0.9f), 0f);
             }
 
             // ── Spirit Group (4마리, 하단) ──
@@ -146,29 +149,66 @@ namespace SpiritMerge.Editor
                 img.color = Color.white;
                 img.raycastTarget = false;
 
-                // 체력바 (하단)
-                var hpBg = new GameObject("HPBar", typeof(RectTransform), typeof(Image));
-                Undo.RegisterCreatedObjectUndo(hpBg, "HPBar");
-                hpBg.transform.SetParent(slot.transform, false);
-                SetAnchors(hpBg, 0.1f, 0.0f, 0.9f, 0.12f);
-                hpBg.GetComponent<Image>().color = new Color(0.1f, 0.2f, 0.3f, 0.5f);
+                // 체력바 (하단) — ⭐ Slider 기반
+                var hpSlider = CreateBar(slot.transform, "HPBar",
+                    new Vector2(0.1f, 0.0f), new Vector2(0.9f, 0.12f),
+                    new Color(0.1f, 0.2f, 0.3f, 0.5f), new Color(0.3f, 0.6f, 1f, 0.7f), 1f);
 
-                var hpFill = new GameObject("HPFill", typeof(RectTransform), typeof(Image));
-                Undo.RegisterCreatedObjectUndo(hpFill, "HPFill");
-                hpFill.transform.SetParent(hpBg.transform, false);
-                SetAnchors(hpFill, 0f, 0f, 1f, 1f);
-                hpFill.GetComponent<Image>().color = new Color(0.3f, 0.6f, 1f, 0.7f);
+                // 공격 쿨타임 바 (슬롯 상단) — ⭐ Slider 기반
+                var cdSlider = CreateBar(slot.transform, "CDBar",
+                    new Vector2(0.1f, 0.9f), new Vector2(0.9f, 0.98f),
+                    new Color(0.2f, 0.15f, 0.05f, 0.5f), new Color(1f, 0.85f, 0.3f, 0.9f), 0f);
             }
 
             Undo.CollapseUndoOperations(group);
             AssetDatabase.SaveAssets();
 
-            Debug.Log("[BattleUI] ✅ Battle UI 리빌드 v2 완료!");
+            Debug.Log("[BattleUI] ✅ Battle UI 리빌드 v3 완료! (Slider 기반)");
             EditorUtility.DisplayDialog("Battle UI",
-                "Battle Area 리빌드 완료! (v2)\n\n" +
-                "- 폰트 크기 1.5배 증가\n" +
+                "Battle Area 리빌드 완료! (v3 Slider)\n\n" +
+                "- HPBar/CDBar → Slider 기반 (value로 자연스럽게 조절)\n" +
                 "- WaveInfo CanvasGroup (페이드 효과 준비)\n" +
                 "- TopBar 영역 확보", "OK");
+        }
+
+        /// <summary>
+        /// ⭐ Slider 기반 바 생성
+        /// 구조: [name](Image 배경 + Slider) > Fill(Image, slider.fillRect)
+        /// Slider.value → fillRect.anchorMax.x 자동 조절 → 화면 반영 보장
+        /// </summary>
+        static Slider CreateBar(Transform parent, string name, Vector2 aMin, Vector2 aMax,
+            Color bgColor, Color fillColor, float initialValue)
+        {
+            // 배경 + Slider
+            var bar = new GameObject(name, typeof(RectTransform), typeof(Image), typeof(Slider));
+            Undo.RegisterCreatedObjectUndo(bar, name);
+            bar.transform.SetParent(parent, false);
+            SetAnchors(bar, aMin.x, aMin.y, aMax.x, aMax.y);
+            var bg = bar.GetComponent<Image>();
+            bg.color = bgColor;
+            bg.raycastTarget = false;
+
+            // Fill (Slider.fillRect) — 부모에 stretch, Slider가 anchor를 value로 조절
+            var fill = new GameObject("Fill", typeof(RectTransform), typeof(Image));
+            Undo.RegisterCreatedObjectUndo(fill, "Fill");
+            fill.transform.SetParent(bar.transform, false);
+            var fr = fill.GetComponent<RectTransform>();
+            fr.anchorMin = Vector2.zero;
+            fr.anchorMax = Vector2.one;
+            fr.offsetMin = Vector2.zero;
+            fr.offsetMax = Vector2.zero;
+            var fi = fill.GetComponent<Image>();
+            fi.color = fillColor;
+            fi.raycastTarget = false;
+
+            var slider = bar.GetComponent<Slider>();
+            slider.interactable = false;                 // 사용자 터치 비활성화 (표시용)
+            slider.transition = Selectable.Transition.None;
+            slider.minValue = 0f;
+            slider.maxValue = 1f;
+            slider.fillRect = fr;
+            slider.value = initialValue;                 // HP=1, CD=0
+            return slider;
         }
 
         static void SetAnchors(GameObject go, float xMin, float yMin, float xMax, float yMax)
@@ -178,6 +218,18 @@ namespace SpiritMerge.Editor
             r.anchorMax = new Vector2(xMax, yMax);
             r.offsetMin = Vector2.zero;
             r.offsetMax = Vector2.zero;
+        }
+
+        /// <summary>
+        /// 현재 오픈된 씬 저장 (CLI에서 호출 가능)
+        /// 실행: SpiritMerge > UI > Save Scene
+        /// </summary>
+        [MenuItem("SpiritMerge/UI/Save Scene")]
+        public static void SaveScene()
+        {
+            UnityEditor.SceneManagement.EditorSceneManager.SaveOpenScenes();
+            AssetDatabase.SaveAssets();
+            Debug.Log("[BattleUI] ✅ 씬 저장 완료");
         }
 
         static GameObject CreateLabel(string name, Transform parent, string text, int size,

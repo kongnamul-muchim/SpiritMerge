@@ -77,10 +77,10 @@ namespace SpiritMerge.Editor
             var bgImg = bg.GetComponent<UnityEngine.UI.Image>();
             bgImg.color = new Color(0.3f, 0.3f, 0.3f, 0.5f);
 
-            // Monster 컴포넌트 연결
+            // Monster 컴포넌트 연결 (레거시 프리팹 — HP바는 Slider 기반)
             var monster = go.GetComponent<Monster>();
             monster.spriteRenderer = sr;
-            monster.hpBarFill = img;
+            monster.hpSlider = CreateWorldBar(hpBar, img);
             monster.hpBarCanvas = canvas;
 
             string path = $"{prefabDir}/Monster.prefab";
@@ -131,12 +131,29 @@ namespace SpiritMerge.Editor
 
             var spirit = go.GetComponent<SpiritUnit>();
             spirit.spriteRenderer = sr;
-            spirit.hpBarFill = img;
+            spirit.hpSlider = CreateWorldBar(hpBar, img);
 
             string path = $"{prefabDir}/Spirit.prefab";
             PrefabUtility.SaveAsPrefabAsset(go, path);
             Object.DestroyImmediate(go);
             Debug.Log($"[GameSetup] 🎯 Spirit 프리팹 생성: {path}");
+        }
+
+        /// <summary>
+        /// 레거시 WorldSpace HP바를 Slider로 변환해 반환
+        /// (fillRect=Fill 이미지, value=1 시작)
+        /// </summary>
+        static UnityEngine.UI.Slider CreateWorldBar(GameObject barGo, UnityEngine.UI.Image fill)
+        {
+            barGo.AddComponent<UnityEngine.UI.Slider>();
+            var slider = barGo.GetComponent<UnityEngine.UI.Slider>();
+            slider.interactable = false;
+            slider.transition = UnityEngine.UI.Selectable.Transition.None;
+            slider.minValue = 0f;
+            slider.maxValue = 1f;
+            slider.fillRect = fill.GetComponent<RectTransform>();
+            slider.value = 1f;
+            return slider;
         }
 
         static void SetupBattleScene()
@@ -145,19 +162,9 @@ namespace SpiritMerge.Editor
             if (battleArea == null) { Debug.LogWarning("[GameSetup] BattleArea 없음"); return; }
 
             // MonsterSpawner 추가
+            // ⭐ SpawnPoint/Monster 프리팹 참조 제거: EnemySlot UI 슬롯을 유닛으로 재사용
             var spawner = battleArea.GetComponent<MonsterSpawner>();
             if (spawner == null) spawner = battleArea.AddComponent<MonsterSpawner>();
-            var monsterPrefab = Resources.Load<GameObject>("Prefabs/Monster");
-            var spawnPointPrefab = Resources.Load<GameObject>("Prefabs/SpawnPoint");
-            if (monsterPrefab != null || spawnPointPrefab != null)
-            {
-                var so = new SerializedObject(spawner);
-                if (monsterPrefab != null)
-                    so.FindProperty("monsterPrefab").objectReferenceValue = monsterPrefab;
-                if (spawnPointPrefab != null)
-                    so.FindProperty("spawnPointPrefab").objectReferenceValue = spawnPointPrefab;
-                so.ApplyModifiedProperties();
-            }
 
             // WaveController 추가
             var waveCtrl = battleArea.GetComponent<WaveController>();
@@ -172,15 +179,9 @@ namespace SpiritMerge.Editor
             var bm = battleArea.GetComponent<BattleManager>();
             if (bm == null) bm = battleArea.AddComponent<BattleManager>();
 
-            // SpiritSpawnRoot / EnemySpawnRoot
-            var spiritRoot = new GameObject("SpiritSpawnRoot");
-            spiritRoot.transform.SetParent(battleArea.transform, false);
-            var enemyRoot = new GameObject("EnemySpawnRoot");
-            enemyRoot.transform.SetParent(battleArea.transform, false);
-
+            // ⭐ SpiritSpawnRoot/EnemySpawnRoot 생성 제거:
+            // 정령은 SpiritGroup/SpiritSlot, 몬스터는 EnemyGroup/EnemySlot UI 슬롯 기반 배치
             var bmSo = new SerializedObject(bm);
-            bmSo.FindProperty("spiritSpawnRoot").objectReferenceValue = spiritRoot.transform;
-            bmSo.FindProperty("enemySpawnRoot").objectReferenceValue = enemyRoot.transform;
             bmSo.FindProperty("battleField").objectReferenceValue = battleArea.transform;
             bmSo.ApplyModifiedProperties();
 

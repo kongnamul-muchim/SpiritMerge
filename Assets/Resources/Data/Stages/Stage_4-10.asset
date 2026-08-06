@@ -15,15 +15,15 @@ MonoBehaviour:
   stageNumber: 10
   stageName: "4-10 \uBC88\uAC1C\uC758 \uC232"
   region: 4
-  elementType: 3
+  elementType: 2
   isBossStage: 1
   waveCount: 8
   goldReward: 500
   rubyReward: 50
   expReward: 230
-  hpMultiplier: 2.8
-  atkMultiplier: 1.6
-  totalMonsterCount: 60
+  hpMultiplier: 3.4299998
+  atkMultiplier: 1.35
+  totalMonsterCount: 66
   spawnPointCount: 5
   summonCost: 1400
   bossHpMultiplier: 10

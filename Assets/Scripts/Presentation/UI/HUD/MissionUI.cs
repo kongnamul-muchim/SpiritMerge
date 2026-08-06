@@ -34,7 +34,10 @@ namespace SpiritMerge.Presentation.UI.HUD
                 go.GetComponentInChildren<TMP_Text>().text = labels[i];
             }
 
-            rewardText.text = $"일일 보상: 루비 {_missions.GetDailyRubyReward()}";
+            // ⭐ 일일 완료 시 총 루비 보상 표시 (MissionService v2 API)
+            int rb = 0;
+            foreach (var d in _missions.DailyDefs) rb += d.RubyReward;
+            rewardText.text = $"일일 완료 보상: 루비 {rb}";
         }
     }
 }

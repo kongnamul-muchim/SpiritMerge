@@ -37,7 +37,7 @@ namespace SpiritMerge.Editor
         // ──────────────────────────────────────────────
         private static void CreateFireSpirits()
         {
-            Create("Fire_1_Spark",      "불꽃",      SpiritGrade.OneStar,   ElementType.Fire,  AnimalType.None,  "Fire Spark",          10,  50,  5,  2.0f, 0.05f, 1.5f);
+            Create("Fire_1_Spark",      "불꽃",      SpiritGrade.OneStar,   ElementType.Fire,  AnimalType.None,  "Fire Spark",          12,  80,  8,  2.0f, 0.05f, 1.5f);
             Create("Fire_2_Orb",        "불덩이",    SpiritGrade.TwoStar,   ElementType.Fire,  AnimalType.None,  "Fire Orb",            18,  90,  9,  1.8f, 0.07f, 1.6f);
             Create("Fire_3_FlameWolf",  "불꽃늑대",  SpiritGrade.ThreeStar, ElementType.Fire,  AnimalType.Wolf,  "Flame Wolf",          35, 180, 18,  1.5f, 0.10f, 1.75f);
             Create("Fire_4_MagmaWolf",  "마그마늑대",SpiritGrade.FourStar,  ElementType.Fire,  AnimalType.Wolf,  "Magma Wolf",          70, 350, 35,  1.2f, 0.15f, 2.0f);

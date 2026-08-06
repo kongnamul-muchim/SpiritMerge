@@ -21,10 +21,19 @@ namespace SpiritMerge
         /// <param name="totalMonsters">총 몬스터 수</param>
         /// <param name="waveCount">웨이브 수</param>
         /// <param name="isBossStage">보스 스테이지 여부</param>
-        /// <param name="maxPerWave">1웨이브당 최대 몬스터 수 (기본 5)</param>
+        /// <param name="maxPerWave">1웨이브당 최대 몬스터 수 (0=자동 — 몰림 방지)</param>
         /// <returns>웨이브별 몬스터 수 배열</returns>
-        public static int[] DistributeMonsters(int totalMonsters, int waveCount, bool isBossStage, int maxPerWave = 5)
+        public static int[] DistributeMonsters(int totalMonsters, int waveCount, bool isBossStage, int maxPerWave = 0)
         {
+            // ⭐ maxPerWave 자동 계산 (웨이브 몰림 방지):
+            //    분배 웨이브당 평균 + 2 (최소 5). 총 몬스터가 많아도 마지막 웨이브에 잔여가 몰리지 않도록
+            if (maxPerWave <= 0)
+            {
+                int fillWaves = isBossStage ? Mathf.Max(1, waveCount - 1) : waveCount;
+                int avg = fillWaves > 0 ? Mathf.CeilToInt(totalMonsters / (float)fillWaves) : totalMonsters;
+                maxPerWave = Mathf.Max(5, avg + 2);
+            }
+
             int[] distribution = new int[waveCount];
 
             if (isBossStage)
@@ -47,32 +56,21 @@ namespace SpiritMerge
         }
 
         /// <summary>
-        /// 지정된 범위에 몬스터 균등 분배
+        /// 지정된 범위에 몬스터 균등 분배 — 몫+나머지 방식 (마지막 웨이브 몰림 방지)
+        /// 예) 20마리/5웨이브 = [4,4,4,4,4], 38/6 = [7,7,6,6,6,6]
         /// </summary>
         private static void DistributeEvenly(int[] arr, int startIndex, int count, int total, int maxPerWave)
         {
             if (count <= 0 || total <= 0) return;
 
-            int remaining = total;
-
-            for (int i = 0; i < count - 1; i++)
+            int baseN = total / count;
+            int rem = total % count;
+            for (int i = 0; i < count; i++)
             {
-                // 최소 1마리는 보장
-                int minForThisWave = 1;
-                int maxForThisWave = Mathf.Min(maxPerWave, remaining - (count - i - 1));
-
-                if (maxForThisWave < minForThisWave)
-                {
-                    maxForThisWave = minForThisWave;
-                }
-
-                int waveCount = Random.Range(minForThisWave, maxForThisWave + 1);
-                arr[startIndex + i] = waveCount;
-                remaining -= waveCount;
+                int val = baseN + (i < rem ? 1 : 0);
+                if (maxPerWave > 0) val = Mathf.Min(val, maxPerWave);
+                arr[startIndex + i] = val;
             }
-
-            // 마지막 웨이브에 나머지 할당
-            arr[startIndex + count - 1] = remaining;
         }
 
         /// <summary>

@@ -58,6 +58,28 @@ namespace SpiritMerge
         public float  FinalCRIT => baseCritRate * GetMultiplier(grade).critSpeed;
         public float  FinalCritDMG => baseCritDamage * GetMultiplier(grade).critSpeed;
 
+        // ──────────────────────────────────────────────
+        // ⭐ 성급(=머지 레벨) 기반 스탯 — 게임 내 실제 성급은 SpiritItemData.level
+        //    머지로 성급이 올라가면 전투력/전투 스탯이 이 값을 사용한다
+        // ──────────────────────────────────────────────
+
+        /// <summary>머지 레벨(1~5+) → 성급 등급 매핑 (Lv.1=1성 ... Lv.5+=5성)</summary>
+        public static SpiritGrade GradeOfLevel(int level) => level switch
+        {
+            1 => SpiritGrade.OneStar,
+            2 => SpiritGrade.TwoStar,
+            3 => SpiritGrade.ThreeStar,
+            4 => SpiritGrade.FourStar,
+            _ => SpiritGrade.FiveStar // Lv.5+
+        };
+
+        public int    FinalATKAt(int level)   => Mathf.RoundToInt(baseATK  * GetMultiplier(GradeOfLevel(level)).atkHpDef);
+        public int    FinalHPAt(int level)    => Mathf.RoundToInt(baseHP   * GetMultiplier(GradeOfLevel(level)).atkHpDef);
+        public int    FinalDEFAt(int level)   => Mathf.RoundToInt(baseDEF  * GetMultiplier(GradeOfLevel(level)).atkHpDef);
+        public float  FinalSPDAt(int level)   => baseSpeed / GetMultiplier(GradeOfLevel(level)).critSpeed;
+        public float  FinalCRITAt(int level)  => baseCritRate * GetMultiplier(GradeOfLevel(level)).critSpeed;
+        public float  FinalCritDMGAt(int level) => baseCritDamage * GetMultiplier(GradeOfLevel(level)).critSpeed;
+
         public static float GetMultiplierAtkHpDef(SpiritGrade g) => GetMultiplier(g).atkHpDef;
         public static float GetMultiplierCritSpeed(SpiritGrade g) => GetMultiplier(g).critSpeed;
 
@@ -102,6 +124,40 @@ namespace SpiritMerge
         public static float GetDamageReduction(int def)
         {
             return def / (def + 500f);
+        }
+
+        // ──────────────────────────────────────────────
+        // 레벨별 스프라이트 해석 (머지보드/편성 UI 공용)
+        // ──────────────────────────────────────────────
+        private static SpiritData[] _levelSpriteCache;
+
+        /// <summary>
+        /// 속성 + 레벨에 맞는 스프라이트 반환 (Lv.1→1성, Lv.2→2성, ..., Lv.5/6→5성)
+        /// 머지보드(CreateItem)와 파티 편성 UI가 동일한 기준으로 이미지를 표시하기 위한 공용 헬퍼.
+        /// 못 찾으면 null (호출부에서 원본 sprite 폴백)
+        /// </summary>
+        public static Sprite ResolveLevelSprite(ElementType element, int level)
+        {
+            if (_levelSpriteCache == null)
+                _levelSpriteCache = Resources.LoadAll<SpiritData>("Data/Spirits");
+
+            SpiritGrade grade = level switch
+            {
+                1 => SpiritGrade.OneStar,
+                2 => SpiritGrade.TwoStar,
+                3 => SpiritGrade.ThreeStar,
+                4 => SpiritGrade.FourStar,
+                5 => SpiritGrade.FiveStar,
+                _ => SpiritGrade.FiveStar // Lv.6+
+            };
+
+            foreach (var sd in _levelSpriteCache)
+            {
+                if (sd == null) continue;
+                if (sd.element == element && sd.grade == grade && sd.sprite != null)
+                    return sd.sprite;
+            }
+            return null;
         }
     }
 }

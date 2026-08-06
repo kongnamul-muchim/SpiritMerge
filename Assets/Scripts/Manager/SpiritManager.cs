@@ -10,7 +10,18 @@ namespace SpiritMerge
     /// </summary>
     public class SpiritManager : MonoBehaviour
     {
-        public static SpiritManager Instance;
+        // ⭐ 도메인 리로드(재컴파일) 후에도 staticMatch 유지 — null이면 씬에서 자동 재연결
+        private static SpiritManager _instance;
+        public static SpiritManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = UnityEngine.Object.FindAnyObjectByType<SpiritManager>();
+                return _instance;
+            }
+            private set { _instance = value; }
+        }
 
         [Header("보유 정령")]
         public List<OwnedSpirit> ownedSpirits = new List<OwnedSpirit>();
@@ -19,10 +30,15 @@ namespace SpiritMerge
 
         private void Awake()
         {
-            if (Instance == null)
-                Instance = this;
+            if (_instance == null)
+                _instance = this;
             else
                 Destroy(gameObject);
+        }
+
+        private void OnDestroy()
+        {
+            if (_instance == this) _instance = null;
         }
 
         /// <summary>

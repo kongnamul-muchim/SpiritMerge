@@ -25,6 +25,9 @@ namespace SpiritMerge.Infrastructure.DI
         {
             Debug.Log("[GameEntryPoint] Starting game...");
 
+            // 에디터 비포커스 상태에서도 게임 시간이 멈추지 않도록 설정 (CLI 자동 테스트용)
+            Application.runInBackground = true;
+
             // 저장 데이터 불러오기
             var saveData = _dataService.Load();
             if (saveData != null)

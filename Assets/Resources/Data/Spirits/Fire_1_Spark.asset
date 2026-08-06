@@ -18,9 +18,9 @@ MonoBehaviour:
   animalType: 6
   description: "\uBD88\uAF43 \u2014 Fire \uC18D\uC131 1\uC131 \uC815\uB839"
   spriteFileName: Fire Spark
-  baseATK: 10
-  baseHP: 50
-  baseDEF: 5
+  baseATK: 12
+  baseHP: 80
+  baseDEF: 8
   baseSpeed: 2
   baseCritRate: 0.05
   baseCritDamage: 1.5

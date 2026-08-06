@@ -59,23 +59,89 @@ namespace SpiritMerge
     [System.Serializable]
     public class SaveData
     {
-        public int playerLevel = 1;
-        public int playerExp = 0;
-        public int[] skillTreeLevels = new int[11]; // 패시브 스킬 트리 레벨 배열
-        public int skillPoints = 0;
+        public int version = 1;
+        public long saveTimestamp;              // ⭐ 저장 시각 (epoch 초) — 오프라인 경과 계산 (파견/쿨다운)
 
-        public List<OwnedSpirit> spirits = new List<OwnedSpirit>();
-        public List<OwnedEquipment> equipment = new List<OwnedEquipment>();
-
+        // 재화 / 플레이어
         public int gold = 0;
         public int ruby = 0;
-        public int spiritStone = 0;
-        public int[] elementStones = new int[6]; // 속성석 6종 (Fire, Water, Wind, Earth, Dark, Light 순)
+        public int playerLevel = 1;
+        public int playerExp = 0;
+        public int skillPoints = 0;
+        public int[] upgradeLevels = new int[25];   // 업그레이드 25노드 (골드 0~9 / SP 10~14 / 루비 15~24)
 
-        public int currentStage = 1;
-        public int[] partySlotIds = new int[4]; // 파티 편성 (정령 UID, -1 = 빈 슬롯)
+        // 스테이지 진행
+        public int stageIndex = 0;
+        public bool repeatMode = false;
 
-        public string lastLoginTime = "";
+        // 보드 정령 16슬롯 + 파티 배치 (보드 슬롯 인덱스 기준)
+        public List<SavedSpirit> boardSpirits = new List<SavedSpirit>();
+        public int[] partySlots = new int[4];   // 각 파티 슬롯에 배치된 보드 슬롯 인덱스 (-1 = 빈)
+
+        // 의뢰 (파견)
+        public List<SavedDispatchRequest> offers = new List<SavedDispatchRequest>();
+        public List<SavedDispatch> activeDispatches = new List<SavedDispatch>();      // 파견 중 (남은 시간 포함)
+        public List<SavedDispatch> completedDispatches = new List<SavedDispatch>();   // 완료 (보상 대기)
+        public float requestCooldownTimer = 0f;  // 새 의뢰 쿨다운 남은 시간
+        public int totalDispatchCount = 0;
+
+        // 미션 (일일/주간 진행도 + 수령 여부)
+        public int[] dailyProgress = new int[10];
+        public bool[] dailyClaimed = new bool[10];
+        public int[] weeklyProgress = new int[10];
+        public bool[] weeklyClaimed = new bool[10];
+
+        // 레이드
+        public int raidStage = 1;
+        public long raidTotalDamage = 0;
+        public long raidBestScore = 0;
+        public bool[] raidStageRewardClaimed = new bool[10];
+        public ElementType weeklyBossElement = ElementType.Fire;
+
+        // 도감 해금 (정령 asset name 목록)
+        public List<string> dexUnlocked = new List<string>();
+    }
+
+    /// <summary>보드 슬롯에 놓인 정령 (슬롯 인덱스 + 데이터 + 성급)</summary>
+    [System.Serializable]
+    public class SavedSpirit
+    {
+        public int slotIndex;   // 보드 슬롯 0~15
+        public string dataId;   // SpiritData asset name (Resources/Data/Spirits)
+        public int level;       // 성급 (머지 레벨)
+    }
+
+    /// <summary>의뢰(제안) 직렬화용</summary>
+    [System.Serializable]
+    public class SavedDispatchRequest
+    {
+        public int id;
+        public float durationHours;
+        public int goldReward;
+        public int rubyReward;
+        public List<SavedOfferSlot> slots = new List<SavedOfferSlot>();
+    }
+
+    [System.Serializable]
+    public class SavedOfferSlot
+    {
+        public ElementType requiredElement;
+        public int minGrade;
+    }
+
+    /// <summary>파견 항목 직렬화용 (파견 중/완료 공용)</summary>
+    [System.Serializable]
+    public class SavedDispatch
+    {
+        public SavedDispatchRequest request;
+        public string spirit1Name;
+        public ElementType spirit1Element;
+        public int spirit1Grade;
+        public string spirit2Name;
+        public ElementType spirit2Element;
+        public int spirit2Grade;
+        public float remainingSeconds;
+        public bool notified;
     }
 
     [System.Serializable]

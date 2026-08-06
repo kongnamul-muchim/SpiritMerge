@@ -35,7 +35,7 @@ namespace SpiritMerge.Presentation.UI.HUD
                 totalDamage += Random.Range(1000, 5000);
             }
 
-            bool isNewRecord = _raid.RecordScore(totalDamage);
+            bool isNewRecord = _raid.EndRaid(totalDamage);
             scoreText.text = $"점수: {_raid.LastScore:N0}" + (isNewRecord ? " 🏆 신기록!" : "");
             rankText.text = $"최고 기록: {_raid.BestScore:N0}";
             startButton.interactable = true;

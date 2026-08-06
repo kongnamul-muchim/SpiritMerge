@@ -17,9 +17,9 @@ MonoBehaviour:
   spriteFileName: enemy_ch3_02
   isBoss: 0
   sprite: {fileID: 21300000, guid: 6c34385ab1512824893f3a43bca00463, type: 3}
-  baseATK: 20
-  baseHP: 100
-  baseDEF: 10
-  baseSpeed: 1.5
-  goldReward: 50
-  expReward: 20
+  baseATK: 27
+  baseHP: 145
+  baseDEF: 12
+  baseSpeed: 1.4
+  goldReward: 85
+  expReward: 44
