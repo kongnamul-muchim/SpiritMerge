@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Spirit Merge</title>
+    <title>Unity Web Player | Spiritia</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Spirit Merge</div>
+        <div id="unity-build-title">Spiritia</div>
       </div>
     </div>
     <script>
@@ -103,9 +103,16 @@
 
 
       } else {
-        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "424px";
-        canvas.style.height = "753px";
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen.
+        // Keep the 9:16 canvas fully visible: scale it down (never up) to fit the window,
+        // preserving aspect ratio so nothing is cropped when the window is narrow or short.
+        function fitCanvasToWindow() {
+          var scale = Math.min(window.innerWidth / 424, window.innerHeight / 753, 1);
+          canvas.style.width = Math.round(424 * scale) + "px";
+          canvas.style.height = Math.round(753 * scale) + "px";
+        }
+        window.addEventListener("resize", fitCanvasToWindow);
+        fitCanvasToWindow();
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
