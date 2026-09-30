@@ -306,7 +306,7 @@ namespace SpiritMerge
                 waveCtrl.StartBattle(next);
             };
 
-            // 💀 파티 HP 0 → ⭐ 둘 다 이전 스테이지로 이동 (1-1이면 유지)
+            //  파티 HP 0 → ⭐ 둘 다 이전 스테이지로 이동 (1-1이면 유지)
             waveCtrl.OnBattleLost += () =>
             {
                 var sorted = GetSortedStages();
@@ -1240,7 +1240,7 @@ namespace SpiritMerge
             GameLogger.Info($"[GM] GNB 탭 클릭: {n}");
             board?.DeselectCurrent(); // 탭 전환 시 머지 보드 선택 해제
 
-            // 🛡️ 파티 탭(1) → 편성 오버레이, 업그레이드 탭(2) → 업그레이드 오버레이,
+            //  파티 탭(1) → 편성 오버레이, 업그레이드 탭(2) → 업그레이드 오버레이,
             //    도감 탭(3) → 도감, 의뢰 탭(4) → 의뢰, 나머지 → 모두 숨김
             bool party = idx == 1;
             bool upgrade = idx == 2;

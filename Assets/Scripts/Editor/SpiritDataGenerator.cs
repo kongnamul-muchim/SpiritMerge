@@ -33,7 +33,7 @@ namespace SpiritMerge.Editor
         }
 
         // ──────────────────────────────────────────────
-        // 🔥 불 — 늑대/개 계열
+        //  불 — 늑대/개 계열
         // ──────────────────────────────────────────────
         private static void CreateFireSpirits()
         {
@@ -45,7 +45,7 @@ namespace SpiritMerge.Editor
         }
 
         // ──────────────────────────────────────────────
-        // 💧 물 — 여우 계열
+        //  물 — 여우 계열
         // ──────────────────────────────────────────────
         private static void CreateWaterSpirits()
         {
@@ -57,7 +57,7 @@ namespace SpiritMerge.Editor
         }
 
         // ──────────────────────────────────────────────
-        // 🌪️ 바람 — 맹금류 계열
+        //  바람 — 맹금류 계열
         // ──────────────────────────────────────────────
         private static void CreateWindSpirits()
         {
@@ -69,7 +69,7 @@ namespace SpiritMerge.Editor
         }
 
         // ──────────────────────────────────────────────
-        // 🌍 땅 — 곰 계열
+        //  땅 — 곰 계열
         // ──────────────────────────────────────────────
         private static void CreateEarthSpirits()
         {
@@ -81,7 +81,7 @@ namespace SpiritMerge.Editor
         }
 
         // ──────────────────────────────────────────────
-        // 🌑 어둠 — 표범 계열
+        //  어둠 — 표범 계열
         // ──────────────────────────────────────────────
         private static void CreateDarkSpirits()
         {
@@ -93,7 +93,7 @@ namespace SpiritMerge.Editor
         }
 
         // ──────────────────────────────────────────────
-        // ☀️ 빛 — 사슴 계열
+        //  빛 — 사슴 계열
         // ──────────────────────────────────────────────
         private static void CreateLightSpirits()
         {

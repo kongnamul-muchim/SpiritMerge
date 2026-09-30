@@ -288,7 +288,7 @@ namespace SpiritMerge.Merge
         {
             if (idx < 0 || idx >= 16) return;
 
-            // 🛡️ 편성 모드에서 파티 슬롯이 먼저 선택됨 → 이 정령을 파티에 배치
+            //  편성 모드에서 파티 슬롯이 먼저 선택됨 → 이 정령을 파티에 배치
             if (selectedPartySlot >= 0)
             {
                 AssignToParty(selectedPartySlot, idx);
@@ -520,11 +520,11 @@ namespace SpiritMerge.Merge
             var drag = spirit.GetComponent<SpiritDragHandler>();
             if (drag != null) drag.UpdateSlotIndex(to);
 
-            // 🛡️ 파티 참조 갱신 (이동한 슬롯 반영)
+            //  파티 참조 갱신 (이동한 슬롯 반영)
             for (int p = 0; p < PartyMax; p++)
                 if (partySlots[p] == from) partySlots[p] = to;
 
-            // 🎨 이동한 정령 색상 복원 (slotItems[from]이 null이므로 HighlightSlot 불가)
+            //  이동한 정령 색상 복원 (slotItems[from]이 null이므로 HighlightSlot 불가)
             var img = spirit.GetComponent<Image>();
             if (img != null && data != null)
                 img.color = SpiritItemColor(img, data.element);
@@ -549,14 +549,14 @@ namespace SpiritMerge.Merge
             int newLevel = fromData.level + 1;
             GameLogger.Info($"[MB] ✨ 합성! Slot_{from}(Lv.{fromData.level}) + Slot_{to}(Lv.{toData.level}) → Lv.{newLevel}");
 
-            // 🛡️ 파티에 속한 정령이 합성에 관여하는지 (소멸 전 미리 확인)
+            //  파티에 속한 정령이 합성에 관여하는지 (소멸 전 미리 확인)
             bool affectsParty = GetPartySlotOfBoard(from) >= 0 || GetPartySlotOfBoard(to) >= 0;
 
             // from 제거
             Destroy(slotItems[from]);
             slotItems[from] = null;
 
-            // 🛡️ 파티에 있던 정령이 합성으로 사라지면 → 파티에서 자동 해제
+            //  파티에 있던 정령이 합성으로 사라지면 → 파티에서 자동 해제
             for (int p = 0; p < PartyMax; p++)
             {
                 if (partySlots[p] == from)
@@ -579,7 +579,7 @@ namespace SpiritMerge.Merge
             toData.level = newLevel;
             slotItems[to].transform.localScale = Vector3.one * (0.8f + newLevel * 0.1f);
 
-            // 🖼️ 새 레벨에 맞는 스프라이트로 변경
+            //  새 레벨에 맞는 스프라이트로 변경
             var newSprite = GetSpiritSprite(toData.element, newLevel);
             if (newSprite != null)
             {
@@ -587,7 +587,7 @@ namespace SpiritMerge.Merge
                 if (mergeImg != null) mergeImg.sprite = newSprite;
             }
 
-            // 🌟 최대 레벨 도달 시 노란 테두리
+            //  최대 레벨 도달 시 노란 테두리
             UpdateMaxLevelEffect(slotItems[to], newLevel);
 
             // to 슬롯 LevelText 업데이트

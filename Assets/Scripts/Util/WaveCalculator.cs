@@ -4,11 +4,11 @@ namespace SpiritMerge
 {
     /// <summary>
     /// 웨이브별 몬스터 분배 계산기
-    /// 
+    ///
     /// 공식:
     /// - 보스전(n-5, n-10): 마지막 웨이브 = 보스 1마리, 나머지에 (총-1) 분배
     /// - 일반전: 모든 웨이브에 랜덤 분배 (1~5, 합계 = 총 몬스터 수)
-    /// 
+    ///
     /// 사용법:
     /// var distribution = WaveCalculator.DistributeMonsters(30, 5, true);
     /// // 결과: [6, 7, 5, 11, 1] (마지막이 보스)

@@ -7,7 +7,7 @@ namespace SpiritMerge.Editor
 {
     /// <summary>
     /// BattleArea UI 리빌더 v3 — Slider 기반 HP/CD 바
-    /// 
+    ///
     /// v3 변경점:
     /// - HPBar/CDBar를 UnityEngine.UI.Slider로 생성 (value로 자연스럽게 조절)
     ///   - Image.Filled 방식은 화면에 fillAmount가 반영되지 않는 문제가 있었음
