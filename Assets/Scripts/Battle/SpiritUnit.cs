@@ -137,7 +137,7 @@ namespace SpiritMerge.Battle
             switch (element)
             {
                 case ElementType.Water:
-                    // 💧 스플래시: 대상 100% + ⭐ 좌/우 1칸 슬롯의 적에게 (등급별 20/40/60/80/100%)
+                    //  스플래시: 대상 100% + ⭐ 좌/우 1칸 슬롯의 적에게 (등급별 20/40/60/80/100%)
                     {
                         int grade = _level > 0 ? _level : (data != null ? (int)data.grade : 1);
                         float splash = SplashFor(grade);
@@ -153,7 +153,7 @@ namespace SpiritMerge.Battle
                     }
                     break;
                 case ElementType.Earth:
-                    // 🌍 광역: 모든 적 (등급별 30/50/70/90/100%)
+                    //  광역: 모든 적 (등급별 30/50/70/90/100%)
                     {
                         int grade = _level > 0 ? _level : (data != null ? (int)data.grade : 1);
                         float aoe = AoeFor(grade);

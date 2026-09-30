@@ -12,7 +12,7 @@ namespace SpiritMerge.Editor
     /// 2. 적 스프라이트 → MonsterData
     /// 3. 속성 아이콘 → BattleArea ElementIcon
     /// 4. 누락된 MonsterData 자동 생성
-    /// 
+    ///
     /// 실행: SpiritMerge > Setup > Connect All Sprites
     /// </summary>
     public static class ConnectAllSprites

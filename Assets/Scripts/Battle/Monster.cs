@@ -204,7 +204,7 @@ namespace SpiritMerge.Battle
 
             isAlive = false;
 
-            // 💰 처치 보상 (골드 + 경험치 — 업그레이드 보너스 적용)
+            //  처치 보상 (골드 + 경험치 — 업그레이드 보너스 적용)
             if (GameManager.Instance != null && data != null)
             {
                 int reward = isBoss ? data.goldReward * 5 : data.goldReward;

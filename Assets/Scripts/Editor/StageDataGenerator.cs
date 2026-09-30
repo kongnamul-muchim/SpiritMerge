@@ -5,14 +5,14 @@ namespace SpiritMerge.Editor
 {
     /// <summary>
     /// StageData 50개 자동 생성 (5챕터 × 10스테이지)
-    /// 
+    ///
     /// 공식:
     /// - 총 몬스터 수: 챕터 × 10 + 테이지 × 2
     /// - 웨이브 수: 챕터 + 4
     /// - 소환 비용: 500 + (챕터-1) × 300
     /// - 보스 테이지: n-5, n-10 (마지막 웨이브에 보스 1마리)
     /// - 속성: (챕터-1) % 4 (0=Fire, 1=Water, 2=Nature, 3=Thunder)
-    /// 
+    ///
     /// 실행: SpiritMerge > Data > Create All Stages
     /// </summary>
     public static class StageDataGenerator

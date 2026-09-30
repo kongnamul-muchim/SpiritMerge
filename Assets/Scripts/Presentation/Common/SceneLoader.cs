@@ -4,7 +4,7 @@ namespace SpiritMerge.Presentation.Common
 {
     /// <summary>
     /// Scene 전환 유틸리티
-    /// 전투는 MainScene 안에서 UI 패널로 처리 (별도 씬 ❌)
+    /// 전투는 MainScene 안에서 UI 패널로 처리 (별도 씬 )
     /// </summary>
     public static class SceneLoader
     {

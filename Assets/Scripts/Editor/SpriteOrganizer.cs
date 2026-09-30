@@ -11,7 +11,7 @@ namespace SpiritMerge.Editor
     /// - Spirits/{Fire|Water|Nature|Thunder|Light|Dark}/ → 아군 정령
     /// - removebg-preview 접미사 제거 + 중복 정리
     /// - 모든 PNG Texture Type → Sprite
-    /// 
+    ///
     /// 실행: SpiritMerge > Setup > Organize All Sprites
     /// </summary>
     public static class SpriteOrganizer
