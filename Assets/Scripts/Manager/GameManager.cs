@@ -119,7 +119,10 @@ namespace SpiritMerge
 
         void Awake()
         {
-            if (_instance == null) _instance = this;
+            // Awake 이전에 Instance 게터가 호출되면 _instance가 "자기 자신"으로 채워진다.
+            // 그 상태에서 기존 코드는 else 분기로 떨어져 자기 자신을 Destroy 해버렸다.
+            // (게임이 시작 직후 아무 반응 없이 멈추는 원인)
+            if (_instance == null || _instance == this) _instance = this;
             else Destroy(gameObject);
         }
 
