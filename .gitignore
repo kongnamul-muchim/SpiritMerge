@@ -42,3 +42,7 @@
 #*.mp3 filter=lfs diff=lfs merge=lfs -text
 #*.fbx filter=lfs diff=lfs merge=lfs -text
 #*.blend filter=lfs diff=lfs merge=lfs -text
+
+# 저장소 정리 (백업/복구/임시 파일)
+Assets/_Recovery/
+Assets/_Recovery.meta
